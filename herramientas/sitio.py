@@ -132,9 +132,12 @@ def frase(o, l):
         que = ui(l, "que_diptico")
     elif o.get("tecnica") == "mixta":
         que = ui(l, "que_mixta")
+    elif o.get("tecnica") == "pintura":
+        que = ui(l, "que_pintura")
     else:
         que = ui(l, "que_sin")
-    return ui(l, "frase").format(titulo=o["titulo"], anio=o["anio"], que=que)
+    cabeza = f'{o["titulo"]}, {o["anio"]}' if o.get("anio") else o["titulo"]
+    return ui(l, "frase").format(cabeza=cabeza, que=que)
 
 
 def aviso_exposicion():
@@ -265,7 +268,7 @@ def documento(l, u, clave, slug, titulo, desc, cuerpo, objetos, og_img, portada=
 <meta property="og:locale" content="{T["idiomas"][l]["og"]}">{ogs}
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="{rel(u, "/favicon.ico")}" sizes="48x48">
-<link rel="icon" href="{rel(u, "/favicon.svg")}" type="image/svg+xml">
+<link rel="icon" href="{rel(u, "/icon-192.png")}" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="{rel(u, "/apple-touch-icon.png")}">
 <link rel="preload" href="{rel(u, "/fonts/schibsted-grotesk-latin.woff2")}" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{rel(u, "/css/sitio.css")}{v}">
@@ -287,7 +290,7 @@ def documento(l, u, clave, slug, titulo, desc, cuerpo, objetos, og_img, portada=
 def tarjeta(l, u, o, sizes):
     return (f'<a href="{rel(u, url("obra", l, o["slug"]))}"><figure>'
             f'{picture(u, "obra", o["slug"], V[o["slug"]][l], sizes)}'
-            f'<figcaption><i>{esc(o["titulo"])}</i> {o["anio"]}</figcaption></figure></a>')
+            f'<figcaption><i>{esc(o["titulo"])}</i> {o["anio"] or ""}</figcaption></figure></a>')
 
 
 SIZES_REJILLA = "(max-width: 700px) 92vw, (max-width: 1100px) 45vw, 400px"
@@ -339,12 +342,14 @@ def indice_obra(l):
 def ficha(l, i, o):
     u = url("obra", l, o["slug"])
     s = o["slug"]
-    dd = [f'<dt>{ui(l, "anio")}</dt><dd>{o["anio"]}</dd>']
+    dd = [f'<dt>{ui(l, "anio")}</dt><dd>{o["anio"]}</dd>'] if o.get("anio") else []
     if o.get("tecnica") == "mixta":
         tec = ui(l, "tecnica_mixta")
         if o.get("formato") == "diptico":
             tec = f'{ui(l, "diptico")}, {tec[0].lower() + tec[1:]}'
         dd.append(f'<dt>{ui(l, "tecnica")}</dt><dd>{tec}</dd>')
+    elif o.get("tecnica") == "pintura":
+        dd.append(f'<dt>{ui(l, "tecnica")}</dt><dd>{ui(l, "tecnica_pintura")}</dd>')
     med = medidas(o, l)
     if med:
         dd.append(f'<dt>{ui(l, "medidas")}</dt><dd>{med}</dd>')
@@ -371,16 +376,18 @@ def ficha(l, i, o):
 <div class="cartela"><h1>{esc(o["titulo"])}</h1>{alt_t}
 <dl>{"".join(dd)}</dl>
 <p>{esc(texto)}</p>
-<a class="accion" href="mailto:{CORREO}?subject={asunto}">{ui(l, "consultar")}</a></div>
+{f'<a class="accion" href="mailto:{CORREO}?subject={asunto}">{ui(l, "consultar")}</a>' if o.get("consultar", True) else ""}</div>
 </article>
 {detalle}
 <nav class="vecinas">{"".join(vecinas)}</nav>
 </main>"""
     img = M["obra"][s]
     obra = {"@type": "VisualArtwork", "@id": DOMINIO + url("obra", "en", s) + "#obra", "url": DOMINIO + u,
-            "name": o["titulo"], "creator": {"@id": f"{DOMINIO}/#persona"}, "dateCreated": str(o["anio"]),
+            "name": o["titulo"], "creator": {"@id": f"{DOMINIO}/#persona"},
             "artform": "Painting", "description": texto, "inLanguage": cod(l),
             "image": f"{DOMINIO}/img/obra/{s}-{img['anchos'][-1]}.webp"}
+    if o.get("anio"):
+        obra["dateCreated"] = str(o["anio"])
     if o.get("alternativo"):
         obra["alternateName"] = o["alternativo"]
     if o.get("tecnica") == "mixta":
@@ -390,7 +397,7 @@ def ficha(l, i, o):
         obra["height"] = {"@type": "QuantitativeValue", "value": o["alto"], "unitCode": "CMT"}
         obra["width"] = {"@type": "QuantitativeValue", "value": o["ancho"], "unitCode": "CMT"}
     objetos = [obra, migas(l, [(NOMBRE, url("portada", l)), (pag("obra", l)["h1"], url("obra", l)), (o["titulo"], u)])]
-    titulo = f'{o["titulo"]} ({o["anio"]}) · {NOMBRE_CORTO}'
+    titulo = f'{o["titulo"]} ({o["anio"]}) · {NOMBRE_CORTO}' if o.get("anio") else f'{o["titulo"]} · {NOMBRE_CORTO}'
     escribir(u, documento(l, u, "obra", s, titulo, texto, cuerpo, objetos, f"/img/og/{s}.jpg"))
 
 
@@ -683,7 +690,7 @@ def main():
     (RAIZ / "robots.txt").write_text(robots(), encoding="utf-8")
     (RAIZ / "llms.txt").write_text(llms(), encoding="utf-8")
     (RAIZ / ".nojekyll").write_text("", encoding="utf-8")
-    favicons()
+    # Los iconos (favicon.ico, icon-192/512, apple-touch-icon) salen de herramientas/favicon.py
     total = len(todas_las_rutas()) * len(IDIOMAS)
     print(f"{total} páginas en {len(IDIOMAS)} idiomas · LANZADO={LANZADO}")
 

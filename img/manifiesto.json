@@ -105,6 +105,102 @@
     1800
    ],
    "detalle": true
+  },
+  "vind-fra-vest": {
+   "ancho": 1034,
+   "alto": 768,
+   "anchos": [
+    640
+   ],
+   "detalle": false
+  },
+  "stotter-iv": {
+   "ancho": 617,
+   "alto": 768,
+   "anchos": [
+    617
+   ],
+   "detalle": false
+  },
+  "stotter": {
+   "ancho": 609,
+   "alto": 768,
+   "anchos": [
+    609
+   ],
+   "detalle": false
+  },
+  "barbacoa-i": {
+   "ancho": 615,
+   "alto": 768,
+   "anchos": [
+    615
+   ],
+   "detalle": false
+  },
+  "barbacoa-iv": {
+   "ancho": 921,
+   "alto": 768,
+   "anchos": [
+    640
+   ],
+   "detalle": false
+  },
+  "konkyliens-ferd": {
+   "ancho": 600,
+   "alto": 768,
+   "anchos": [
+    600
+   ],
+   "detalle": false
+  },
+  "broen": {
+   "ancho": 610,
+   "alto": 768,
+   "anchos": [
+    610
+   ],
+   "detalle": false
+  },
+  "sjolvsikker": {
+   "ancho": 616,
+   "alto": 768,
+   "anchos": [
+    616
+   ],
+   "detalle": false
+  },
+  "medlevere": {
+   "ancho": 581,
+   "alto": 768,
+   "anchos": [
+    581
+   ],
+   "detalle": false
+  },
+  "familie": {
+   "ancho": 574,
+   "alto": 768,
+   "anchos": [
+    574
+   ],
+   "detalle": false
+  },
+  "grensen-begrenser-sinnet": {
+   "ancho": 602,
+   "alto": 768,
+   "anchos": [
+    602
+   ],
+   "detalle": false
+  },
+  "den-raude-pupillen": {
+   "ancho": 578,
+   "alto": 768,
+   "anchos": [
+    578
+   ],
+   "detalle": false
   }
  },
  "mural": {

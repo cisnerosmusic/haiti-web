@@ -103,7 +103,19 @@
       "alto": 100, "ancho": 80,
       "fuente": "10 Tre, sjebnen, solen dor.jpg",
       "foco": [0.50, 0.40]
-    }
+    },
+    {"slug": "vind-fra-vest", "titulo": "Vind fra vest", "anio": null, "tecnica": "pintura", "alto": 150, "ancho": 200, "fuente": "Vind-fra-vest-Maleri-150x200-cm-kr-45000-ur.jpg", "foco": null, "consultar": false},
+    {"slug": "stotter-iv", "titulo": "Støtter IV", "anio": null, "tecnica": "pintura", "alto": 150, "ancho": 120, "fuente": "Støtter-IV-Maleri-150x120-cm-kr-35000-ur.jpg", "foco": null, "consultar": false},
+    {"slug": "stotter", "titulo": "Støtter", "anio": null, "tecnica": "pintura", "alto": 50, "ancho": 40, "fuente": "Støtter-Maleri-50x40-cm-kr-6000-ur.jpg", "foco": null, "consultar": false},
+    {"slug": "barbacoa-i", "titulo": "Barbacoa I", "anio": null, "tecnica": "pintura", "alto": 100, "ancho": 80, "fuente": "Barbacoa-I-Maleri-100x80-cm-kr-22000-ur.jpg", "foco": null, "consultar": false},
+    {"slug": "barbacoa-iv", "titulo": "Barbacoa IV", "anio": null, "tecnica": "pintura", "alto": 50, "ancho": 60, "fuente": "Barbacoa-IV-Maleri-50x60-cm-kr-8000-ur.jpg", "foco": null, "consultar": false},
+    {"slug": "konkyliens-ferd", "titulo": "Konkyliens ferd", "anio": null, "tecnica": "pintura", "alto": 100, "ancho": 80, "fuente": "Konkyliens-ferd-Maleri-100x80-cm-kr-20000-ur.jpg", "foco": null, "consultar": false},
+    {"slug": "broen", "titulo": "Broen", "anio": null, "tecnica": "pintura", "alto": 100, "ancho": 80, "fuente": "Broen-Maleri-100x80-cm-kr-20000-ur.jpg", "foco": null, "consultar": false},
+    {"slug": "sjolvsikker", "titulo": "Sjølvsikker", "anio": null, "tecnica": "pintura", "alto": 100, "ancho": 80, "fuente": "Sjølvsikker-Masleri-100x80-cm-kr-20000-ur.jpg", "foco": null, "consultar": false},
+    {"slug": "medlevere", "titulo": "Medlevere", "anio": null, "tecnica": "pintura", "alto": 80, "ancho": 60, "fuente": "Medlevere-Maleri-80x60-cm-kr-13000-ur.jpg", "foco": null, "consultar": false},
+    {"slug": "familie", "titulo": "Familie", "anio": null, "tecnica": "pintura", "alto": 80, "ancho": 60, "fuente": "Familie-Maleri-80x60-cm-kr-13000-ur.jpg", "foco": null, "consultar": false},
+    {"slug": "grensen-begrenser-sinnet", "titulo": "Grensen begrenser sinnet", "anio": null, "tecnica": "pintura", "alto": 80, "ancho": 60, "fuente": "Grensen-begrenser-sinnet-Maleri-80x60-cm-kr-13000-ur.jpg", "foco": null, "consultar": false},
+    {"slug": "den-raude-pupillen", "titulo": "Den raude pupillen", "anio": null, "tecnica": "pintura", "alto": 80, "ancho": 60, "fuente": "Den-raude-pupillen-Maleri-80x60-cm-kr-13000-ur.jpg", "foco": null, "consultar": false}
   ],
   "murales": [
     {
