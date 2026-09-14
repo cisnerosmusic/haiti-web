@@ -50,7 +50,7 @@ i, em { font-style: italic; }
 
 /* Cabecera */
 .cab { display: flex; justify-content: space-between; align-items: baseline; gap: 12px 24px; flex-wrap: wrap;
-       max-width: var(--ancho); margin: 0 auto; padding-block: clamp(16px, 3vw, 28px) 0; padding-inline: var(--margen); position: relative; z-index: 2; }
+       max-width: var(--ancho); margin: 0 auto; padding-block: clamp(16px, 3vw, 28px) 0; padding-inline: var(--margen); position: relative; z-index: 20; }
 .h-nombre { font: inherit; margin: 0; }
 .nombre { text-decoration: none; font-weight: 600; font-size: var(--f-l); letter-spacing: .005em; line-height: 1.2; }
 .nombre small { display: block; font-weight: 400; font-size: var(--f-xs); letter-spacing: .03em; color: var(--tinta-2); margin-top: 3px; }
@@ -68,11 +68,22 @@ i, em { font-style: italic; }
   .menu-movil summary { cursor: pointer; list-style: none; font-weight: 500; }
   .menu-movil summary::-webkit-details-marker { display: none; }
   .menu-movil[open] summary { text-decoration: underline; }
-  .menu-movil .panel { position: absolute; left: var(--margen); right: var(--margen); margin-top: 12px; padding: 16px 0;
-                       background: var(--fondo); color: var(--tinta); border-top: 1px solid var(--linea); border-bottom: 1px solid var(--linea); z-index: 5; }
-  .menu-movil ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; font-size: var(--f-l); }
-  .menu-movil a { text-decoration: none; }
-  .menu-movil .idiomas { margin-top: 16px; }
+  /* Hoja que cae bajo la cabecera entera, siempre por encima del cuadro */
+  .menu-movil .panel { position: absolute; top: calc(100% + 10px); left: 0; right: 0; z-index: 30;
+                       padding-block: 20px 24px; padding-inline: var(--margen);
+                       background: var(--fondo); color: var(--tinta);
+                       border-top: 1px solid var(--linea); border-bottom: 1px solid var(--linea);
+                       box-shadow: 0 18px 40px rgba(0,0,0,.18); }
+  .menu-movil ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; font-size: var(--f-l); }
+  .menu-movil a { text-decoration: none; color: var(--tinta); }
+  .menu-movil a[aria-current="page"] { text-decoration: underline; }
+  .menu-movil .idiomas { margin-top: 18px; }
+  .menu-movil .idiomas a { color: var(--tinta-2); }
+  .menu-movil .idiomas a[aria-current="true"] { color: var(--tinta); }
+  /* En la portada la cabecera usa la tinta del cielo; la hoja vuelve a la del fondo */
+  .pag-portada .cielo .menu-movil .panel a { color: var(--tinta); }
+  .pag-portada .cielo .menu-movil .panel .idiomas a { color: var(--tinta-2); }
+  .pag-portada .cielo .menu-movil .panel .idiomas a[aria-current="true"] { color: var(--tinta); }
 }
 
 /* Portada: el cielo de Bergen */

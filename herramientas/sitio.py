@@ -20,7 +20,7 @@ DOMINIO = "https://ramonhaitifiliu.com"
 # Mientras el dominio siga apuntando al WordPress antiguo, las páginas llevan
 # noindex. El día que el DNS apunte a GitHub Pages: True, añadir CNAME y regenerar.
 LANZADO = False
-VERSION = "2"  # súbela cada vez que cambien css/ o js/
+VERSION = "3"  # súbela cada vez que cambien css/ o js/
 IDIOMAS = ["en", "no", "es"]
 SELECTOR = ["no", "en", "es"]
 CORREO = "haitifiliu@yahoo.es"
