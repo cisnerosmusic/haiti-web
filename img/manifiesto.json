@@ -1,0 +1,130 @@
+{
+ "obra": {
+  "echo-in-the-sea": {
+   "ancho": 3678,
+   "alto": 2717,
+   "anchos": [
+    640,
+    1200,
+    1800
+   ],
+   "detalle": true
+  },
+  "angel-iii": {
+   "ancho": 2940,
+   "alto": 3703,
+   "anchos": [
+    640,
+    1200,
+    1800
+   ],
+   "detalle": true
+  },
+  "moment": {
+   "ancho": 1351,
+   "alto": 1710,
+   "anchos": [
+    640,
+    1200
+   ],
+   "detalle": false
+  },
+  "koplingar-iii": {
+   "ancho": 1677,
+   "alto": 2100,
+   "anchos": [
+    640,
+    1200
+   ],
+   "detalle": true
+  },
+  "the-hopeful-one": {
+   "ancho": 1666,
+   "alto": 2100,
+   "anchos": [
+    640,
+    1200
+   ],
+   "detalle": true
+  },
+  "fragments-that-remain": {
+   "ancho": 2100,
+   "alto": 1797,
+   "anchos": [
+    640,
+    1200,
+    1800
+   ],
+   "detalle": true
+  },
+  "elleguas-hager-ii": {
+   "ancho": 1606,
+   "alto": 2100,
+   "anchos": [
+    640,
+    1200
+   ],
+   "detalle": true
+  },
+  "silent-axis": {
+   "ancho": 2664,
+   "alto": 4019,
+   "anchos": [
+    640,
+    1200,
+    1800
+   ],
+   "detalle": true
+  },
+  "serene-and-enchanting": {
+   "ancho": 5906,
+   "alto": 4436,
+   "anchos": [
+    640,
+    1200,
+    1800
+   ],
+   "detalle": true
+  },
+  "geometry-of-the-spirit-i": {
+   "ancho": 2353,
+   "alto": 3000,
+   "anchos": [
+    640,
+    1200,
+    1800
+   ],
+   "detalle": true
+  },
+  "tre-sjebnen-solen-dor": {
+   "ancho": 2564,
+   "alto": 3205,
+   "anchos": [
+    640,
+    1200,
+    1800
+   ],
+   "detalle": true
+  }
+ },
+ "mural": {
+  "hverdagen": {
+   "ancho": 1621,
+   "alto": 1146,
+   "anchos": [
+    640,
+    1200
+   ]
+  }
+ },
+ "retrato": {
+  "ramon-haiti-filiu": {
+   "ancho": 1622,
+   "alto": 2048,
+   "anchos": [
+    480,
+    960
+   ]
+  }
+ }
+}

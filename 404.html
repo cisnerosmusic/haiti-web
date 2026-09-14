@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>404 · Ramón Haití Filiu</title>
+<style>
+body { margin: 0; background: #E9EAE3; color: #0B0D12; font-family: "Helvetica Neue", Arial, system-ui, sans-serif; line-height: 1.55; }
+main { max-width: 640px; margin: 0 auto; padding-block: 16vh 64px; padding-inline: 20px; display: grid; gap: 36px; }
+h1 { font-size: 24px; margin: 0 0 6px; } p { margin: 0; } a { color: inherit; }
+</style>
+</head>
+<body>
+<main><section lang="en"><h1>This page does not exist</h1><p>The address may have changed. Start again from the home page: <a data-ruta="/" href="/">Ramón Haití Filiu</a></p></section><section lang="nb"><h1>Denne siden finnes ikke</h1><p>Adressen kan ha endret seg. Begynn på nytt fra forsiden: <a data-ruta="/no/" href="/no/">Ramón Haití Filiu</a></p></section><section lang="es"><h1>Esta página no existe</h1><p>Puede que la dirección haya cambiado. Vuelva a empezar desde la portada: <a data-ruta="/es/" href="/es/">Ramón Haití Filiu</a></p></section></main>
+<script>
+/* En GitHub Pages el sitio vive en /haiti-web/; en el dominio propio, en la raíz */
+var base = location.pathname.indexOf("/haiti-web/") === 0 ? "/haiti-web" : "";
+document.querySelectorAll("[data-ruta]").forEach(function (a) { a.href = base + a.getAttribute("data-ruta"); });
+</script>
+</body>
+</html>

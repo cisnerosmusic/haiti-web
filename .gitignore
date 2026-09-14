@@ -1,2 +1,6 @@
 # Sesiones del compañero visual de brainstorming (locales)
 .superpowers/
+
+# Originales de alta resolución (viven en OneDrive, no en git)
+originales/
+__pycache__/

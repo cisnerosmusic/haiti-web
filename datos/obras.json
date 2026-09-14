@@ -1,0 +1,120 @@
+{
+  "_nota": "Catálogo de obra. Fuente: IMAGE IDENTIFICATION LIST del artista (títulos, años, técnica, medidas). 'alto' y 'ancho' en cm, deducidos de la orientación de la foto. 'fuente' es relativa a la carpeta de originales indicada en herramientas/imagenes.py. 'foco' es el centro del recorte de detalle, en fracciones (x, y) del original; null = sin detalle.",
+  "obras": [
+    {
+      "slug": "echo-in-the-sea",
+      "titulo": "Echo in the Sea I–II",
+      "anio": 2025,
+      "tecnica": "mixta",
+      "formato": "diptico",
+      "medidas_texto": "183,5 × 122",
+      "alto": null, "ancho": null,
+      "fuente": "@proyecto/originales/echo-in-the-sea.jpg",
+      "foco": [0.30, 0.42],
+      "portada": true
+    },
+    {
+      "slug": "angel-iii",
+      "titulo": "Angel III",
+      "anio": 2023,
+      "tecnica": "mixta",
+      "alto": 100, "ancho": 80,
+      "fuente": "Angel III.jpg",
+      "foco": [0.46, 0.38]
+    },
+    {
+      "slug": "moment",
+      "titulo": "Moment",
+      "anio": 2023,
+      "tecnica": "mixta",
+      "alto": 100, "ancho": 80,
+      "fuente": "Trim_Moment 2023(2).jpg",
+      "foco": null
+    },
+    {
+      "slug": "koplingar-iii",
+      "titulo": "Koplingar III",
+      "anio": 2022,
+      "tecnica": "mixta",
+      "alto": 100, "ancho": 80,
+      "fuente": "4 Koplingar III   2022.jpg",
+      "foco": [0.55, 0.40]
+    },
+    {
+      "slug": "the-hopeful-one",
+      "titulo": "The Hopeful One",
+      "anio": 2021,
+      "tecnica": "mixta",
+      "alto": 100, "ancho": 80,
+      "fuente": "Filiu_Ramon_2  The Hopeful One.jpg",
+      "foco": [0.50, 0.22]
+    },
+    {
+      "slug": "fragments-that-remain",
+      "titulo": "Fragments That Remain",
+      "anio": 2021,
+      "tecnica": "mixta",
+      "alto": 100, "ancho": 120,
+      "fuente": "Filiu_Ramon_3 Fragments That Remain.jpg",
+      "foco": [0.58, 0.40]
+    },
+    {
+      "slug": "elleguas-hager-ii",
+      "titulo": "Elleguás hager II",
+      "anio": 2021,
+      "tecnica": null,
+      "alto": null, "ancho": null,
+      "fuente": "Elleguás hager II 2021.jpg",
+      "foco": [0.50, 0.50]
+    },
+    {
+      "slug": "silent-axis",
+      "titulo": "Silent Axis",
+      "anio": 2020,
+      "tecnica": "mixta",
+      "alto": 150, "ancho": 120,
+      "fuente": "8 Silent Axis.JPG",
+      "foco": [0.50, 0.50]
+    },
+    {
+      "slug": "serene-and-enchanting",
+      "titulo": "Serene and Enchanting",
+      "alternativo": "Fredfullt og fortryllende",
+      "anio": 2020,
+      "tecnica": "mixta",
+      "alto": 120, "ancho": 150,
+      "fuente": "Fredfullt og fortryllende 2020.jpg",
+      "foco": [0.72, 0.66]
+    },
+    {
+      "slug": "geometry-of-the-spirit-i",
+      "titulo": "Geometry of the Spirit I",
+      "anio": 2019,
+      "tecnica": "mixta",
+      "alto": 120, "ancho": 100,
+      "fuente": "Geometry of the Spirit I.jpg",
+      "foco": [0.50, 0.35]
+    },
+    {
+      "slug": "tre-sjebnen-solen-dor",
+      "titulo": "Tre, Sjebnen, Solen Dor",
+      "anio": 2019,
+      "tecnica": "mixta",
+      "alto": 100, "ancho": 80,
+      "fuente": "10 Tre, sjebnen, solen dor.jpg",
+      "foco": [0.50, 0.40]
+    }
+  ],
+  "murales": [
+    {
+      "slug": "hverdagen",
+      "titulo": "Hverdagen",
+      "medidas_texto": "8 × 4 m",
+      "fuente": "@proyecto/originales/hverdagen.jpg"
+    }
+  ],
+  "retrato": {
+    "slug": "ramon-haiti-filiu",
+    "fuente": "ti.jpeg"
+  }
+}

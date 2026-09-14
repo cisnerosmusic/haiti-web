@@ -1,0 +1,94 @@
+{
+  "_nota": "CV consolidado. Fuentes: CV del artista (2026) y CV de Galleri Amare. 't' es texto invariable (nombres propios) o un objeto por idioma. 'desde'/'hasta' (AAAA-MM-DD) activan el aviso de exposición en la portada.",
+  "secciones": [
+    {
+      "id": "exposiciones",
+      "titulo": {"en": "Exhibitions (selection)", "no": "Utstillinger (utvalg)", "es": "Exposiciones (selección)"},
+      "items": [
+        {"anio": "2026", "t": "Hardanger Kulturgalleri", "fechas": {"en": "10–22 September", "no": "10.–22. september", "es": "10–22 de septiembre"}, "desde": "2026-09-10", "hasta": "2026-09-22"},
+        {"anio": "2021", "t": "Hardanger Kulturgalleri", "solo": true},
+        {"anio": "2021", "t": {"en": "Kunsthuset Wendelboe, Bergen: <i>The Tridimensional Path to Forms</i>", "no": "Kunsthuset Wendelboe, Bergen: <i>The Tridimensional Path to Forms</i>", "es": "Kunsthuset Wendelboe, Bergen: <i>The Tridimensional Path to Forms</i>"}, "solo": true},
+        {"anio": "2020", "t": "Galleri Holmen, Balestrand: <i>Reunion</i>", "solo": true},
+        {"anio": "2019", "t": "Kunsthuset Wendelboe, Bergen: <i>Forms in the Labyrinth</i>", "solo": true},
+        {"anio": "2018", "t": "Galleri Amare, Stavanger", "solo": true},
+        {"anio": "2017", "t": "Kunsthuset Wendelboe, Bergen: <i>A Vertical Horizon</i>", "solo": true},
+        {"anio": "2016", "t": "Doktorgarden, Selje"},
+        {"anio": "2015", "t": {"en": "Galleri Bekkjarvik, spring exhibition", "no": "Galleri Bekkjarvik, vårutstilling", "es": "Galleri Bekkjarvik, exposición de primavera"}},
+        {"anio": "2015", "t": "Wild Sheep Festival, Hardbakke, Solund"},
+        {"anio": "2014", "t": "Fertile Days, Leikanger"},
+        {"anio": "2014", "t": "Cafeteatret, Nordic Black Theatre, Oslo"},
+        {"anio": "2014", "t": "Radisson Blu, Bodø"},
+        {"anio": "2013", "t": "Galleri Amare, Stavanger"},
+        {"anio": "2013", "t": "Glesvær kafé, Glesvær"},
+        {"anio": "2012", "t": "Galleri Hvelvet, Os: <i>Livets stier og former</i>"},
+        {"anio": "2012", "t": "Kystmuseet, Florø"},
+        {"anio": "2011", "t": "Ciderhuset, Balestrand"},
+        {"anio": "2010", "t": "Bar Barista, Bergen"},
+        {"anio": "2008", "t": "Galleri Vox, Bergen"},
+        {"anio": "2007", "t": "Galleri Bryggen, Bergen"},
+        {"anio": "2006", "t": "Galleri Sjøgaten, Bodø"},
+        {"anio": "2006", "t": {"en": "Radisson SAS, Latin Festival, Bodø", "no": "Radisson SAS, Latinfestival, Bodø", "es": "Radisson SAS, Festival Latino, Bodø"}},
+        {"anio": "2005", "t": {"en": "<i>Små bilder</i>, Vedado, Havana", "no": "<i>Små bilder</i>, Vedado, Havana", "es": "<i>Små bilder</i>, El Vedado, La Habana"}},
+        {"anio": "2004", "t": {"en": "UNEAC, Sala Villena, Havana: <i>Intimidad de la conciencia</i>", "no": "UNEAC, Sala Villena, Havana: <i>Intimidad de la conciencia</i>", "es": "UNEAC, Sala Villena, La Habana: <i>Intimidad de la conciencia</i>"}}
+      ]
+    },
+    {
+      "id": "bienales",
+      "titulo": {"en": "Biennials and group exhibitions", "no": "Biennaler og kollektivutstillinger", "es": "Bienales y exposiciones colectivas"},
+      "items": [
+        {"anio": "2024–2025", "t": {"en": "15th Havana Biennial: <i>Shared Horizons</i>, Havana", "no": "Den 15. Havanabiennalen: <i>Shared Horizons</i>, Havana", "es": "XV Bienal de La Habana: <i>Horizontes compartidos</i>, La Habana"}},
+        {"anio": "2019", "t": "Kunsthuset Wendelboe, Bergen: <i>ByNatt</i>"},
+        {"anio": "2015", "t": "Vevringutstillinga"},
+        {"anio": "2012", "t": {"en": "10th Havana Biennial, installation <i>Conexión</i>, Havana", "no": "Den 10. Havanabiennalen, installasjonen <i>Conexión</i>, Havana", "es": "X Bienal de La Habana, instalación <i>Conexión</i>, La Habana"}},
+        {"anio": "2005", "t": {"en": "Sala El Paso, Spain: <i>Cuba Mestiza</i>", "no": "Sala El Paso, Spania: <i>Cuba Mestiza</i>", "es": "Sala El Paso, España: <i>Cuba Mestiza</i>"}},
+        {"anio": "2004", "t": {"en": "3rd Carving Biennial, Havana", "no": "Den 3. treskjærerbiennalen, Havana", "es": "III Bienal de Talla, La Habana"}}
+      ]
+    },
+    {
+      "id": "encargos",
+      "titulo": {"en": "Murals and commissions", "no": "Veggmalerier og oppdrag", "es": "Murales y encargos"},
+      "items": [
+        {"anio": "2021", "t": {"en": "Record cover, <i>Tres Músicos</i>", "no": "Plateomslag, <i>Tres Músicos</i>", "es": "Portada de disco, <i>Tres Músicos</i>"}},
+        {"anio": "2019", "t": {"en": "Cover illustration for <i>Convertida en canción</i> by Antonio López Sánchez (Editorial Capiro)", "no": "Omslagsillustrasjon til <i>Convertida en canción</i> av Antonio López Sánchez (Editorial Capiro)", "es": "Ilustración de cubierta de <i>Convertida en canción</i>, de Antonio López Sánchez (Editorial Capiro)"}, "enlace": "https://antoniolopezsanchez.art/libros/convertida-en-cancion/"},
+        {"anio": "2016", "t": {"en": "Festival poster, Nattjazz 2017, Bergen", "no": "Festivalplakat, Nattjazz 2017, Bergen", "es": "Cartel del festival Nattjazz 2017, Bergen"}},
+        {"anio": "2015", "t": {"en": "Mural <i>Konvergent</i>, Vestre Torggaten 12 housing cooperative, Bergen", "no": "Veggmaleri <i>Konvergent</i>, borettslaget Vestre Torggaten 12, Bergen", "es": "Mural <i>Konvergent</i>, cooperativa de viviendas Vestre Torggaten 12, Bergen"}},
+        {"anio": "2013", "t": {"en": "Mural, USF, for Nattjazz, Bergen", "no": "Veggmaleri, USF, for Nattjazz, Bergen", "es": "Mural en USF para Nattjazz, Bergen"}},
+        {"anio": "2012", "t": {"en": "Mural <i>Saxofon</i>, Vågsbunnen, for Nattjazz, Bergen", "no": "Veggmaleri <i>Saxofon</i>, Vågsbunnen, for Nattjazz, Bergen", "es": "Mural <i>Saxofon</i>, Vågsbunnen, para Nattjazz, Bergen"}},
+        {"anio": "2010", "t": {"en": "Mural <i>Livets gang</i>, Glesvær", "no": "Veggmaleri <i>Livets gang</i>, Glesvær", "es": "Mural <i>Livets gang</i>, Glesvær"}},
+        {"anio": "2008", "t": {"en": "Mural <i>La voz</i>, USF, for Nattjazz, Bergen", "no": "Veggmaleri <i>La voz</i>, USF, for Nattjazz, Bergen", "es": "Mural <i>La voz</i> en USF para Nattjazz, Bergen"}},
+        {"anio": "2008", "t": {"en": "Cover illustration for <i>Trovadoras</i> by Antonio López Sánchez (Editorial Oriente)", "no": "Omslagsillustrasjon til <i>Trovadoras</i> av Antonio López Sánchez (Editorial Oriente)", "es": "Ilustración de cubierta de <i>Trovadoras</i>, de Antonio López Sánchez (Editorial Oriente)"}, "enlace": "https://antoniolopezsanchez.art/libros/trovadoras/"}
+      ]
+    },
+    {
+      "id": "colecciones",
+      "titulo": {"en": "Collections", "no": "Innkjøpt av", "es": "Colecciones"},
+      "items": [
+        {"anio": "2014", "t": "Aleris Ungplan, Bergen"},
+        {"anio": "2012", "t": "Grieg Foundation, Bergen"},
+        {"anio": "2012", "t": "Flora ungdomsskule, Florø"},
+        {"anio": "2012", "t": "Brandsøy skule, Florø"},
+        {"anio": "2006", "t": "Nordland psykiatriske sykehus, Bodø"},
+        {"anio": "2006", "t": "Universitetet i Nordland, Bodø"}
+      ]
+    },
+    {
+      "id": "formacion",
+      "titulo": {"en": "Education", "no": "Utdanning", "es": "Formación"},
+      "items": [
+        {"anio": "1997", "t": {"en": "Bronze casting course, Havana", "no": "Kurs i bronsestøping, Havana", "es": "Curso de fundición en bronce, La Habana"}},
+        {"anio": "1992–1996", "t": {"en": "San Alejandro Academy of Fine Arts, Havana", "no": "Kunstakademiet San Alejandro, Havana", "es": "Academia de Bellas Artes San Alejandro, La Habana"}},
+        {"anio": "1984", "t": {"en": "Paulita Concepción Art School, Havana", "no": "Kunstskolen Paulita Concepción, Havana", "es": "Escuela de Arte Paulita Concepción, La Habana"}}
+      ]
+    },
+    {
+      "id": "docencia",
+      "titulo": {"en": "Teaching", "no": "Undervisning", "es": "Docencia"},
+      "items": [
+        {"anio": "2010", "t": {"en": "Steiner School, Skjold, Bergen", "no": "Steinerskolen på Skjold, Bergen", "es": "Escuela Steiner de Skjold, Bergen"}},
+        {"anio": "2007", "t": {"en": "Drawing course, Bodø University College", "no": "Tegnekurs, Høgskolen i Bodø", "es": "Curso de dibujo, Escuela Universitaria de Bodø"}},
+        {"anio": "2001–2008", "t": {"en": "Centro de Superación para la Cultura, Havana", "no": "Centro de Superación para la Cultura, Havana", "es": "Centro de Superación para la Cultura, La Habana"}},
+        {"anio": "1999–2011", "t": {"en": "Sculpture teacher, José Antonio Díaz Peláez Art School, Havana", "no": "Skulpturlærer, kunstskolen José Antonio Díaz Peláez, Havana", "es": "Profesor de escultura, Escuela de Arte José Antonio Díaz Peláez, La Habana"}}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "_nota": "Todo el texto del sitio en inglés (raíz), noruego bokmål (/no/) y español (/es/). Los títulos de obra no se traducen. Sin raya larga en ningún texto.",
+  "idiomas": {
+    "en": {"prefijo": "", "codigo": "en", "og": "en_US", "corto": "EN", "nombre": "English"},
+    "no": {"prefijo": "/no", "codigo": "nb", "og": "nb_NO", "corto": "NO", "nombre": "Norsk"},
+    "es": {"prefijo": "/es", "codigo": "es", "og": "es_ES", "corto": "ES", "nombre": "Español"}
+  },
+  "rutas": {
+    "obra": {"en": "works", "no": "verk", "es": "obra"},
+    "murales": {"en": "murals", "no": "veggmalerier", "es": "murales"},
+    "relato": {"en": "havana-bergen", "no": "havana-bergen", "es": "la-habana-bergen"},
+    "cv": {"en": "cv", "no": "cv", "es": "cv"},
+    "contacto": {"en": "contact", "no": "kontakt", "es": "contacto"}
+  },
+  "ui": {
+    "en": {
+      "oficio": "Painter and sculptor · Bergen",
+      "menu_obra": "Works", "menu_murales": "Murals", "menu_relato": "Havana–Bergen", "menu_cv": "CV", "menu_contacto": "Contact",
+      "menu": "Menu", "nav": "Main", "idiomas": "Language", "saltar": "Skip to content",
+      "tecnica_mixta": "Mixed media on canvas", "diptico": "Diptych",
+      "frase": "{titulo}, {anio}: {que} by the Cuban-Norwegian painter and sculptor Ramón Eduardo Haití Filiu.",
+      "que_mixta": "a mixed-media work on canvas", "que_diptico": "a diptych in mixed media on canvas", "que_sin": "a work",
+      "consultar": "Enquire about this work", "asunto": "Enquiry: {titulo}",
+      "anio": "Year", "tecnica": "Technique", "medidas": "Size (height × width)",
+      "detalle": "Detail", "detalle_nota": "An 800-pixel crop from the original photograph, at full resolution.",
+      "anterior": "Previous", "siguiente": "Next",
+      "toda_obra": "All works", "obra_reciente": "Recent work",
+      "ahora": "Now", "pronto": "Coming up",
+      "luz": "The light on this page is Bergen’s, right now.",
+      "credito": "Website by Index01",
+      "solo": "solo",
+      "cronologia": "Chronology", "cubiertas": "Book covers",
+      "cubierta_alt": "Cover of {libro} by Antonio López Sánchez, illustrated by Ramón Eduardo Haití Filiu",
+      "retrato_pie": "Ramón Eduardo Haití Filiu",
+      "mural": "Mural",
+      "tony_url": {"trovadoras": "https://antoniolopezsanchez.art/en/books/trovadoras/", "convertida-en-cancion": "https://antoniolopezsanchez.art/en/books/convertida-en-cancion/"}
+    },
+    "no": {
+      "oficio": "Maler og billedhugger · Bergen",
+      "menu_obra": "Verk", "menu_murales": "Veggmalerier", "menu_relato": "Havana–Bergen", "menu_cv": "CV", "menu_contacto": "Kontakt",
+      "menu": "Meny", "nav": "Hovedmeny", "idiomas": "Språk", "saltar": "Hopp til innholdet",
+      "tecnica_mixta": "Blandingsteknikk på lerret", "diptico": "Diptyk",
+      "frase": "{titulo}, {anio}: {que} av den kubansk-norske maleren og billedhuggeren Ramón Eduardo Haití Filiu.",
+      "que_mixta": "et verk i blandingsteknikk på lerret", "que_diptico": "en diptyk i blandingsteknikk på lerret", "que_sin": "et verk",
+      "consultar": "Spør om dette verket", "asunto": "Forespørsel: {titulo}",
+      "anio": "År", "tecnica": "Teknikk", "medidas": "Mål (høyde × bredde)",
+      "detalle": "Detalj", "detalle_nota": "Et utsnitt på 800 piksler fra originalfotografiet, i full oppløsning.",
+      "anterior": "Forrige", "siguiente": "Neste",
+      "toda_obra": "Alle verk", "obra_reciente": "Nyere verk",
+      "ahora": "Nå", "pronto": "Kommer",
+      "luz": "Lyset på denne siden er Bergens, akkurat nå.",
+      "credito": "Nettsted av Index01",
+      "solo": "separatutstilling",
+      "cronologia": "Kronologi", "cubiertas": "Bokomslag",
+      "cubierta_alt": "Omslaget til {libro} av Antonio López Sánchez, illustrert av Ramón Eduardo Haití Filiu",
+      "retrato_pie": "Ramón Eduardo Haití Filiu",
+      "mural": "Veggmaleri",
+      "tony_url": {"trovadoras": "https://antoniolopezsanchez.art/en/books/trovadoras/", "convertida-en-cancion": "https://antoniolopezsanchez.art/en/books/convertida-en-cancion/"}
+    },
+    "es": {
+      "oficio": "Pintor y escultor · Bergen",
+      "menu_obra": "Obra", "menu_murales": "Murales", "menu_relato": "La Habana–Bergen", "menu_cv": "CV", "menu_contacto": "Contacto",
+      "menu": "Menú", "nav": "Principal", "idiomas": "Idioma", "saltar": "Ir al contenido",
+      "tecnica_mixta": "Técnica mixta sobre lienzo", "diptico": "Díptico",
+      "frase": "{titulo}, {anio}: {que} del pintor y escultor cubano-noruego Ramón Eduardo Haití Filiu.",
+      "que_mixta": "una obra en técnica mixta sobre lienzo", "que_diptico": "un díptico en técnica mixta sobre lienzo", "que_sin": "una obra",
+      "consultar": "Consultar esta obra", "asunto": "Consulta: {titulo}",
+      "anio": "Año", "tecnica": "Técnica", "medidas": "Medidas (alto × ancho)",
+      "detalle": "Detalle", "detalle_nota": "Recorte de 800 píxeles de la fotografía original, a resolución completa.",
+      "anterior": "Anterior", "siguiente": "Siguiente",
+      "toda_obra": "Toda la obra", "obra_reciente": "Obra reciente",
+      "ahora": "Ahora", "pronto": "Próximamente",
+      "luz": "La luz de esta página es la de Bergen, ahora mismo.",
+      "credito": "Web de Index01",
+      "solo": "individual",
+      "cronologia": "Cronología", "cubiertas": "Cubiertas de libros",
+      "cubierta_alt": "Cubierta de {libro}, de Antonio López Sánchez, ilustrada por Ramón Eduardo Haití Filiu",
+      "retrato_pie": "Ramón Eduardo Haití Filiu",
+      "mural": "Mural",
+      "tony_url": {"trovadoras": "https://antoniolopezsanchez.art/libros/trovadoras/", "convertida-en-cancion": "https://antoniolopezsanchez.art/libros/convertida-en-cancion/"}
+    }
+  },
+  "paginas": {
+    "portada": {
+      "en": {"titulo": "Ramón Eduardo Haití Filiu · Painter and sculptor, Bergen",
+             "desc": "Cuban-Norwegian painter and sculptor, born in Havana in 1971 and based in Bergen. Mixed media on canvas: paint, printed fabric and collage.",
+             "intro": "Born in Havana in 1971, trained at San Alejandro and based in Bergen since 2009, Ramón Eduardo Haití Filiu builds his paintings from paint, printed fabric, jute and corrugated cardboard: figures in wide-brimmed hats, fish, masks, the sea."},
+      "no": {"titulo": "Ramón Eduardo Haití Filiu · Maler og billedhugger, Bergen",
+             "desc": "Kubansk-norsk maler og billedhugger, født i Havana i 1971 og bosatt i Bergen. Blandingsteknikk på lerret: maling, trykt stoff og kollasj.",
+             "intro": "Født i Havana i 1971, utdannet ved San Alejandro og bosatt i Bergen siden 2009: Ramón Eduardo Haití Filiu bygger bildene sine av maling, trykt stoff, jute og bølgepapp. Skikkelser med bredbremmede hatter, fisker, masker, havet."},
+      "es": {"titulo": "Ramón Eduardo Haití Filiu · Pintor y escultor en Bergen",
+             "desc": "Pintor y escultor cubano-noruego, nacido en La Habana en 1971 y radicado en Bergen. Técnica mixta sobre lienzo: pintura, tela estampada y collage.",
+             "intro": "Nacido en La Habana en 1971, formado en San Alejandro y radicado en Bergen desde 2009, Ramón Eduardo Haití Filiu construye sus cuadros con pintura, tela estampada, yute y cartón ondulado: figuras con sombreros de ala ancha, peces, máscaras, el mar."}
+    },
+    "obra": {
+      "en": {"titulo": "Works · Ramón Haití Filiu", "h1": "Works",
+             "desc": "Paintings by Ramón Eduardo Haití Filiu, 2019 to 2025: mixed media on canvas with collage and printed fabric. Enquiries directly to the artist.",
+             "lead": "Paintings in mixed media on canvas, 2019 to 2025. For availability and prices, write to the artist."},
+      "no": {"titulo": "Verk · Ramón Haití Filiu", "h1": "Verk",
+             "desc": "Malerier av Ramón Eduardo Haití Filiu, 2019 til 2025: blandingsteknikk på lerret med kollasj og trykt stoff. Forespørsler direkte til kunstneren.",
+             "lead": "Malerier i blandingsteknikk på lerret, 2019 til 2025. Skriv til kunstneren for tilgjengelighet og priser."},
+      "es": {"titulo": "Obra · Ramón Haití Filiu", "h1": "Obra",
+             "desc": "Pinturas de Ramón Eduardo Haití Filiu, de 2019 a 2025: técnica mixta sobre lienzo con collage y tela estampada. Consultas directas al artista.",
+             "lead": "Pinturas en técnica mixta sobre lienzo, de 2019 a 2025. Para disponibilidad y precios, escriba al artista."}
+    },
+    "murales": {
+      "en": {"titulo": "Murals and commissions · Ramón Haití Filiu", "h1": "Murals and commissions",
+             "desc": "Murals, posters and book covers by Ramón Eduardo Haití Filiu: Nattjazz in Bergen, housing cooperatives, and covers for Antonio López Sánchez.",
+             "lead": "Walls, posters and covers: work made for a place or a commission, from the Nattjazz festival in Bergen to book covers for the Cuban writer Antonio López Sánchez."},
+      "no": {"titulo": "Veggmalerier og oppdrag · Ramón Haití Filiu", "h1": "Veggmalerier og oppdrag",
+             "desc": "Veggmalerier, plakater og bokomslag av Ramón Eduardo Haití Filiu: Nattjazz i Bergen, borettslag og omslag for Antonio López Sánchez.",
+             "lead": "Vegger, plakater og omslag: arbeider laget for et sted eller et oppdrag, fra Nattjazz-festivalen i Bergen til bokomslag for den kubanske forfatteren Antonio López Sánchez."},
+      "es": {"titulo": "Murales y encargos · Ramón Haití Filiu", "h1": "Murales y encargos",
+             "desc": "Murales, carteles y cubiertas de libros de Ramón Eduardo Haití Filiu: Nattjazz en Bergen, cooperativas de viviendas y cubiertas para Antonio López Sánchez.",
+             "lead": "Paredes, carteles y cubiertas: obra hecha para un lugar o un encargo, desde el festival Nattjazz de Bergen hasta las cubiertas de libros del escritor cubano Antonio López Sánchez."}
+    },
+    "relato": {
+      "en": {"titulo": "From Havana to Bergen · Ramón Eduardo Haití Filiu", "h1": "From Havana to Bergen",
+             "desc": "Biography of Ramón Eduardo Haití Filiu: born in Havana in 1971, son of the sculptor Ramón Haití Eduardo, trained at San Alejandro, based in Bergen since 2009.",
+             "secciones": [
+               {"h2": "Havana", "p": [
+                 "Ramón Eduardo Haití Filiu was born in Havana in 1971. He is the son of the sculptor Ramón Haití Eduardo (b. 1932), a member of the Grupo Antillano, and of the seamstress Mercedes Filiu, from whom he takes his second surname.",
+                 "He completed the Paulita Concepción art school in 1984, studied at the San Alejandro Academy of Fine Arts from 1992 to 1996 and took a bronze casting course in 1997. For more than a decade he taught sculpture at the José Antonio Díaz Peláez art school in Havana, and he exhibited at UNEAC and at the Havana Biennial."]},
+               {"h2": "Bergen", "p": [
+                 "In 2006 he exhibited in Bodø, in northern Norway, where the University of Nordland and the Nordland psychiatric hospital acquired his work. He settled in Bergen in 2009. Since then he has painted murals for the Nattjazz festival, designed its 2017 poster and exhibited in Bergen, Stavanger, Oslo and across Western Norway."]},
+               {"h2": "The work", "p": [
+                 "His paintings are built in layers: oil and acrylic, collage of printed fabric, jute and corrugated cardboard. The figures, often women in wide-brimmed hats, fish and masks, come from the visual world of Cuba, where Santería is part of everyday culture, and speak of relationships, solidarity and personal freedom. Among his references he names Matisse, Picasso, Emil Nolde and Diego Rivera.",
+                 "In recent years his practice has moved towards three-dimensional structures that combine painting, textile, collage and epoxy resin, exploring form, transparency, space and visual memory."]},
+               {"h2": "The light", "p": [
+                 "He has said that the scarce light of the Norwegian winter keeps making his paintings brighter. This website follows that same light: its colours change with the position of the sun over Bergen."]}
+             ]},
+      "no": {"titulo": "Fra Havana til Bergen · Ramón Eduardo Haití Filiu", "h1": "Fra Havana til Bergen",
+             "desc": "Biografi om Ramón Eduardo Haití Filiu: født i Havana i 1971, sønn av billedhuggeren Ramón Haití Eduardo, utdannet ved San Alejandro, bosatt i Bergen siden 2009.",
+             "secciones": [
+               {"h2": "Havana", "p": [
+                 "Ramón Eduardo Haití Filiu ble født i Havana i 1971. Han er sønn av billedhuggeren Ramón Haití Eduardo (f. 1932), medlem av Grupo Antillano, og av syersken Mercedes Filiu, som han har sitt andre etternavn etter.",
+                 "Han fullførte kunstskolen Paulita Concepción i 1984, studerte ved kunstakademiet San Alejandro fra 1992 til 1996 og tok et kurs i bronsestøping i 1997. I over ti år underviste han i skulptur ved kunstskolen José Antonio Díaz Peláez i Havana, og han stilte ut hos UNEAC og på Havanabiennalen."]},
+               {"h2": "Bergen", "p": [
+                 "I 2006 stilte han ut i Bodø, der Universitetet i Nordland og Nordland psykiatriske sykehus kjøpte inn verk av ham. I 2009 slo han seg ned i Bergen. Siden har han laget veggmalerier for Nattjazz, tegnet festivalens plakat for 2017 og stilt ut i Bergen, Stavanger, Oslo og rundt om på Vestlandet."]},
+               {"h2": "Verket", "p": [
+                 "Bildene hans bygges opp i lag: olje og akryl, kollasj av trykt stoff, jute og bølgepapp. Skikkelsene, ofte kvinner med bredbremmede hatter, fisker og masker, kommer fra Cubas billedverden, der santería er en del av hverdagskulturen, og handler om relasjoner, solidaritet og personlig frihet. Blant forbildene sine nevner han Matisse, Picasso, Emil Nolde og Diego Rivera.",
+                 "De siste årene har arbeidet hans beveget seg mot tredimensjonale strukturer som forener maleri, tekstil, kollasj og epoksy, og som utforsker form, transparens, rom og visuell hukommelse."]},
+               {"h2": "Lyset", "p": [
+                 "Han har sagt at det sparsomme vinterlyset i Norge gjør maleriene hans stadig lysere. Dette nettstedet følger det samme lyset: fargene skifter med solens stilling over Bergen."]}
+             ]},
+      "es": {"titulo": "De La Habana a Bergen · Ramón Eduardo Haití Filiu", "h1": "De La Habana a Bergen",
+             "desc": "Biografía de Ramón Eduardo Haití Filiu: nacido en La Habana en 1971, hijo del escultor Ramón Haití Eduardo, formado en San Alejandro y radicado en Bergen desde 2009.",
+             "secciones": [
+               {"h2": "La Habana", "p": [
+                 "Ramón Eduardo Haití Filiu nació en La Habana en 1971. Es hijo del escultor Ramón Haití Eduardo (n. 1932), miembro del Grupo Antillano, y de la costurera Mercedes Filiu, de quien lleva el segundo apellido.",
+                 "Terminó la escuela de arte Paulita Concepción en 1984, estudió en la Academia de Bellas Artes San Alejandro de 1992 a 1996 e hizo un curso de fundición en bronce en 1997. Durante más de una década fue profesor de escultura en la escuela de arte José Antonio Díaz Peláez de La Habana, y expuso en la UNEAC y en la Bienal de La Habana."]},
+               {"h2": "Bergen", "p": [
+                 "En 2006 expuso en Bodø, en el norte de Noruega, donde la Universidad de Nordland y el hospital psiquiátrico de Nordland adquirieron obra suya. En 2009 se estableció en Bergen. Desde entonces ha pintado murales para el festival Nattjazz, diseñó su cartel de 2017 y ha expuesto en Bergen, Stavanger, Oslo y a lo largo del oeste de Noruega."]},
+               {"h2": "La obra", "p": [
+                 "Sus cuadros se construyen por capas: óleo y acrílico, collage de tela estampada, yute y cartón ondulado. Las figuras, a menudo mujeres con sombreros de ala ancha, peces y máscaras, vienen del imaginario visual de Cuba, donde la santería forma parte de la cultura cotidiana, y hablan de relaciones, solidaridad y libertad personal. Entre sus referencias nombra a Matisse, Picasso, Emil Nolde y Diego Rivera.",
+                 "En los últimos años su práctica se ha movido hacia estructuras tridimensionales que combinan pintura, tela, collage y resina epoxi, y que exploran la forma, la transparencia, el espacio y la memoria visual."]},
+               {"h2": "La luz", "p": [
+                 "Ha contado que la escasa luz del invierno noruego vuelve sus cuadros cada vez más claros. Esta web sigue esa misma luz: sus colores cambian con la posición del sol sobre Bergen."]}
+             ]}
+    },
+    "cv": {
+      "en": {"titulo": "CV · Ramón Eduardo Haití Filiu", "h1": "CV",
+             "desc": "CV of Ramón Eduardo Haití Filiu: exhibitions in Norway and Cuba, the Havana Biennial, murals for Nattjazz, public collections, education and teaching.",
+             "lead": "Ramón Eduardo Haití Filiu (Havana, 1971). Cuban-Norwegian visual artist based in Bergen."},
+      "no": {"titulo": "CV · Ramón Eduardo Haití Filiu", "h1": "CV",
+             "desc": "CV for Ramón Eduardo Haití Filiu: utstillinger i Norge og på Cuba, Havanabiennalen, veggmalerier for Nattjazz, innkjøp, utdanning og undervisning.",
+             "lead": "Ramón Eduardo Haití Filiu (Havana, 1971). Kubansk-norsk billedkunstner bosatt i Bergen."},
+      "es": {"titulo": "CV · Ramón Eduardo Haití Filiu", "h1": "CV",
+             "desc": "CV de Ramón Eduardo Haití Filiu: exposiciones en Noruega y Cuba, la Bienal de La Habana, murales para Nattjazz, colecciones, formación y docencia.",
+             "lead": "Ramón Eduardo Haití Filiu (La Habana, 1971). Artista visual cubano-noruego radicado en Bergen."}
+    },
+    "contacto": {
+      "en": {"titulo": "Contact · Ramón Haití Filiu", "h1": "Contact",
+             "desc": "Contact Ramón Eduardo Haití Filiu about works, commissions and exhibitions. Studio in Laksevåg, Bergen, visits by appointment.",
+             "lead": "For enquiries about works, commissions and exhibitions, write to the artist.",
+             "correo": "Email", "taller": "Studio", "taller_txt": "Laksevåg, Bergen. Visits by appointment.", "galeria": "Gallery", "redes": "Elsewhere"},
+      "no": {"titulo": "Kontakt · Ramón Haití Filiu", "h1": "Kontakt",
+             "desc": "Kontakt Ramón Eduardo Haití Filiu om verk, oppdrag og utstillinger. Atelier på Laksevåg i Bergen, besøk etter avtale.",
+             "lead": "Skriv til kunstneren om verk, oppdrag og utstillinger.",
+             "correo": "E-post", "taller": "Atelier", "taller_txt": "Laksevåg, Bergen. Besøk etter avtale.", "galeria": "Galleri", "redes": "Ellers"},
+      "es": {"titulo": "Contacto · Ramón Haití Filiu", "h1": "Contacto",
+             "desc": "Contacto con Ramón Eduardo Haití Filiu para obras, encargos y exposiciones. Taller en Laksevåg, Bergen, visitas con cita previa.",
+             "lead": "Para consultas sobre obras, encargos y exposiciones, escriba directamente al artista.",
+             "correo": "Correo", "taller": "Taller", "taller_txt": "Laksevåg, Bergen. Visitas con cita previa.", "galeria": "Galería", "redes": "En la red"}
+    },
+    "404": {
+      "en": {"h1": "This page does not exist", "p": "The address may have changed. Start again from the home page:"},
+      "no": {"h1": "Denne siden finnes ikke", "p": "Adressen kan ha endret seg. Begynn på nytt fra forsiden:"},
+      "es": {"h1": "Esta página no existe", "p": "Puede que la dirección haya cambiado. Vuelva a empezar desde la portada:"}
+    }
+  }
+}
