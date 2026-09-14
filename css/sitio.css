@@ -190,6 +190,25 @@ h3 { font-size: var(--f-l); }
 .relato figcaption { margin-top: 10px; font-size: var(--f-xs); color: var(--tinta-2); }
 @media (max-width: 860px) { .relato { grid-template-columns: 1fr; } .relato figure { position: static; max-width: 420px; } }
 
+/* Prensa */
+.cita { margin: 0 0 clamp(40px, 6vw, 64px); max-width: 40ch; }
+.cita p { margin: 0; font-family: var(--titulo); font-style: italic; font-size: clamp(1.5rem, 1.1rem + 1.6vw, 2.25rem); line-height: 1.2; }
+.cita .trad { margin-top: 12px; font-family: var(--letra); font-style: normal; font-size: var(--f-m); line-height: 1.5; color: var(--tinta-2); }
+.cita footer { margin-top: 10px; font-size: var(--f-s); color: var(--tinta-2); }
+.prensa { display: grid; gap: clamp(32px, 5vw, 48px); max-width: 880px; }
+.prensa h2 { font-size: var(--f-l); margin-bottom: 12px; font-variant-numeric: tabular-nums; }
+.prensa ol { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--linea); }
+.prensa li { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--linea); }
+.prensa .anio { font-variant-numeric: tabular-nums; color: var(--tinta-2); font-size: var(--f-s); padding-top: 2px; }
+.prensa p { margin: 0; }
+.prensa .medio { font-size: var(--f-s); color: var(--tinta-2); }
+.prensa .medio b { color: var(--tinta); font-weight: 600; }
+.prensa .titular { display: block; font-family: var(--titulo); font-size: var(--f-l); line-height: 1.25; margin: 3px 0 4px; }
+.prensa .fuente { margin-top: 6px; font-size: var(--f-s); }
+.prensa .acceso { color: var(--tinta-2); font-size: var(--f-xs); letter-spacing: .04em; margin-left: 10px; }
+.nota-prensa { max-width: 72ch; margin: clamp(32px, 5vw, 48px) 0 0; font-size: var(--f-s); color: var(--tinta-2); }
+@media (max-width: 520px) { .prensa li { grid-template-columns: 1fr; gap: 2px; } }
+
 /* Contacto */
 .contacto { display: grid; gap: 28px; max-width: 64ch; }
 .contacto .correo { font-size: var(--f-xl); font-weight: 500; word-break: break-word; }

@@ -20,7 +20,7 @@ DOMINIO = "https://ramonhaitifiliu.com"
 # Mientras el dominio siga apuntando al WordPress antiguo, las páginas llevan
 # noindex. El día que el DNS apunte a GitHub Pages: True, añadir CNAME y regenerar.
 LANZADO = False
-VERSION = "3"  # súbela cada vez que cambien css/ o js/
+VERSION = "4"  # súbela cada vez que cambien css/ o js/
 IDIOMAS = ["en", "no", "es"]
 SELECTOR = ["no", "en", "es"]
 CORREO = "haitifiliu@yahoo.es"
@@ -48,6 +48,7 @@ T = cargar("datos/textos.json")
 O = cargar("datos/obras.json")
 CV = cargar("datos/cv.json")
 V = cargar("datos/vistas.json")
+P = cargar("datos/prensa.json")
 M = cargar("img/manifiesto.json")
 OBRAS = O["obras"]
 esc = lambda s: html.escape(str(s), quote=True)
@@ -202,7 +203,8 @@ def ld(objetos):
 
 # ---------- esqueleto ----------
 
-MENU = [("obra", "menu_obra"), ("murales", "menu_murales"), ("relato", "menu_relato"), ("cv", "menu_cv"), ("contacto", "menu_contacto")]
+MENU = [("obra", "menu_obra"), ("murales", "menu_murales"), ("relato", "menu_relato"), ("cv", "menu_cv"),
+        ("prensa", "menu_prensa"), ("contacto", "menu_contacto")]
 
 
 def cabecera(l, u, clave, slug, portada=False):
@@ -461,6 +463,72 @@ def cv(l):
     escribir(u, documento(l, u, "cv", None, p["titulo"], p["desc"], cuerpo, objetos, "/img/og/ramon-haiti-filiu.jpg"))
 
 
+MESES = {"en": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+         "no": ["jan.", "feb.", "mars", "apr.", "mai", "juni", "juli", "aug.", "sep.", "okt.", "nov.", "des."],
+         "es": ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"]}
+
+
+def fecha_txt(f, l):
+    if len(f) == 4:
+        return f
+    a, m, d = f.split("-")
+    mes = MESES[l][int(m) - 1]
+    return f"{int(d)}. {mes} {a}" if l == "no" else f"{int(d)} {mes} {a}"
+
+
+def fuera(href, texto):
+    """Enlace externo: siempre en otra pestaña."""
+    return f'<a href="{href}" target="_blank" rel="noopener">{texto}</a>'
+
+
+def prensa(l):
+    u = url("prensa", l)
+    p = pag("prensa", l)
+    rotulo_acceso = {"abierto": p["abierto"], "restringido": p["restringido"], "pago": p["pago"]}
+    arts = sorted(P["articulos"], key=lambda a: a["fecha"], reverse=True)
+    anios = sorted({a["fecha"][:4] for a in arts}, reverse=True)
+    bloques, noticias = [], []
+    for anio in anios:
+        filas = []
+        for a in (x for x in arts if x["fecha"][:4] == anio):
+            enlace = a.get("url") or f"https://www.nb.no/items/{a['urn']}"
+            leer = p["leer_web"] if a.get("url") else p["leer"]
+            titular = f'<i class="titular" lang="no">{esc(a["titular"])}</i>' if a.get("titular") else ""
+            autor = f' · {esc(a["autor"])}' if a.get("autor") else ""
+            filas.append(f'<li><span class="anio">{fecha_txt(a["fecha"], l)}</span><div>'
+                         f'<p class="medio"><b>{esc(a["medio"])}</b>{autor}</p>{titular}<p>{a["resumen"][l]}</p>'
+                         f'<p class="fuente">{fuera(enlace, leer)}<span class="acceso">{rotulo_acceso[a["acceso"]]}</span></p></div></li>')
+            n = {"@type": "Book" if a.get("libro") else "NewsArticle",
+                 "headline": a.get("titular") or f'{a["medio"]}, {a["fecha"]}', "url": enlace,
+                 "datePublished": a["fecha"], "inLanguage": "no", "about": {"@id": f"{DOMINIO}/#persona"},
+                 "publisher": {"@type": "Organization", "name": a["medio"]}}
+            if a.get("autor"):
+                n["author"] = {"@type": "Person", "name": a["autor"]}
+            noticias.append(n)
+        bloques.append(f'<section><h2>{anio}</h2><ol>{"".join(filas)}</ol></section>')
+    otros = []
+    for t in P["textos"]:
+        titulo = f'<i class="titular">{esc(t["titulo"][l])}</i>' if t.get("titulo") else ""
+        autor = f' · {esc(t["autor"])}' if t.get("autor") else ""
+        enlaces = " · ".join(fuera(loc(e["url"], l), e["rotulo"][l]) for e in t["enlaces"])
+        otros.append(f'<li><span class="anio">{t["anio"]}</span><div><p class="medio"><b>{esc(t["medio"])}</b>{autor}</p>'
+                     f'{titulo}<p>{t["resumen"][l]}</p><p class="fuente">{enlaces}</p></div></li>')
+    trad = f'<p class="trad">{p["cita_trad"]}</p>' if p["cita_trad"] else ""
+    cuerpo = f"""<main id="contenido" class="bloque">
+<div class="cabeza"><h1>{p["h1"]}</h1><p>{p["lead"]}</p></div>
+<blockquote class="cita"><p lang="nn">{esc(P["cita"]["texto"])}</p>{trad}<footer>{p["cita_fuente"]}</footer></blockquote>
+<div class="prensa">{"".join(bloques)}
+<section><h2>{p["otros"]}</h2><ol>{"".join(otros)}</ol></section></div>
+<p class="nota-prensa">{p["leyenda"]} {p["derechos"]}</p>
+</main>"""
+    objetos = [{"@type": "CollectionPage", "@id": DOMINIO + u, "url": DOMINIO + u, "name": p["titulo"], "inLanguage": cod(l),
+                "isPartOf": {"@id": f"{DOMINIO}/#web"}, "about": {"@id": f"{DOMINIO}/#persona"},
+                "mainEntity": {"@type": "ItemList", "itemListElement": [
+                    {"@type": "ListItem", "position": i + 1, "item": n} for i, n in enumerate(noticias)]}},
+               migas(l, [(NOMBRE, url("portada", l)), (p["h1"], u)])]
+    escribir(u, documento(l, u, "prensa", None, p["titulo"], p["desc"], cuerpo, objetos, "/img/og/ramon-haiti-filiu.jpg"))
+
+
 def contacto(l):
     u = url("contacto", l)
     p = pag("contacto", l)
@@ -515,7 +583,7 @@ document.querySelectorAll("[data-ruta]").forEach(function (a) {{ a.href = base +
 
 def todas_las_rutas():
     rutas = [("portada", None), ("obra", None)] + [("obra", o["slug"]) for o in OBRAS]
-    rutas += [("murales", None), ("relato", None), ("cv", None), ("contacto", None)]
+    rutas += [("murales", None), ("relato", None), ("cv", None), ("prensa", None), ("contacto", None)]
     return rutas
 
 
@@ -558,6 +626,7 @@ Key facts:
 - [Other work: murals, posters and book covers]({DOMINIO}{url('murales', 'en')})
 - [From Havana to Bergen]({DOMINIO}{url('relato', 'en')}): biography
 - [CV]({DOMINIO}{url('cv', 'en')})
+- [Press]({DOMINIO}{url('prensa', 'en')}): {len(P['articulos'])} pieces in the Norwegian press since 2006 (Avisa Nordland, Bergensavisen, Bergens Tidende, Klassekampen, Firda and others), with links to the National Library of Norway
 - [Contact]({DOMINIO}{url('contacto', 'en')})
 - Norwegian: {DOMINIO}/no/ · Spanish: {DOMINIO}/es/
 
@@ -607,6 +676,7 @@ def main():
         murales(l)
         relato(l)
         cv(l)
+        prensa(l)
         contacto(l)
     (RAIZ / "404.html").write_text(pagina_404(), encoding="utf-8")
     (RAIZ / "sitemap.xml").write_text(sitemap(), encoding="utf-8")

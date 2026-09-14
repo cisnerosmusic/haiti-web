@@ -12,7 +12,7 @@
 - **Hallazgos de prensa que chocan con su CV** (detalle en [docs/prensa-y-exposiciones.md](docs/prensa-y-exposiciones.md)): Hardanger fue en octubre de 2020 ("Vinden frå Vest"), no en 2021; Wendelboe 2019 se tituló "Berøring med blikket", no *Forms in the Labyrinth*; Florø 2012 se tituló "Kvardagens lys og former". Además hay exposiciones documentadas que no están en su CV (Galleri Bryggen 2007 con Alain Gutiérrez Almeida, Galleri VOX 2008, "Refleksjon" 2014, Leikanger 2014, Høyanger 2019).
 - **Exposiciones fuera de Noruega y Cuba:** la prensa de 2006 dice que expuso en EE. UU., Sudamérica y Francia. ¿Dónde y cuándo?
 - **Fallecimiento de su padre:** las fuentes dan 2007, 2008 y 2013. No se publica ninguna fecha hasta que él la confirme.
-- **Hardanger Kulturgalleri 2021:** el CV añade "Mælen"; ¿es el lugar? 2026: ¿individual?
+- **Hardanger Kulturgalleri:** "Mælen" es correcto (la galería está en Mælen, según Hordaland Folkeblad). Queda por confirmar el año (la prensa dice octubre de 2020) y si la de 2026 es individual.
 - ***Tres Músicos* (2021):** ¿es el nombre del disco o del grupo?
 - **Statement:** un texto suyo en primera persona sobre su obra. Hoy la biografía está en tercera persona y no hay statement.
 - **Escultura:** fotos de sus piezas tridimensionales (resina, textil, estructuras). Con ellas se abre la sala Escultura.
