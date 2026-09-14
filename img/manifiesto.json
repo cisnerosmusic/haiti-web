@@ -222,5 +222,38 @@
     960
    ]
   }
+ },
+ "cuenco": {
+  "cuenco-arbol": {
+   "ancho": 1525,
+   "alto": 1017,
+   "anchos": [
+    640,
+    1200
+   ]
+  },
+  "cuenco-circulos": {
+   "ancho": 1536,
+   "alto": 1024,
+   "anchos": [
+    640,
+    1200
+   ]
+  },
+  "cuenco-rostro": {
+   "ancho": 1536,
+   "alto": 1024,
+   "anchos": [
+    640,
+    1200
+   ]
+  },
+  "cuenco-mascara": {
+   "ancho": 960,
+   "alto": 640,
+   "anchos": [
+    640
+   ]
+  }
  }
 }

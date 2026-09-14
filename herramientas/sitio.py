@@ -20,7 +20,7 @@ DOMINIO = "https://ramonhaitifiliu.com"
 # Mientras el dominio siga apuntando al WordPress antiguo, las páginas llevan
 # noindex. El día que el DNS apunte a GitHub Pages: True, añadir CNAME y regenerar.
 LANZADO = False
-VERSION = "4"  # súbela cada vez que cambien css/ o js/
+VERSION = "5"  # súbela cada vez que cambien css/ o js/
 IDIOMAS = ["en", "no", "es"]
 SELECTOR = ["no", "en", "es"]
 CORREO = "haitifiliu@yahoo.es"
@@ -432,6 +432,8 @@ def murales(l):
 <p class="cartela-min"><i>{m["titulo"]}</i> {ui(l, "mural")}, {m["medidas_texto"]}</p></div>
 <h2 style="margin-bottom:24px">{ui(l, "cubiertas")}</h2>
 <div class="cubiertas">{cubiertas}</div>
+<h2 style="margin-bottom:24px">{ui(l, "cuencos")}</h2>
+<div class="cuencos">{"".join(picture(u, "cuenco", c["slug"], V[c["slug"]][l], "(max-width: 700px) 92vw, 45vw") for c in O.get("cuencos", []))}</div>
 <section class="cv"><div><h2>{ui(l, "cronologia")}</h2>{lista_cv(l, u, encargos["items"])}</div></section>
 </main>"""
     objetos = [{"@type": "CollectionPage", "@id": DOMINIO + u, "url": DOMINIO + u, "name": p["titulo"], "inLanguage": cod(l),

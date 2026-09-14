@@ -85,7 +85,7 @@ def detalle(im, slug, foco):
 
 def main():
     datos = json.loads((RAIZ / "datos" / "obras.json").read_text(encoding="utf-8"))
-    manifiesto = {"obra": {}, "mural": {}, "retrato": {}}
+    manifiesto = {"obra": {}, "mural": {}, "retrato": {}, "cuenco": {}}
 
     for o in datos["obras"]:
         im = abrir(ruta_fuente(o["fuente"]))
@@ -102,6 +102,14 @@ def main():
         manifiesto["mural"][m["slug"]] = {"ancho": im.size[0], "alto": im.size[1],
                                           "anchos": escalas(im, "mural", m["slug"], ANCHOS_OBRA)}
         print("mural", m["slug"], im.size)
+
+    for c in datos.get("cuencos", []):
+        im = abrir(ruta_fuente(c["fuente"]))
+        if c.get("recorte"):
+            im = im.crop(tuple(c["recorte"]))  # misma proporción (3:2) para toda la serie
+        manifiesto["cuenco"][c["slug"]] = {"ancho": im.size[0], "alto": im.size[1],
+                                           "anchos": escalas(im, "cuenco", c["slug"], [640, 1200])}
+        print("cuenco", c["slug"], im.size)
 
     r = datos["retrato"]
     im = abrir(ruta_fuente(r["fuente"]))

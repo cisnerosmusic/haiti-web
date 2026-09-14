@@ -173,6 +173,8 @@ h3 { font-size: var(--f-l); }
 .cubiertas figure { margin: 0; }
 .cubiertas figcaption { margin-top: 10px; font-size: var(--f-s); color: var(--tinta-2); }
 .cubiertas figcaption i { font-family: var(--titulo); font-size: var(--f-l); color: var(--tinta); display: block; }
+.cuencos { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: clamp(16px, 2.5vw, 28px); margin: 0 0 clamp(48px, 7vw, 88px); }
+.cuencos img { width: 100%; }
 @media (max-width: 860px) { .mural { grid-template-columns: 1fr; } }
 
 /* Listas de CV */

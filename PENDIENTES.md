@@ -16,6 +16,7 @@
 - **Hardanger Kulturgalleri:** "Mælen" es correcto (la galería está en Mælen, según Hordaland Folkeblad). Queda por confirmar el año (la prensa dice octubre de 2020) y si la de 2026 es individual.
 - ***Tres Músicos* (2021):** ¿es el nombre del disco o del grupo?
 - **Statement:** un texto suyo en primera persona sobre su obra. Hoy la biografía está en tercera persona y no hay statement.
+- **Cuencos pintados** (sala Otros, 4 fotos sin datos por decisión de Ernesto): ¿madera, cerámica o las dos? (el del árbol es de madera por dentro). Dos llevan firma con "19", probablemente 2019. ¿Siguen disponibles? Si los tiene, repetir las fotos con fondo liso, luz de día y el mismo ángulo; así entrarían también los que hoy quedaron fuera por calidad.
 - **Escultura:** fotos de sus piezas tridimensionales (resina, textil, estructuras). Con ellas se abre la sala Escultura.
 - **Revisión del noruego** por un hablante nativo.
 

@@ -125,6 +125,12 @@
       "fuente": "@proyecto/originales/hverdagen.jpg"
     }
   ],
+  "cuencos": [
+    {"slug": "cuenco-arbol", "fuente": "IMG_1303-copia-3-1536x1017.webp", "recorte": [5, 0, 1530, 1017]},
+    {"slug": "cuenco-circulos", "fuente": "IMAG0015-1536x1152.webp", "recorte": [0, 60, 1536, 1084]},
+    {"slug": "cuenco-rostro", "fuente": "IMG_20191123_114545-1536x2048.webp", "recorte": [0, 763, 1536, 1787]},
+    {"slug": "cuenco-mascara", "fuente": "IMG_0076.webp", "recorte": [0, 80, 960, 720]}
+  ],
   "retrato": {
     "slug": "ramon-haiti-filiu",
     "fuente": "ti.jpeg"
