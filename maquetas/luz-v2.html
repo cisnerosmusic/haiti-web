@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Luz del norte de Ramón Haití</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* Documento en un solo mundo claro y neutro; el color vive dentro de las maquetas. */
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #F4F4F1; color: #1B1D1F; font-family: "Schibsted Grotesk", system-ui, sans-serif; line-height: 1.5; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding-block: 40px 96px; padding-inline: 20px; }
+  .doc { font-size: 13px; color: #62676B; letter-spacing: .02em; margin: 0; }
+  h1 { font-weight: 600; font-size: clamp(26px, 4vw, 38px); line-height: 1.15; margin: 8px 0 12px; text-wrap: balance; }
+  .intro { max-width: 68ch; color: #3E4246; margin: 0 0 32px; }
+  h2 { font-size: 19px; font-weight: 600; margin: 0 0 6px; text-wrap: balance; }
+  section { margin: 0 0 56px; }
+  section > p { max-width: 70ch; color: #3E4246; margin: 0 0 14px; }
+
+  /* La portada: cielo de tres paradas calculado por hora, tinta por zona, aurora de noche */
+  .rh { --c1:#CDE7E0; --c2:#F4EEBB; --c3:#E9E7A6; --i1:#0E1117; --s1:rgba(14,17,23,.74); --i3:#0E1117; --s3:rgba(14,17,23,.74); --h3:rgba(14,17,23,.18); --aur:0;
+        position: relative; isolation: isolate; container-type: inline-size; border-radius: 6px; overflow: hidden;
+        background: linear-gradient(180deg, var(--c1) 0%, var(--c2) 55%, var(--c3) 100%);
+        box-shadow: 0 0 0 1px rgba(0,0,0,.06); }
+  .rh .bar { position: relative; z-index: 2; display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: max(2.4cqw,16px) max(3.2cqw,18px) 0; color: var(--i1); }
+  .rh .nom { font-weight: 600; font-size: max(1.9cqw,15px); letter-spacing: .01em; }
+  .rh .nom small { display: block; font-weight: 400; font-size: max(1.25cqw,11px); color: var(--s1); letter-spacing: .02em; margin-top: 2px; }
+  .rh nav { font-size: max(1.2cqw,11px); color: var(--s1); display: flex; gap: max(2cqw,12px); white-space: nowrap; }
+  .rh nav b { font-weight: 500; color: var(--i1); }
+  .rh nav .m { display: none; color: var(--i1); font-weight: 500; }
+  .rh .hero { position: relative; z-index: 2; display: flex; justify-content: center; padding: 4.5cqw 3.2cqw 3cqw; }
+  .rh .hero img { width: 74cqw; max-width: 100%; height: auto; display: block; }
+  .rh .pie { position: relative; z-index: 2; display: flex; justify-content: space-between; align-items: baseline; gap: 6px 16px; flex-wrap: wrap;
+             margin: 0 max(3.2cqw,18px); padding: max(1.4cqw,10px) 0 max(2.8cqw,18px); border-top: 1px solid var(--h3);
+             font-size: max(1.2cqw,11px); color: var(--s3); }
+  .rh .pie i { font-family: "Newsreader", Georgia, serif; font-style: italic; font-size: max(1.55cqw,14px); color: var(--i3); }
+  @container (max-width: 640px) {
+    .rh nav span:not(.m), .rh nav b { display: none; }
+    .rh nav .m { display: inline; }
+    .rh .hero { padding: 7cqw 0 5cqw; }
+    .rh .hero img { width: 100cqw; }
+    .rh .pie { flex-direction: column; }
+  }
+
+  .aurora { position: absolute; z-index: 1; left: 0; right: 0; top: 0; height: 64%; pointer-events: none;
+            opacity: var(--aur); mix-blend-mode: screen; transition: opacity .8s ease;
+            -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 30%, transparent 100%);
+                    mask-image: linear-gradient(180deg, #000 0%, #000 30%, transparent 100%); }
+  .aurora i { position: absolute; left: -25%; width: 150%; will-change: transform; }
+  .aurora .v1 { top: 2%; height: 46%;
+      background: linear-gradient(180deg, rgba(70,255,170,0) 0%, rgba(80,255,175,.62) 58%, rgba(40,210,190,.22) 82%, rgba(40,210,190,0) 100%);
+      -webkit-mask-image: radial-gradient(closest-side, #000 30%, transparent 100%);
+              mask-image: radial-gradient(closest-side, #000 30%, transparent 100%);
+      filter: blur(5px); animation: velo1 17s ease-in-out infinite alternate; }
+  .aurora .v1::after { content: ""; position: absolute; inset: 0;
+      background: repeating-linear-gradient(90deg, transparent 0 7px, rgba(215,255,235,.30) 7px 9px, transparent 9px 15px); }
+  .aurora .v2 { top: -6%; height: 36%; border-radius: 50%;
+      background: radial-gradient(55% 50% at 38% 70%, rgba(60,230,205,.5), rgba(118,104,255,.24) 52%, transparent 75%);
+      filter: blur(12px); animation: velo2 23s ease-in-out infinite alternate; }
+  .aurora .v3 { top: 16%; height: 22%; border-radius: 50%;
+      background: radial-gradient(50% 50% at 64% 45%, rgba(196,118,255,.32), transparent 72%);
+      filter: blur(14px); animation: velo3 29s ease-in-out infinite alternate; }
+  @keyframes velo1 { from { transform: translateX(-5%) skewX(-10deg) scaleY(.9); } to { transform: translateX(6%) skewX(8deg) scaleY(1.12); } }
+  @keyframes velo2 { from { transform: translateX(7%) skewX(12deg); } to { transform: translateX(-6%) skewX(-6deg) scaleY(.82); } }
+  @keyframes velo3 { from { transform: translateX(-3%) scale(1); opacity: .55; } to { transform: translateX(4%) scale(1.15); opacity: 1; } }
+
+  .ctl { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; margin-top: 14px; font-size: 14px; color: #62676B; }
+  .ctl input[type=range] { flex: 1 1 260px; max-width: 460px; accent-color: #1B1D1F; }
+  .ctl button { font: inherit; font-size: 13px; padding: 3px 10px; border-radius: 4px; border: 1px solid #CFD2CE; background: #FFFFFF; color: #1B1D1F; cursor: pointer; }
+  .ctl button.on { border-color: #1B1D1F; }
+  .ctl button:focus-visible, .ctl input:focus-visible { outline: 2px solid #1B1D1F; outline-offset: 2px; }
+  .ctl output { font-variant-numeric: tabular-nums; color: #1B1D1F; font-weight: 500; }
+  #estado { color: #1B1D1F; font-variant-numeric: tabular-nums; }
+
+  .dia { margin-top: 18px; }
+  .franja { position: relative; height: 56px; border-radius: 4px; overflow: hidden; box-shadow: 0 0 0 1px rgba(0,0,0,.08); }
+  .franja canvas { width: 100%; height: 100%; display: block; }
+  .marca { position: absolute; top: 0; bottom: 0; left: 0; width: 2px; margin-left: -1px; background: #1B1D1F; box-shadow: 0 0 0 1px rgba(255,255,255,.75); will-change: transform; }
+  .horas { display: flex; justify-content: space-between; font-size: 12px; color: #62676B; font-variant-numeric: tabular-nums; margin-top: 4px; }
+  .leyenda { font-size: 13px; color: #62676B; margin: 6px 0 0; }
+
+  /* Ficha: la luz conserva la hora pero pierde casi todo el color */
+  .ficha { --fw:#E7E8E4; --fi:#0E1117; --fs:rgba(14,17,23,.74); --fh:rgba(14,17,23,.18);
+           container-type: inline-size; background: var(--fw); color: var(--fi); border-radius: 6px; box-shadow: 0 0 0 1px rgba(0,0,0,.06); }
+  .ficha .in { padding: max(4cqw,18px); }
+  .ficha .fila { display: grid; grid-template-columns: 1.7fr 1fr; gap: 4cqw; align-items: end; }
+  .ficha img { width: 100%; max-width: 100%; height: auto; display: block; }
+  .ficha .cartela { font-size: max(1.35cqw,13px); line-height: 1.55; color: var(--fs); border-top: 1px solid var(--fh); padding-top: max(1.4cqw,10px); }
+  .ficha .cartela i { display: block; font-family: "Newsreader", Georgia, serif; font-size: max(2.6cqw,22px); line-height: 1.15; color: var(--fi); }
+  .ficha .cartela .alt { display: block; font-size: max(1.3cqw,12px); margin: 4px 0 14px; }
+  .ficha .cartela a { display: inline-block; margin-top: 18px; color: var(--fi); text-decoration: underline; text-underline-offset: .35em; text-decoration-thickness: 1px; font-weight: 500; }
+  .ficha .det { margin-top: 5cqw; display: grid; grid-template-columns: 1fr 1.7fr; gap: 4cqw; align-items: start; }
+  .ficha .det p { margin: 0; font-size: max(1.3cqw,12px); color: var(--fs); line-height: 1.55; border-top: 1px solid var(--fh); padding-top: max(1.4cqw,10px); }
+  .ficha .det p b { color: var(--fi); font-weight: 500; }
+  @container (max-width: 640px) {
+    .ficha .fila, .ficha .det { grid-template-columns: 1fr; gap: 16px; }
+    .ficha .det { margin-top: 32px; }
+  }
+
+  .notas ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 14px; max-width: 72ch; }
+  .notas li { color: #3E4246; padding-top: 12px; border-top: 1px solid #DADCD8; }
+  .notas li b { color: #1B1D1F; font-weight: 600; }
+  @media (prefers-reduced-motion: reduce) { .aurora i { animation: none; } .aurora { transition: none; } }
+</style>
+
+<div class="wrap">
+  <p class="doc">Ramón Haití Filiu · maqueta de trabajo, no es la web final · Parte 2, segunda versión</p>
+  <h1>La luz de Bergen, hora a hora</h1>
+  <p class="intro">Azul casi negro en la hora más oscura, amarillo con tintes verdeazules en la más clara y la luz del alba en el camino, siempre en degradado. En noche cerrada, una aurora en el cielo de la página, alrededor del cuadro y nunca encima. El fondo sigue al sol real de Bergen, a 60° de latitud norte.</p>
+
+  <section>
+    <div class="rh" id="vivo">
+      <div class="aurora" aria-hidden="true"><i class="v2"></i><i class="v1"></i><i class="v3"></i></div>
+      <div class="bar"><div class="nom">Ramón Haití Filiu<small>Pintor y escultor · Bergen</small></div>
+        <nav><b>Obra</b><span>Murales</span><span>La Habana, Bergen</span><span>CV</span><span>Contacto</span><span>NO · EN · ES</span><span class="m">Menú</span></nav></div>
+      <div class="hero"><img src="img/echo.jpg" width="1400" height="1034" alt="Echo in the Sea I–II, díptico, 2025"></div>
+      <div class="pie"><span><i>Echo in the Sea I–II</i>&nbsp; 2025 · técnica mixta sobre lienzo</span><span>La luz de esta página es la de Bergen ahora</span></div>
+    </div>
+
+    <div class="ctl">
+      <span>Hora en Bergen <output id="hora">--:--</output></span>
+      <input id="rango" type="range" min="0" max="1439" step="1" aria-label="Hora en Bergen">
+      <button type="button" id="play">Ver el día entero</button>
+    </div>
+    <div class="ctl">
+      <span>Día:</span>
+      <button type="button" id="d-hoy" data-d="hoy" class="on">Hoy</button><button type="button" id="d-dic" data-d="dic">21 dic</button><button type="button" id="d-jun" data-d="jun">21 jun</button>
+      <span id="estado"></span>
+    </div>
+
+    <div class="dia">
+      <div class="franja"><canvas id="franja" role="img" aria-label="Color de la página a lo largo del día en Bergen"></canvas><span class="marca" id="marca"></span></div>
+      <div class="horas"><span>00</span><span>06</span><span>12</span><span>18</span><span>24</span></div>
+      <p class="leyenda">El día elegido en Bergen: cada franja vertical es el color de la página a esa hora. Compara 21 dic con 21 jun.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>La ficha de una obra</h2>
+    <p>Aquí la luz conserva la hora pero pierde casi todo el color: de noche la sala se oscurece y de día se aclara, pero el único color sigue siendo el cuadro. Sigue la misma hora que la portada.</p>
+    <div class="ficha" id="ficha"><div class="in">
+      <div class="fila">
+        <img src="img/serene.jpg" width="1400" height="1052" alt="Fredfullt og fortryllende, 2020">
+        <div class="cartela">
+          <i>Fredfullt og fortryllende</i>
+          <span class="alt">Serene and Enchanting</span>
+          2020<br>Técnica mixta sobre lienzo<br>150 × 120 cm
+          <br><a href="#" onclick="return false">Consultar esta obra</a>
+        </div>
+      </div>
+      <div class="det">
+        <p><b>Detalle</b><br>Recorte del original de 5906 px, sin reescalar.</p>
+        <img src="img/serene-detail.jpg" width="900" height="900" alt="Detalle de Fredfullt og fortryllende">
+      </div>
+    </div></div>
+  </section>
+
+  <section class="notas">
+    <h2>Lo que conviene saber</h2>
+    <ul>
+      <li><b>La aurora es fiel a la latitud.</b> En Bergen se ve de verdad solo en noches de actividad fuerte; es más propia de Tromsø o Lofoten. Aquí aparece solo con el sol por debajo de −10°, así que en las noches blancas de junio no sale nunca, igual que en la realidad. Más adelante podría encenderse solo cuando el pronóstico real de auroras lo anuncie; eso costaría una consulta a un servicio externo y se decide después.</li>
+      <li><b>El texto cambia de tinta solo.</b> Arriba y abajo se elige, en cada momento, la tinta oscura o la clara que más contrasta con el color que tiene detrás. En el tránsito del alba el contraste baja un poco; en la web final se afinan esos tonos para que ningún texto quede por debajo del mínimo de accesibilidad.</li>
+      <li><b>En diciembre la casa nunca llega al amarillo.</b> El sol de Bergen apenas sube 6° al mediodía, así que el día se queda en oro pálido de alba. En junio pasa horas en la luz más clara y de madrugada no baja de la hora azul.</li>
+    </ul>
+  </section>
+</div>
+
+<script>
+(function(){
+  var LAT=60.3913, LON=5.3221, R=Math.PI/180;
+  function elev(ms){
+    var d=(ms-Date.UTC(2000,0,1,12))/864e5, g=(357.529+0.98560028*d)*R, q=280.459+0.98564736*d;
+    var L=(q+1.915*Math.sin(g)+0.020*Math.sin(2*g))*R, e=(23.439-0.00000036*d)*R;
+    var ra=Math.atan2(Math.cos(e)*Math.sin(L),Math.cos(L)), dec=Math.asin(Math.sin(e)*Math.sin(L));
+    var gmst=((18.697374558+24.06570982441908*d)%24+24)%24, H=(gmst*15+LON)*R-ra;
+    return Math.asin(Math.sin(LAT*R)*Math.sin(dec)+Math.cos(LAT*R)*Math.cos(dec)*Math.cos(H))/R;
+  }
+  function oslo(ms){
+    var p=new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Oslo",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hourCycle:"h23",timeZoneName:"shortOffset"}).formatToParts(new Date(ms));
+    var g=function(t){ var x=p.find(function(y){return y.type===t}); return x?x.value:""; };
+    var m=g("timeZoneName").match(/GMT([+-]\d+)?/);
+    return { y:+g("year"), mo:+g("month")-1, d:+g("day"), h:+g("hour"), mi:+g("minute"), off:(m&&m[1])?+m[1]:0 };
+  }
+
+  // Color en OKLab: las transiciones entre paradas no se enturbian
+  function cl(v){ return Math.max(0,Math.min(1,v)); }
+  function lin(c){ c/=255; return c<=0.04045?c/12.92:Math.pow((c+0.055)/1.055,2.4); }
+  function gam(c){ c=cl(c); return Math.round((c<=0.0031308?12.92*c:1.055*Math.pow(c,1/2.4)-0.055)*255); }
+  function lab(h){
+    var r=lin(parseInt(h.slice(1,3),16)), g=lin(parseInt(h.slice(3,5),16)), b=lin(parseInt(h.slice(5,7),16));
+    var l=Math.cbrt(0.4122214708*r+0.5363325363*g+0.0514459929*b), m=Math.cbrt(0.2119034982*r+0.6806995451*g+0.1073969566*b), s=Math.cbrt(0.0883024619*r+0.2817188376*g+0.6299787005*b);
+    return [0.2104542553*l+0.7936177850*m-0.0040720468*s, 1.9779984951*l-2.4285922050*m+0.4505937099*s, 0.0259040371*l+0.7827717662*m-0.8086757660*s];
+  }
+  function rgbLin(L){
+    var l=L[0]+0.3963377774*L[1]+0.2158037573*L[2], m=L[0]-0.1055613458*L[1]-0.0638541728*L[2], s=L[0]-0.0894841775*L[1]-1.2914855480*L[2];
+    l=l*l*l; m=m*m*m; s=s*s*s;
+    return [4.0767416621*l-3.3077115913*m+0.2309699292*s, -1.2684380046*l+2.6097574011*m-0.3413193965*s, -0.0041960863*l-0.7034186147*m+1.7076147010*s];
+  }
+  function css(L){ var c=rgbLin(L); return "rgb("+gam(c[0])+","+gam(c[1])+","+gam(c[2])+")"; }
+  function lum(L){ var c=rgbLin(L); return 0.2126*cl(c[0])+0.7152*cl(c[1])+0.0722*cl(c[2]); }
+  function mix(a,b,t){ return [a[0]+(b[0]-a[0])*t, a[1]+(b[1]-a[1])*t, a[2]+(b[2]-a[2])*t]; }
+
+  // Paradas por altura del sol: [grados, arriba, centro, abajo]
+  var STOPS=[
+    [-30,"#04060D","#070C1C","#0C1630"],  // la hora más oscura: azul casi negro
+    [-12,"#070D22","#0E1B3D","#1B2C57"],  // noche náutica
+    [-6, "#13224F","#2B3F78","#5B5B93"],  // hora azul
+    [-2, "#34457F","#8C7BA8","#E8A78F"],  // alba: violeta, malva, rosa melocotón
+    [2,  "#7FA3C4","#E9C3A6","#F5D494"],  // salida del sol
+    [10, "#BFDCD6","#EEE2B4","#F4DE98"],  // mañana
+    [30, "#CDE7E0","#F4EEBB","#E9E7A6"]   // la hora más clara: amarillo con tintes verdeazules
+  ].map(function(s){ return [s[0], lab(s[1]), lab(s[2]), lab(s[3])]; });
+  function cielo(el){
+    var n=STOPS.length;
+    if(el<=STOPS[0][0]) return STOPS[0].slice(1);
+    if(el>=STOPS[n-1][0]) return STOPS[n-1].slice(1);
+    for(var i=0;i<n-1;i++){ var a=STOPS[i], b=STOPS[i+1];
+      if(el<=b[0]){ var t=(el-a[0])/(b[0]-a[0]); return [mix(a[1],b[1],t),mix(a[2],b[2],t),mix(a[3],b[3],t)]; } }
+  }
+  var OSC=lab("#0E1117"), CLA=lab("#F7F5EE"), LO=lum(OSC), LC=lum(CLA);
+  function cr(a,b){ return (Math.max(a,b)+0.05)/(Math.min(a,b)+0.05); }
+  var TINTA={ o:{i:"#0E1117", s:"rgba(14,17,23,.74)", h:"rgba(14,17,23,.18)"}, c:{i:"#F7F5EE", s:"rgba(247,245,238,.78)", h:"rgba(247,245,238,.22)"} };
+  function tinta(fondo){ var Lf=lum(fondo); return cr(Lf,LO)>=cr(Lf,LC)?TINTA.o:TINTA.c; }
+
+  var vivo=document.getElementById("vivo"), ficha=document.getElementById("ficha");
+  var rango=document.getElementById("rango"), hora=document.getElementById("hora"), est=document.getElementById("estado");
+  var cv=document.getElementById("franja"), marca=document.getElementById("marca"), play=document.getElementById("play");
+  var ahora=oslo(Date.now());
+  var dias={ hoy:[ahora.y,ahora.mo,ahora.d,ahora.off], dic:[2026,11,21,1], jun:[2026,5,21,2] }, dia="hoy";
+  function msDe(m){ var b=dias[dia]; return Date.UTC(b[0],b[1],b[2])+(m-b[3]*60)*6e4; }
+  function nombre(el,sube){
+    if(el>=10) return "día";
+    if(el>=2) return sube?"sol bajo de la mañana":"sol bajo de la tarde";
+    if(el>=-2) return sube?"salida del sol":"puesta del sol";
+    if(el>=-6) return sube?"alba":"ocaso";
+    if(el>=-12) return "hora azul";
+    return "noche cerrada";
+  }
+  function pinta(){
+    var m=+rango.value, ms=msDe(m), el=elev(ms), sube=elev(ms+6e5)>el, c=cielo(el), st=vivo.style;
+    st.setProperty("--c1",css(c[0])); st.setProperty("--c2",css(c[1])); st.setProperty("--c3",css(c[2]));
+    var t1=tinta(c[0]), t3=tinta(c[2]);
+    st.setProperty("--i1",t1.i); st.setProperty("--s1",t1.s);
+    st.setProperty("--i3",t3.i); st.setProperty("--s3",t3.s); st.setProperty("--h3",t3.h);
+    var aur=cl((-10-el)/8); st.setProperty("--aur",aur.toFixed(3));
+    var w=[c[1][0], c[1][1]*.22, c[1][2]*.22], tf=tinta(w), fs=ficha.style;
+    fs.setProperty("--fw",css(w)); fs.setProperty("--fi",tf.i); fs.setProperty("--fs",tf.s); fs.setProperty("--fh",tf.h);
+    hora.textContent=String(Math.floor(m/60)).padStart(2,"0")+":"+String(m%60).padStart(2,"0");
+    est.textContent="sol a "+(el<0?"−":"")+Math.abs(el).toFixed(1).replace(".",",")+"° · "+nombre(el,sube)+(aur>0.05?" · aurora":"");
+    marca.style.transform="translateX("+(m/1440*cv.clientWidth).toFixed(1)+"px)";
+  }
+  function dibuja(){
+    var w=cv.clientWidth, h=cv.clientHeight, dpr=window.devicePixelRatio||1;
+    cv.width=Math.round(w*dpr); cv.height=Math.round(h*dpr);
+    var ctx=cv.getContext("2d"); ctx.setTransform(dpr,0,0,dpr,0,0);
+    var cols=288, cw=w/cols;
+    for(var k=0;k<cols;k++){
+      var c=cielo(elev(msDe(k*5+2.5))), g=ctx.createLinearGradient(0,0,0,h);
+      g.addColorStop(0,css(c[0])); g.addColorStop(.55,css(c[1])); g.addColorStop(1,css(c[2]));
+      ctx.fillStyle=g; ctx.fillRect(k*cw,0,cw+0.6,h);
+    }
+  }
+  var anim=null, lento=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function para(){ if(anim){ cancelAnimationFrame(anim); anim=null; } play.textContent="Ver el día entero"; }
+  play.addEventListener("click",function(){
+    if(anim){ para(); return; }
+    var t0=null; play.textContent="Detener";
+    function paso(ts){
+      if(t0===null) t0=ts;
+      var m=Math.min(1439,(ts-t0)*0.09); if(lento) m=Math.min(1439,Math.floor(m/60)*60);
+      rango.value=Math.round(m); pinta();
+      if(m<1439) anim=requestAnimationFrame(paso); else para();
+    }
+    anim=requestAnimationFrame(paso);
+  });
+  rango.addEventListener("input",function(){ para(); pinta(); });
+  document.querySelectorAll("[data-d]").forEach(function(bt){ bt.addEventListener("click",function(){
+    document.querySelectorAll("[data-d]").forEach(function(x){x.classList.remove("on")}); bt.classList.add("on"); dia=bt.dataset.d; dibuja(); pinta(); }); });
+  window.addEventListener("resize",function(){ dibuja(); pinta(); });
+  rango.value=ahora.h*60+ahora.mi;
+  dibuja(); pinta();
+})();
+</script>
+</html>
