@@ -7,7 +7,7 @@
   },
   "rutas": {
     "obra": {"en": "works", "no": "verk", "es": "obra"},
-    "murales": {"en": "murals", "no": "veggmalerier", "es": "murales"},
+    "murales": {"en": "other-work", "no": "annet", "es": "otros"},
     "relato": {"en": "havana-bergen", "no": "havana-bergen", "es": "la-habana-bergen"},
     "cv": {"en": "cv", "no": "cv", "es": "cv"},
     "contacto": {"en": "contact", "no": "kontakt", "es": "contacto"}
@@ -15,7 +15,7 @@
   "ui": {
     "en": {
       "oficio": "Painter and sculptor · Bergen",
-      "menu_obra": "Works", "menu_murales": "Murals", "menu_relato": "Havana–Bergen", "menu_cv": "CV", "menu_contacto": "Contact",
+      "menu_obra": "Works", "menu_murales": "Other work", "menu_relato": "Havana–Bergen", "menu_cv": "CV", "menu_contacto": "Contact",
       "menu": "Menu", "nav": "Main", "idiomas": "Language", "saltar": "Skip to content",
       "tecnica_mixta": "Mixed media on canvas", "diptico": "Diptych",
       "frase": "{titulo}, {anio}: {que} by the Cuban-Norwegian painter and sculptor Ramón Eduardo Haití Filiu.",
@@ -37,7 +37,7 @@
     },
     "no": {
       "oficio": "Maler og billedhugger · Bergen",
-      "menu_obra": "Verk", "menu_murales": "Veggmalerier", "menu_relato": "Havana–Bergen", "menu_cv": "CV", "menu_contacto": "Kontakt",
+      "menu_obra": "Verk", "menu_murales": "Annet", "menu_relato": "Havana–Bergen", "menu_cv": "CV", "menu_contacto": "Kontakt",
       "menu": "Meny", "nav": "Hovedmeny", "idiomas": "Språk", "saltar": "Hopp til innholdet",
       "tecnica_mixta": "Blandingsteknikk på lerret", "diptico": "Diptyk",
       "frase": "{titulo}, {anio}: {que} av den kubansk-norske maleren og billedhuggeren Ramón Eduardo Haití Filiu.",
@@ -59,7 +59,7 @@
     },
     "es": {
       "oficio": "Pintor y escultor · Bergen",
-      "menu_obra": "Obra", "menu_murales": "Murales", "menu_relato": "La Habana–Bergen", "menu_cv": "CV", "menu_contacto": "Contacto",
+      "menu_obra": "Obra", "menu_murales": "Otros", "menu_relato": "La Habana–Bergen", "menu_cv": "CV", "menu_contacto": "Contacto",
       "menu": "Menú", "nav": "Principal", "idiomas": "Idioma", "saltar": "Ir al contenido",
       "tecnica_mixta": "Técnica mixta sobre lienzo", "diptico": "Díptico",
       "frase": "{titulo}, {anio}: {que} del pintor y escultor cubano-noruego Ramón Eduardo Haití Filiu.",
@@ -104,15 +104,15 @@
              "lead": "Pinturas en técnica mixta sobre lienzo, de 2019 a 2025. Para disponibilidad y precios, escriba al artista."}
     },
     "murales": {
-      "en": {"titulo": "Murals and commissions · Ramón Haití Filiu", "h1": "Murals and commissions",
-             "desc": "Murals, posters and book covers by Ramón Eduardo Haití Filiu: Nattjazz in Bergen, housing cooperatives, and covers for Antonio López Sánchez.",
-             "lead": "Walls, posters and covers: work made for a place or a commission, from the Nattjazz festival in Bergen to book covers for the Cuban writer Antonio López Sánchez."},
-      "no": {"titulo": "Veggmalerier og oppdrag · Ramón Haití Filiu", "h1": "Veggmalerier og oppdrag",
-             "desc": "Veggmalerier, plakater og bokomslag av Ramón Eduardo Haití Filiu: Nattjazz i Bergen, borettslag og omslag for Antonio López Sánchez.",
-             "lead": "Vegger, plakater og omslag: arbeider laget for et sted eller et oppdrag, fra Nattjazz-festivalen i Bergen til bokomslag for den kubanske forfatteren Antonio López Sánchez."},
-      "es": {"titulo": "Murales y encargos · Ramón Haití Filiu", "h1": "Murales y encargos",
-             "desc": "Murales, carteles y cubiertas de libros de Ramón Eduardo Haití Filiu: Nattjazz en Bergen, cooperativas de viviendas y cubiertas para Antonio López Sánchez.",
-             "lead": "Paredes, carteles y cubiertas: obra hecha para un lugar o un encargo, desde el festival Nattjazz de Bergen hasta las cubiertas de libros del escritor cubano Antonio López Sánchez."}
+      "en": {"titulo": "Other work: murals, posters and covers · Ramón Haití Filiu", "h1": "Other work",
+             "desc": "Murals, festival posters, a record cover and book covers by Ramón Eduardo Haití Filiu: Nattjazz in Bergen and covers for the writer Antonio López Sánchez.",
+             "lead": "Work made for a wall, a festival or a book: murals in Bergen and Western Norway, the Nattjazz 2017 poster, a record cover, and covers for the Cuban writer {tony}."},
+      "no": {"titulo": "Andre arbeider: veggmalerier, plakater og omslag · Ramón Haití Filiu", "h1": "Andre arbeider",
+             "desc": "Veggmalerier, festivalplakater, et plateomslag og bokomslag av Ramón Eduardo Haití Filiu: Nattjazz i Bergen og omslag for forfatteren Antonio López Sánchez.",
+             "lead": "Arbeider laget for en vegg, en festival eller en bok: veggmalerier i Bergen og på Vestlandet, Nattjazz-plakaten for 2017, et plateomslag og bokomslag for den kubanske forfatteren {tony}."},
+      "es": {"titulo": "Otros trabajos: murales, carteles y cubiertas · Ramón Haití Filiu", "h1": "Otros trabajos",
+             "desc": "Murales, carteles de festival, una portada de disco y cubiertas de libros de Ramón Eduardo Haití Filiu: Nattjazz en Bergen y cubiertas para el escritor Antonio López Sánchez.",
+             "lead": "Obra hecha para una pared, un festival o un libro: murales en Bergen y el oeste de Noruega, el cartel de Nattjazz 2017, una portada de disco y las cubiertas para el escritor cubano {tony}."}
     },
     "relato": {
       "en": {"titulo": "From Havana to Bergen · Ramón Eduardo Haití Filiu", "h1": "From Havana to Bergen",

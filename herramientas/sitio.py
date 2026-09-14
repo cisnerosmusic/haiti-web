@@ -29,6 +29,12 @@ AMARE = "https://galleriamare.no/eduardo-haiti-filiu-ramon/"
 SAMTIDSKUNST = "https://samtidskunst.com/become-better-acquainted-with-the-exciting-artist-ramon-eduardo-haiti-filiu/"
 PADRE_WIKIDATA = "https://www.wikidata.org/wiki/Q131699504"
 TONY = "https://antoniolopezsanchez.art"
+TONY_WEB = {"en": TONY + "/en/", "no": TONY + "/en/", "es": TONY + "/"}
+
+
+def tony(l):
+    """El nombre de Antonio López Sánchez, enlazado a su web en otra pestaña."""
+    return f'<a href="{TONY_WEB[l]}" target="_blank" rel="noopener">Antonio López Sánchez</a>'
 NOMBRE = "Ramón Eduardo Haití Filiu"
 NOMBRE_CORTO = "Ramón Haití Filiu"
 HOY = datetime.date.today().isoformat()
@@ -391,7 +397,7 @@ def lista_cv(l, u, items):
     for it in items:
         t = loc(it["t"], l)
         if it.get("enlace"):
-            t = f'<a href="{it["enlace"]}">{t}</a>'
+            t = f'<a href="{it["enlace"]}" target="_blank" rel="noopener">{t}</a>'
         extra = f' <span class="solo">· {ui(l, "solo")}</span>' if it.get("solo") else ""
         if it.get("fechas"):
             extra += f' <span class="solo">· {loc(it["fechas"], l)}</span>'
@@ -407,12 +413,12 @@ def murales(l):
     libros = [("trovadoras", "Trovadoras", "trovadoras-cubierta.webp", 640, 935, "Editorial Oriente, 2008"),
               ("convertida-en-cancion", "Convertida en canción", "convertida-cubierta.webp", 640, 984, "Editorial Capiro, 2019")]
     cubiertas = "".join(
-        f'<figure><a href="{ui(l, "tony_url")[k]}"><img src="{rel(u, "/img/libros/" + f)}" width="{w}" height="{h}" '
+        f'<figure><a href="{ui(l, "tony_url")[k]}" target="_blank" rel="noopener"><img src="{rel(u, "/img/libros/" + f)}" width="{w}" height="{h}" '
         f'alt="{esc(ui(l, "cubierta_alt").format(libro=t))}" loading="lazy" decoding="async"></a>'
-        f'<figcaption><i>{t}</i>Antonio López Sánchez · {ed}</figcaption></figure>'
+        f'<figcaption><i>{t}</i>{tony(l)} · {ed}</figcaption></figure>'
         for k, t, f, w, h, ed in libros)
     cuerpo = f"""<main id="contenido" class="bloque">
-<div class="cabeza"><h1>{p["h1"]}</h1><p>{p["lead"]}</p></div>
+<div class="cabeza"><h1>{p["h1"]}</h1><p>{p["lead"].replace("{tony}", tony(l))}</p></div>
 <div class="mural">{picture(u, "mural", m["slug"], V[m["slug"]][l], "(max-width: 860px) 92vw, 62vw", "eager", True)}
 <p class="cartela-min"><i>{m["titulo"]}</i> {ui(l, "mural")}, {m["medidas_texto"]}</p></div>
 <h2 style="margin-bottom:24px">{ui(l, "cubiertas")}</h2>
@@ -549,7 +555,7 @@ Key facts:
 ## Pages
 - [Home]({DOMINIO}/)
 - [Works]({DOMINIO}{url('obra', 'en')})
-- [Murals and commissions]({DOMINIO}{url('murales', 'en')})
+- [Other work: murals, posters and book covers]({DOMINIO}{url('murales', 'en')})
 - [From Havana to Bergen]({DOMINIO}{url('relato', 'en')}): biography
 - [CV]({DOMINIO}{url('cv', 'en')})
 - [Contact]({DOMINIO}{url('contacto', 'en')})
