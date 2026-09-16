@@ -26,3 +26,7 @@
 - Dossier en PDF generado desde el CV.
 - Afinar los recortes de detalle obra por obra (`foco` en `datos/obras.json`).
 - Lanzamiento: ver README.
+
+## Decisiones cerradas
+
+- **El WordPress anterior del dominio está invalidado (15-sep) y no debe verse bajo ninguna circunstancia.** Sus direcciones (`/portfolio-item/`, `/nb/`, `/wp-*`) responden 404 a propósito: no se redirigen, no se enlazan y no se recupera nada de él en el sitio.
