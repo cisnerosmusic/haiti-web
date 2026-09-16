@@ -15,6 +15,7 @@
 - **Fallecimiento de su padre:** las fuentes se contradicen. Samtidskunst (2020), que entrevistó al artista, dice 2008; AfroCubaWeb titula "1932-2013" y cita una despedida de febrero de 2013; Bergensavisen (2017) también dice 2013. No se publica ninguna fecha, y tampoco se toca la de Wikidata, hasta que él lo confirme.
 - **Hardanger Kulturgalleri:** "Mælen" es correcto (la galería está en Mælen, según Hordaland Folkeblad). Queda por confirmar el año (la prensa dice octubre de 2020) y si la de 2026 es individual.
 - ***Tres Músicos* (2021):** ¿es el nombre del disco o del grupo?
+- **El grabado falta en la web.** La prensa noruega lo documenta ("oljemåleri, collagar og print", Fjordenes Tidende 2016; óleos y grabados en Vevring 2015) y las IA ya lo mencionan, pero ni la biografía ni el CV lo recogen. Confirmar con él técnica y años, y si conserva obra gráfica que quiera mostrar.
 - **Statement:** un texto suyo en primera persona sobre su obra. Hoy la biografía está en tercera persona y no hay statement.
 - **Cuencos pintados** (sala Otros, 4 fotos sin datos por decisión de Ernesto): ¿madera, cerámica o las dos? (el del árbol es de madera por dentro). Dos llevan firma con "19", probablemente 2019. ¿Siguen disponibles? Si los tiene, repetir las fotos con fondo liso, luz de día y el mismo ángulo; así entrarían también los que hoy quedaron fuera por calidad.
 - **Escultura:** fotos de sus piezas tridimensionales (resina, textil, estructuras). Con ellas se abre la sala Escultura.
