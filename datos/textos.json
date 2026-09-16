@@ -102,7 +102,9 @@
         "trovadoras": "https://antoniolopezsanchez.art/en/books/trovadoras/",
         "convertida-en-cancion": "https://antoniolopezsanchez.art/en/books/convertida-en-cancion/"
       },
-      "obra_de": "Work by"
+      "obra_de": "Work by",
+      "ver_obra": "View work",
+      "idioma_actual": "Language: English"
     },
     "no": {
       "oficio": "Maler · Bergen",
@@ -150,7 +152,9 @@
         "trovadoras": "https://antoniolopezsanchez.art/en/books/trovadoras/",
         "convertida-en-cancion": "https://antoniolopezsanchez.art/en/books/convertida-en-cancion/"
       },
-      "obra_de": "Verk av"
+      "obra_de": "Verk av",
+      "ver_obra": "Se verket",
+      "idioma_actual": "Språk: norsk"
     },
     "es": {
       "oficio": "Pintor · Bergen",
@@ -198,7 +202,9 @@
         "trovadoras": "https://antoniolopezsanchez.art/libros/trovadoras/",
         "convertida-en-cancion": "https://antoniolopezsanchez.art/libros/convertida-en-cancion/"
       },
-      "obra_de": "Obra de"
+      "obra_de": "Obra de",
+      "ver_obra": "Ver obra",
+      "idioma_actual": "Idioma: español"
     }
   },
   "paginas": {
@@ -206,17 +212,32 @@
       "en": {
         "titulo": "Ramón Eduardo Haití Filiu · Painter, Bergen",
         "desc": "Cuban-Norwegian painter, born in Havana in 1971 and based in Bergen. Mixed media on canvas: paint, printed fabric and collage.",
-        "intro": "Born in Havana in 1971, trained at San Alejandro and based in Bergen since 2009, Ramón Eduardo Haití Filiu builds his paintings from paint, printed fabric, jute and corrugated cardboard: figures in wide-brimmed hats, fish, masks, the sea."
+        "intro": "Born in Havana in 1971, trained at San Alejandro and based in Bergen since 2009, Ramón Eduardo Haití Filiu builds his paintings from paint, printed fabric, jute and corrugated cardboard: figures in wide-brimmed hats, fish, masks, the sea.",
+        "antetitulo": "Art between territories",
+        "lema": "Memory, movement and transformation",
+        "disciplinas": "Painting · Collage · Installation",
+        "dialogo": "A dialogue between places",
+        "declaracion": "My work is born from the meeting of Havana and Bergen, of memory and the present, of what is visible and what endures."
       },
       "no": {
         "titulo": "Ramón Eduardo Haití Filiu · Maler, Bergen",
         "desc": "Kubansk-norsk maler, født i Havana i 1971 og bosatt i Bergen. Blandingsteknikk på lerret: maling, trykt stoff og kollasj.",
-        "intro": "Født i Havana i 1971, utdannet ved San Alejandro og bosatt i Bergen siden 2009: Ramón Eduardo Haití Filiu bygger bildene sine av maling, trykt stoff, jute og bølgepapp. Skikkelser med bredbremmede hatter, fisker, masker, havet."
+        "intro": "Født i Havana i 1971, utdannet ved San Alejandro og bosatt i Bergen siden 2009: Ramón Eduardo Haití Filiu bygger bildene sine av maling, trykt stoff, jute og bølgepapp. Skikkelser med bredbremmede hatter, fisker, masker, havet.",
+        "antetitulo": "Kunst mellom territorier",
+        "lema": "Minne, bevegelse og forvandling",
+        "disciplinas": "Maleri · Kollasj · Installasjon",
+        "dialogo": "En dialog mellom steder",
+        "declaracion": "Arbeidet mitt springer ut av møtet mellom Havana og Bergen, mellom minnet og nåtiden, mellom det synlige og det som består."
       },
       "es": {
         "titulo": "Ramón Eduardo Haití Filiu · Pintor en Bergen",
         "desc": "Pintor cubano-noruego, nacido en La Habana en 1971 y radicado en Bergen. Técnica mixta sobre lienzo: pintura, tela estampada y collage.",
-        "intro": "Nacido en La Habana en 1971, formado en San Alejandro y radicado en Bergen desde 2009, Ramón Eduardo Haití Filiu construye sus cuadros con pintura, tela estampada, yute y cartón ondulado: figuras con sombreros de ala ancha, peces, máscaras, el mar."
+        "intro": "Nacido en La Habana en 1971, formado en San Alejandro y radicado en Bergen desde 2009, Ramón Eduardo Haití Filiu construye sus cuadros con pintura, tela estampada, yute y cartón ondulado: figuras con sombreros de ala ancha, peces, máscaras, el mar.",
+        "antetitulo": "Arte entre territorios",
+        "lema": "Memoria, movimiento y transformación",
+        "disciplinas": "Pintura · Collage · Instalación",
+        "dialogo": "Un diálogo entre lugares",
+        "declaracion": "Mi trabajo nace del encuentro entre La Habana y Bergen, entre la memoria y el presente, entre lo visible y lo que permanece."
       }
     },
     "obra": {

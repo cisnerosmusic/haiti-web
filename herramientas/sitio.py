@@ -20,7 +20,7 @@ DOMINIO = "https://ramonhaitifiliu.com"
 # True desde el lanzamiento (15 sep 2026). En False, todas las páginas salen
 # con noindex, por si alguna vez hace falta esconder el sitio.
 LANZADO = True
-VERSION = "6"  # súbela cada vez que cambien css/ o js/
+VERSION = "7"  # súbela cada vez que cambien css/ o js/
 IDIOMAS = ["en", "no", "es"]
 SELECTOR = ["no", "en", "es"]
 CORREO = "haitifiliu@yahoo.es"
@@ -215,6 +215,9 @@ def ld(objetos):
 
 # ---------- esqueleto ----------
 
+FLECHA_ABAJO = '<svg class="chevron" viewBox="0 0 12 8" width="12" height="8" aria-hidden="true"><path d="M1 1.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>'
+FLECHA_DERECHA = '<svg class="flecha" viewBox="0 0 26 12" width="26" height="12" aria-hidden="true"><path d="M0 6h24M19 1l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>'
+
 MENU = [("obra", "menu_obra"), ("murales", "menu_murales"), ("relato", "menu_relato"), ("cv", "menu_cv"),
         ("prensa", "menu_prensa"), ("contacto", "menu_contacto")]
 
@@ -233,7 +236,8 @@ def cabecera(l, u, clave, slug, portada=False):
         nombre = f'<h1 class="h-nombre">{nombre}</h1>'
     return (f'<header class="cab">{nombre}'
             f'<nav class="menu" aria-label="{ui(l, "nav")}"><ul>{items}</ul>'
-            f'<div class="idiomas" role="group" aria-label="{ui(l, "idiomas")}">{idiomas}</div></nav>'
+            f'<details class="idioma-sel"><summary aria-label="{ui(l, "idioma_actual")}">{T["idiomas"][l]["corto"]}{FLECHA_ABAJO}</summary>'
+            f'<div class="idiomas" role="group" aria-label="{ui(l, "idiomas")}">{idiomas}</div></details></nav>'
             f'<details class="menu-movil"><summary>{ui(l, "menu")}</summary><div class="panel">'
             f'<ul>{items}</ul><div class="idiomas" role="group" aria-label="{ui(l, "idiomas")}">{idiomas}</div></div></details>'
             f'</header>')
@@ -280,7 +284,7 @@ def documento(l, u, clave, slug, titulo, desc, cuerpo, objetos, og_img, portada=
 <link rel="icon" href="{rel(u, "/favicon.ico")}" sizes="48x48">
 <link rel="icon" href="{rel(u, "/icon-192.png")}" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="{rel(u, "/apple-touch-icon.png")}">
-<link rel="preload" href="{rel(u, "/fonts/schibsted-grotesk-latin.woff2")}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{rel(u, "/fonts/jost-latin.woff2")}" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{rel(u, "/css/sitio.css")}{v}">
 <script src="{rel(u, "/js/luz.js")}{v}"></script>
 <script src="{rel(u, "/js/sitio.js")}{v}" defer></script>
@@ -311,15 +315,27 @@ def portada(l):
     p = pag("portada", l)
     hero = next(o for o in OBRAS if o.get("portada"))
     resto = [o for o in OBRAS if o is not hero][:6]
-    tecnica = ui(l, "diptico") + " · " + ui(l, "tecnica_mixta").lower() if hero.get("formato") == "diptico" else ui(l, "tecnica_mixta")
-    cuerpo = f"""<div class="cielo">
-<div class="aurora" aria-hidden="true"><i class="v2"></i><i class="v1"></i></div>
+    diptico = hero.get("formato") == "diptico"
+    ficha_obra = f'{hero["titulo"]}, {hero["anio"]}' if hero.get("anio") else hero["titulo"]
+    formato = (ui(l, "diptico") + ", " if diptico else "") + (medidas(hero, l) or "")
+    enlace = rel(u, url("obra", l, hero["slug"]))
+    # Obra a pantalla completa con los bordes oscurecidos; encima, la cabecera en blanco y los textos del artista
+    cuerpo = f"""<div class="escena">
+{picture(u, "obra", hero["slug"], V[hero["slug"]][l], "100vw", "eager", True)}
+<div class="velo" aria-hidden="true"></div>
 {{{{CABECERA}}}}
-<div class="hero"><a href="{rel(u, url("obra", l, hero["slug"]))}">{picture(u, "obra", hero["slug"], V[hero["slug"]][l], "(max-width: 1280px) 92vw, 1184px", "eager", True)}</a></div>
-<div class="pie-hero"><div class="fila"><span><i>{esc(hero["titulo"])}</i>&nbsp; {hero["anio"]} · {tecnica}</span>{aviso_html(l)}</div></div>
+<div class="escena-texto">
+<p class="antetitulo">{p["antetitulo"]}</p>
+<p class="escena-titulo">{esc(hero["titulo"])}</p>
+<p class="lema">{p["lema"]}</p>
+<a class="boton" href="{enlace}">{ui(l, "ver_obra")}{FLECHA_DERECHA}</a>
 </div>
-<div class="horizonte" aria-hidden="true"></div>
+<div class="escena-pie">{aviso_html(l)}<p class="escena-ficha"><a href="{enlace}">{esc(ficha_obra)}</a><br>{ui(l, "tecnica_mixta")}<br>{formato}</p></div>
+</div>
 <main id="contenido">
+<section class="declaracion"><p class="disciplinas">{p["disciplinas"]}</p>
+<h2>{p["dialogo"]}</h2>
+<p class="voz">{p["declaracion"]}</p></section>
 <section class="bloque"><div class="intro"><p>{p["intro"]}</p>
 <div class="mas"><a class="vermas" href="{rel(u, url("relato", l))}">{pag("relato", l)["h1"]}</a><a href="{rel(u, url("cv", l))}">CV</a><a href="{rel(u, url("contacto", l))}">{ui(l, "menu_contacto")}</a></div></div></section>
 <section class="bloque"><div class="cabeza"><h2>{ui(l, "obra_reciente")}</h2></div>

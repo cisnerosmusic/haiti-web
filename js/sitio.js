@@ -11,3 +11,16 @@
     });
   });
 })();
+
+/* Selector de idioma: se cierra al pulsar fuera o con Escape. */
+(function () {
+  var sel = document.querySelectorAll(".idioma-sel");
+  if (!sel.length) return;
+  document.addEventListener("click", function (e) {
+    sel.forEach(function (d) { if (d.open && !d.contains(e.target)) d.open = false; });
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key !== "Escape") return;
+    sel.forEach(function (d) { if (d.open) { d.open = false; d.querySelector("summary").focus(); } });
+  });
+})();
