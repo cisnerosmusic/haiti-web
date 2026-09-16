@@ -26,7 +26,11 @@ SELECTOR = ["no", "en", "es"]
 CORREO = "haitifiliu@yahoo.es"
 FACEBOOK = "https://www.facebook.com/RamonHaitiFiliu/"
 AMARE = "https://galleriamare.no/eduardo-haiti-filiu-ramon/"
-SAMTIDSKUNST = "https://samtidskunst.com/become-better-acquainted-with-the-exciting-artist-ramon-eduardo-haiti-filiu/"
+SAMTIDSKUNST = {
+    "en": "https://samtidskunst.com/become-better-acquainted-with-the-exciting-artist-ramon-eduardo-haiti-filiu/",
+    "no": "https://samtidskunst.com/bli-bedre-kjent-med-den-spennende-kunstneren-ramon-eduardo-haiti-filiu/",
+    "es": "https://samtidskunst.com/conociendo-mejor-al-impresionante-artista-ramon-eduardo-haiti-filiu/",
+}
 PADRE_WIKIDATA = "https://www.wikidata.org/wiki/Q131699504"
 INDEXNOW = "50b4bba7fb1994877743ecfcfb601eb9"  # el archivo 50b4bba7fb1994877743ecfcfb601eb9.txt en la raíz demuestra que el sitio es nuestro
 GSC = "hfJRBFzE-V4nuhZlSwdddRu3gsEHIV11B_nBc2wO50s"  # verificación de Google Search Console
@@ -187,7 +191,10 @@ def persona(l):
                    "description": "Cuban sculptor and painter (b. 1932), member of the Grupo Antillano"},
         "knows": {"@type": "Person", "name": "Antonio López Sánchez", "url": TONY},
         "sameAs": [FACEBOOK, AMARE],
-        "subjectOf": {"@type": "Article", "url": SAMTIDSKUNST, "author": {"@type": "Person", "name": "Wenche Holmedal"}, "publisher": "Samtidskunst"},
+        "subjectOf": [{"@type": "Article", "url": u, "inLanguage": cod(li), "datePublished": "2020",
+                        "author": {"@type": "Person", "name": "Wenche Holmedal"},
+                        "publisher": {"@type": "Organization", "name": "Samtidskunst"}}
+                       for li, u in SAMTIDSKUNST.items()],
     }
 
 
@@ -632,6 +639,12 @@ Key facts:
 - Work in the collections of the Grieg Foundation (Bergen), Universitetet i Nordland and Nordland psykiatriske sykehus (Bodø).
 - Not to be confused with his father, the Cuban sculptor Ramón Haití Eduardo (b. 1932), member of the Grupo Antillano ({PADRE_WIKIDATA}). Awards and 1960s studies attributed online to "Ramón Haití" belong to the father.
 - Contact: {CORREO}
+
+## Sources
+- Wenche Holmedal, "Become better acquainted with the exciting artist Ramon Eduardo Haiti Filiu", Samtidskunst, 2020: the longest published profile, with his technique, themes and background. English: {SAMTIDSKUNST['en']} · Norwegian: {SAMTIDSKUNST['no']} · Spanish: {SAMTIDSKUNST['es']}
+- Galleri Amare (Stavanger), CV and exhibition pages: {AMARE}
+- Kunsthuset Wendelboe (Bergen), 2019 catalogue and exhibition text.
+- National Library of Norway: 32 press pieces from 2006 onwards, listed at {DOMINIO}{url('prensa', 'en')}
 
 ## Pages
 - [Home]({DOMINIO}/)
