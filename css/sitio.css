@@ -108,9 +108,10 @@ i, em { font-style: italic; }
 @keyframes velo1 { from { transform: translateX(-5%) skewX(-10deg) scaleY(.9); } to { transform: translateX(6%) skewX(8deg) scaleY(1.1); } }
 @keyframes velo2 { from { transform: translateX(7%) skewX(12deg); } to { transform: translateX(-6%) skewX(-6deg) scaleY(.85); } }
 
-.hero { position: relative; z-index: 2; max-width: var(--ancho); margin: 0 auto; padding-block: clamp(28px, 6vw, 72px) clamp(20px, 3vw, 32px); padding-inline: var(--margen); }
+.hero { position: relative; z-index: 2; max-width: var(--ancho); margin: 0 auto; padding-block: clamp(28px, 6vw, 72px) 0; padding-inline: var(--margen); }
 .hero a { display: block; }
-.hero img { width: min(100%, 1100px); margin: 0 auto; max-height: 76vh; object-fit: contain; }
+/* La obra de portada ocupa todo el ancho del marco y se apoya en la línea de su cartela */
+.hero img { width: 100%; }
 .pie-hero { position: relative; z-index: 2; max-width: var(--ancho); margin: 0 auto; padding-inline: var(--margen); padding-block: 0 clamp(22px, 3vw, 36px); }
 .pie-hero .fila { display: flex; justify-content: space-between; align-items: baseline; gap: 6px 24px; flex-wrap: wrap;
   border-top: 1px solid var(--t3-l); padding-top: 12px; color: var(--t3-2); font-size: var(--f-s); }

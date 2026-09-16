@@ -20,7 +20,7 @@ DOMINIO = "https://ramonhaitifiliu.com"
 # True desde el lanzamiento (15 sep 2026). En False, todas las páginas salen
 # con noindex, por si alguna vez hace falta esconder el sitio.
 LANZADO = True
-VERSION = "5"  # súbela cada vez que cambien css/ o js/
+VERSION = "6"  # súbela cada vez que cambien css/ o js/
 IDIOMAS = ["en", "no", "es"]
 SELECTOR = ["no", "en", "es"]
 CORREO = "haitifiliu@yahoo.es"
@@ -315,7 +315,7 @@ def portada(l):
     cuerpo = f"""<div class="cielo">
 <div class="aurora" aria-hidden="true"><i class="v2"></i><i class="v1"></i></div>
 {{{{CABECERA}}}}
-<div class="hero"><a href="{rel(u, url("obra", l, hero["slug"]))}">{picture(u, "obra", hero["slug"], V[hero["slug"]][l], "(max-width: 1180px) 92vw, 1100px", "eager", True)}</a></div>
+<div class="hero"><a href="{rel(u, url("obra", l, hero["slug"]))}">{picture(u, "obra", hero["slug"], V[hero["slug"]][l], "(max-width: 1280px) 92vw, 1184px", "eager", True)}</a></div>
 <div class="pie-hero"><div class="fila"><span><i>{esc(hero["titulo"])}</i>&nbsp; {hero["anio"]} · {tecnica}</span>{aviso_html(l)}</div></div>
 </div>
 <div class="horizonte" aria-hidden="true"></div>
