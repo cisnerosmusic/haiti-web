@@ -1,94 +1,509 @@
 {
-  "_nota": "Prensa verificada en el archivo de la Biblioteca Nacional de Noruega (nb.no) el 14 sep 2026. Solo piezas editoriales sobre el artista (no agendas ni anuncios). 'titular' y 'autor' solo cuando constan en el fragmento del archivo. acceso: abierto (cualquier país), restringido (bibliotecas de Noruega), pago. Resúmenes escritos por nosotros; nunca se reproduce el texto del artículo.",
-  "cita": {"texto": "Nordmenn er opptekne av lyset, kubanarar er meir opptekne av fargane.", "fecha": "2012-09-10", "medio": "Firda"},
-  "articulos": [
-    {"fecha": "2006-01-27", "medio": "Avisa Nordland", "autor": "Kjell Nordeng", "acceso": "abierto", "urn": "URN:NBN:no-nb_digavis_avisanordland_null_null_20060127_4_23_1",
-     "resumen": {"en": "His first exhibition in Bodø: works at the SAS Radisson during the Bodø Latin Festival.", "no": "Hans første utstilling i Bodø: arbeider på SAS Radisson under Bodø Latinofestival.", "es": "Su primera exposición en Bodø: obra en el SAS Radisson durante el Bodø Latinofestival."}},
-    {"fecha": "2006", "medio": "Bodø nu, n.º 4", "acceso": "restringido", "urn": "URN:NBN:no-nb_digitidsskrift_2024020680024_004",
-     "resumen": {"en": "Interview on his arrival in Bodø with twenty paintings brought from Cuba.", "no": "Intervju ved ankomsten til Bodø med tjue malerier fra Cuba.", "es": "Entrevista a su llegada a Bodø con veinte pinturas traídas de Cuba."}},
-    {"fecha": "2006", "medio": "Bodø nu, n.º 28", "acceso": "restringido", "urn": "URN:NBN:no-nb_digitidsskrift_2024021280055_005",
-     "resumen": {"en": "His painting <i>Consejos en la penumbra</i> and a profile of the painter, then a teacher at an art school in Havana.", "no": "Maleriet <i>Consejos en la penumbra</i> og et portrett av maleren, den gang lærer ved en kunstskole i Havanna.", "es": "Su cuadro <i>Consejos en la penumbra</i> y una semblanza del pintor, entonces profesor en una escuela de arte de La Habana."}},
-    {"fecha": "2006-08-05", "medio": "Avisa Nordland", "autor": "Nina Sjøholt", "acceso": "abierto", "urn": "URN:NBN:no-nb_digavis_avisanordland_null_null_20060805_4_179_1",
-     "resumen": {"en": "Second exhibition in Bodø in six months, at Galleri Sjøgata: women in everyday scenes.", "no": "Andre utstilling i Bodø på et halvt år, i Galleri Sjøgata: kvinner i hverdagssituasjoner.", "es": "Segunda exposición en Bodø en medio año, en Galleri Sjøgata: mujeres en escenas cotidianas."}},
-    {"fecha": "2006-08-05", "medio": "Klassekampen", "acceso": "restringido", "urn": "URN:NBN:no-nb_digavis_klassekampen_null_null_20060805_38_178_1",
-     "resumen": {"en": "Note on his show of eighteen paintings at Galleri Sjøgata, Bodø.", "no": "Notis om utstillingen med atten bilder i Galleri Sjøgata i Bodø.", "es": "Nota sobre su muestra de dieciocho cuadros en Galleri Sjøgata, Bodø."}},
-    {"fecha": "2006-08-15", "medio": "Avisa Nordland", "autor": "Hanna Lisa Skau", "acceso": "abierto", "urn": "URN:NBN:no-nb_digavis_avisanordland_null_null_20060815_4_187_1",
-     "resumen": {"en": "A painting course with the artist during his exhibition in Bodø.", "no": "Malerkurs med kunstneren under utstillingen i Bodø.", "es": "Un curso de pintura con el artista durante su exposición en Bodø."}},
-    {"fecha": "2007-08-02", "medio": "Bergensavisen", "acceso": "abierto", "urn": "URN:NBN:no-nb_digavis_bergensavisen_null_null_20070802_81_205_1",
-     "resumen": {"en": "Exhibition in Bergen shared with the Cuban artist Alain Lázaro Gutiérrez Almeida.", "no": "Utstilling i Bergen sammen med den cubanske kunstneren Alain Lázaro Gutiérrez Almeida.", "es": "Exposición en Bergen compartida con el artista cubano Alain Lázaro Gutiérrez Almeida."}},
-    {"fecha": "2008", "medio": "Krigsropet, n.º 23", "titular": "Fra Havanna til Bergen", "acceso": "abierto", "urn": "URN:NBN:no-nb_digitidsskrift_2019081481103_001",
-     "resumen": {"en": "Feature on his exhibition at Galleri VOX, Bergen, including one of his sculptures.", "no": "Reportasje om utstillingen i Galleri VOX i Bergen, med en av skulpturene hans.", "es": "Reportaje sobre su exposición en Galleri VOX, Bergen, con una de sus esculturas."}},
-    {"fecha": "2010-04-29", "medio": "VestNytt", "acceso": "restringido", "urn": "URN:NBN:no-nb_digavis_vestnytt_null_null_20100429_22_48_1",
-     "resumen": {"en": "Exhibition at Glesvær Kafé, opened with a concert by the Cuban-Norwegian band Timbason.", "no": "Utstilling på Glesvær Kafé, åpnet med konsert av det cubansk-norske bandet Timbason.", "es": "Exposición en Glesvær Kafé, inaugurada con un concierto del grupo cubano-noruego Timbason."}},
-    {"fecha": "2010-06-03", "medio": "VestNytt", "acceso": "restringido", "urn": "URN:NBN:no-nb_digavis_vestnytt_null_null_20100603_22_61_1",
-     "resumen": {"en": "His show sets the sales record at Glesvær Kafé.", "no": "Utstillingen hans setter salgsrekord på Glesvær Kafé.", "es": "Su muestra bate el récord de ventas de Glesvær Kafé."}},
-    {"fecha": "2011-05-07", "medio": "Sogn Avis", "titular": "Cuba-eksotisk i Ciderhuset", "acceso": "abierto", "urn": "URN:NBN:no-nb_digavis_sognavis_null_null_20110507_0_87_1",
-     "resumen": {"en": "Exhibition at the Ciderhuset in Balestrand during the Balejazz festival.", "no": "Utstilling i Ciderhuset i Balestrand under Balejazz.", "es": "Exposición en el Ciderhuset de Balestrand durante el festival Balejazz."}},
-    {"fecha": "2012-01-17", "medio": "Sydvesten", "titular": "Et touch av Havanna på Laksevåg", "acceso": "restringido", "urn": "URN:NBN:no-nb_digavis_sydvesten_null_null_20120117_2_3_1",
-     "resumen": {"en": "Profile of the painter, now living in Laksevåg: San Alejandro, his sculptor father and the Norwegian light.", "no": "Portrett av maleren, nå bosatt på Laksevåg: San Alejandro, billedhuggerfaren og det norske lyset.", "es": "Perfil del pintor, ya instalado en Laksevåg: San Alejandro, su padre escultor y la luz de Noruega."}},
-    {"fecha": "2012-01-25", "medio": "Os & Fusaposten", "titular": "Lokkar med Cuba", "acceso": "restringido", "urn": "URN:NBN:no-nb_digavis_osogfusaposten_null_null_20120125_26_7_1",
-     "resumen": {"en": "His solo exhibition <i>Livets stier og former</i> in the Hvelvet gallery at Oseana.", "no": "Separatutstillingen <i>Livets stier og former</i> i Hvelvet på Oseana.", "es": "Su exposición individual <i>Livets stier og former</i> en la sala Hvelvet de Oseana."}},
-    {"fecha": "2012-09-01", "medio": "Firdaposten", "acceso": "restringido", "urn": "URN:NBN:no-nb_digavis_firdaposten_null_null_20120901_64_101_1",
-     "resumen": {"en": "Preview of <i>Kvardagens lys og former</i>, his exhibition with Flora Kunstlag at the Kystmuseet in Florø.", "no": "Forhåndsomtale av <i>Kvardagens lys og former</i>, utstillingen med Flora Kunstlag på Kystmuseet i Florø.", "es": "Anuncio de <i>Kvardagens lys og former</i>, su exposición con Flora Kunstlag en el Kystmuseet de Florø."}},
-    {"fecha": "2012-09-10", "medio": "Firda", "autor": "Knut Magnussen", "titular": "Kubanske kulørar", "acceso": "restringido", "urn": "URN:NBN:no-nb_digavis_firda_null_null_20120910_95_210_1",
-     "resumen": {"en": "Norwegians notice the light, Cubans the colour: interview at the Kystmuseet in Florø.", "no": "Nordmenn ser lyset, kubanere fargene: intervju på Kystmuseet i Florø.", "es": "Los noruegos se fijan en la luz; los cubanos, en el color: entrevista en el Kystmuseet de Florø."}},
-    {"fecha": "2012-09-11", "medio": "Firdaposten", "acceso": "restringido", "urn": "URN:NBN:no-nb_digavis_firdaposten_null_null_20120911_64_105_1",
-     "resumen": {"en": "Report from the opening in Florø: a painter who also works in ceramics and sculpture.", "no": "Fra åpningen i Florø: en maler som også arbeider med keramikk og skulptur.", "es": "Crónica de la inauguración en Florø: un pintor que también hace cerámica y escultura."}},
-    {"fecha": "2013-06-06", "medio": "Rogalands Avis", "titular": "Fra Cuba til Amare", "acceso": "abierto", "urn": "URN:NBN:no-nb_digavis_rogalandsavis_null_null_20130606_113_127_1",
-     "resumen": {"en": "His exhibition at Galleri Amare, Stavanger.", "no": "Utstillingen hans i Galleri Amare i Stavanger.", "es": "Su exposición en Galleri Amare, Stavanger."}},
-    {"fecha": "2013-11-02", "medio": "VestNytt", "acceso": "restringido", "urn": "URN:NBN:no-nb_digavis_vestnytt_null_null_20131102_25_123_1",
-     "resumen": {"en": "Back at Glesvær Kafé with a new show, until 31 December.", "no": "Tilbake på Glesvær Kafé med en ny utstilling, til 31. desember.", "es": "Vuelve a Glesvær Kafé con una nueva muestra, hasta el 31 de diciembre."}},
-    {"fecha": "2014-04-23", "medio": "Klassekampen", "acceso": "restringido", "urn": "URN:NBN:no-nb_digavis_klassekampen_null_null_20140423_46_92_1",
-     "resumen": {"en": "His exhibition <i>Refleksjon</i> at Nordic Black Theatre / Cafeteatret, Oslo.", "no": "Utstillingen <i>Refleksjon</i> på Nordic Black Theatre / Cafeteatret i Oslo.", "es": "Su exposición <i>Refleksjon</i> en Nordic Black Theatre / Cafeteatret, Oslo."}},
-    {"fecha": "2014-09-30", "medio": "Sogn Avis", "titular": "Byr på fargerik kunst frå Cuba", "acceso": "restringido", "urn": "URN:NBN:no-nb_digavis_sognavis_null_null_20140930_22_187_1",
-     "resumen": {"en": "Exhibition at the Gamlehotellet in Leikanger during the Fruktbare dagar festival.", "no": "Utstilling på Gamlehotellet i Leikanger under Fruktbare dagar.", "es": "Exposición en el Gamlehotellet de Leikanger durante el festival Fruktbare dagar."}},
-    {"fecha": "2015-08-11", "medio": "Bergens Tidende", "acceso": "restringido", "urn": "URN:NBN:no-nb_digavis_bergenstidende_null_null_20150811_148_213_1",
-     "resumen": {"en": "His three-by-six-metre mural for the Vestre Torggaten 12 housing cooperative in Bergen.", "no": "Veggmaleriet på tre ganger seks meter for borettslaget i Vestre Torggaten 12 i Bergen.", "es": "Su mural de tres por seis metros para la cooperativa de viviendas de Vestre Torggaten 12, Bergen."}},
-    {"fecha": "2015-09-10", "medio": "Firda", "acceso": "restringido", "urn": "URN:NBN:no-nb_digavis_firda_null_null_20150910_98_209_1",
-     "resumen": {"en": "Large-format oil paintings at the Vevringutstillinga.", "no": "Storformata oljemåleri på Vevringutstillinga.", "es": "Óleos de gran formato en la Vevringutstillinga."}},
-    {"fecha": "2016-03-22", "medio": "Fjordenes Tidende", "autor": "Siv K. Berg", "acceso": "abierto", "urn": "URN:NBN:no-nb_digavis_fjordenestidende_null_null_20160322_106_23_1",
-     "resumen": {"en": "Easter exhibition at Doktorgarden, Selje: oil paintings, collages and prints.", "no": "Påskeutstilling i Doktorgarden i Selje: oljemalerier, collager og grafikk.", "es": "Exposición de Semana Santa en Doktorgarden, Selje: óleos, collages y grabados."}},
-    {"fecha": "2016-06-17", "medio": "Fjordenes Tidende", "acceso": "abierto", "urn": "URN:NBN:no-nb_digavis_fjordenestidende_null_null_20160617_106_46_1",
-     "resumen": {"en": "His work in the summer exhibition at Doktorgarden, Selje.", "no": "Bilder av ham på sommerutstillingen i Doktorgarden i Selje.", "es": "Obra suya en la exposición de verano de Doktorgarden, Selje."}},
-    {"fecha": "2017-09-08", "medio": "Bergensavisen", "acceso": "restringido", "urn": "URN:NBN:no-nb_digavis_bergensavisen_null_null_20170908_0_243_1",
-     "resumen": {"en": "Interview at Kunsthuset Wendelboe: his father's influence, jute and cardboard, and a palette that has grown lighter in Norway.", "no": "Intervju på Kunsthuset Wendelboe: farens innflytelse, strie og bølgepapp, og en fargepalett som er blitt lysere i Norge.", "es": "Entrevista en Kunsthuset Wendelboe: la huella de su padre, el yute y el cartón, y una paleta que en Noruega se ha vuelto más clara."}},
-    {"fecha": "2017-09-09", "medio": "Bergensavisen", "acceso": "restringido", "urn": "URN:NBN:no-nb_digavis_bergensavisen_null_null_20170909_0_244_1",
-     "resumen": {"en": "The paper's editor-in-chief, Sigvald Sveinbjørnsson, opens his exhibition at Kunsthuset Wendelboe.", "no": "Sjefredaktør Sigvald Sveinbjørnsson åpner utstillingen hans på Kunsthuset Wendelboe.", "es": "El director del diario, Sigvald Sveinbjørnsson, inaugura su exposición en Kunsthuset Wendelboe."}},
-    {"fecha": "2019-08-21", "medio": "Firda", "acceso": "restringido", "urn": "URN:NBN:no-nb_digavis_firda_null_null_20190821_102_192_1",
-     "resumen": {"en": "Joint exhibition with the goldsmith Kristin Selboskar; he keeps studios in Bergen and Havana.", "no": "Felles utstilling med gullsmed Kristin Selboskar; han har atelier i Bergen og Havanna.", "es": "Exposición conjunta con la orfebre Kristin Selboskar; tiene taller en Bergen y en La Habana."}},
-    {"fecha": "2019-09-12", "medio": "Bergensavisen", "acceso": "restringido", "urn": "URN:NBN:no-nb_digavis_bergensavisen_null_null_20190912_0_246_1",
-     "resumen": {"en": "<i>Berøring med blikket</i>, his exhibition at Kunsthuset Wendelboe during Bergen's Kulturnatt.", "no": "<i>Berøring med blikket</i>, utstillingen hans på Kunsthuset Wendelboe under Kulturnatt i Bergen.", "es": "<i>Berøring med blikket</i>, su exposición en Kunsthuset Wendelboe durante la Kulturnatt de Bergen."}},
-    {"fecha": "2020-07-09", "medio": "Sogn Avis", "acceso": "restringido", "urn": "URN:NBN:no-nb_digavis_sognavis_null_null_20200709_0_132_1",
-     "resumen": {"en": "Exhibition at Galleri Holmen, Balestrand: the local art society's first opening after the pandemic closure.", "no": "Utstilling i Galleri Holmen i Balestrand: kunstlagets første opning etter koronastenginga.", "es": "Exposición en Galleri Holmen, Balestrand: la primera inauguración de la asociación de arte local tras el cierre por la pandemia."}},
-    {"fecha": "2020-10-09", "medio": "Hordaland Folkeblad", "acceso": "restringido", "urn": "URN:NBN:no-nb_digavis_hordalandfolkeblad_null_null_20201009_147_77_1",
-     "resumen": {"en": "<i>Vinden frå Vest</i>, his exhibition at Hardanger Kulturgalleri in Mælen.", "no": "<i>Vinden frå Vest</i>, utstillingen hans på Hardanger Kulturgalleri på Mælen.", "es": "<i>Vinden frå Vest</i>, su exposición en Hardanger Kulturgalleri, en Mælen."}},
-    {"fecha": "2020-10-09", "medio": "Hardanger Folkeblad", "titular": "Heftige rytmer fra Cuba avslutter sesongen på Hardanger Kulturgalleri", "acceso": "pago", "url": "https://www.hardanger-folkeblad.no/heftige-rytmer-fra-cuba-avslutter-sesongen-pa-hardanger-kulturgalleri/s/5-22-295165",
-     "resumen": {"en": "Works full of dance, music and colour close the season at Hardanger Kulturgalleri.", "no": "Bilder fulle av dans, musikk og farger avslutter sesongen på Hardanger Kulturgalleri.", "es": "Obras llenas de baile, música y color cierran la temporada de Hardanger Kulturgalleri."}},
-    {"fecha": "2023", "medio": "Per Vie, Vie veier til sommernorge", "libro": true, "acceso": "restringido", "urn": "URN:NBN:no-nb_digibok_2023072448026",
-     "resumen": {"en": "A travel book that recalls his exhibition at Galleri Holmen, Balestrand.", "no": "En reisebok som minnes utstillingen hans i Galleri Holmen i Balestrand.", "es": "Un libro de viajes que recuerda su exposición en Galleri Holmen, Balestrand."}}
-  ],
-  "textos": [
-    {"anio": "2020", "medio": "Samtidskunst", "autor": "Wenche Holmedal",
-     "titulo": {"en": "Become better acquainted with the exciting artist Ramon Eduardo Haiti Filiu", "no": "Bli bedre kjent med den spennende kunstneren Ramon Eduardo Haiti Filiu", "es": "Become better acquainted with the exciting artist Ramon Eduardo Haiti Filiu"},
-     "resumen": {"en": "Long profile: technique, themes and his father's legacy.", "no": "Langt portrett: teknikk, temaer og farens arv.", "es": "Perfil extenso: técnica, temas y el legado de su padre."},
-     "enlaces": [{"url": {"en": "https://samtidskunst.com/become-better-acquainted-with-the-exciting-artist-ramon-eduardo-haiti-filiu/", "no": "https://samtidskunst.com/bli-bedre-kjent-med-den-spennende-kunstneren-ramon-eduardo-haiti-filiu/", "es": "https://samtidskunst.com/become-better-acquainted-with-the-exciting-artist-ramon-eduardo-haiti-filiu/"}, "rotulo": {"en": "Read", "no": "Les", "es": "Leer"}}]},
-    {"anio": "2021", "medio": "Kunsthuset Wendelboe",
-     "resumen": {"en": "Exhibition opening at Bergen's Kulturnatt, 10 September 2021, with a downloadable catalogue.", "no": "Utstillingsåpning under Kulturnatt i Bergen 10. september 2021, med katalog.", "es": "Inauguración en la Kulturnatt de Bergen, el 10 de septiembre de 2021, con catálogo descargable."},
-     "enlaces": [{"url": "https://kunsthusetwendelboe.no/2021/09/05/ramon-haiti-f-apning-kulturnatt-10-09/", "rotulo": {"en": "Exhibition page", "no": "Utstillingen", "es": "Página de la exposición"}}]},
-    {"anio": "2019", "medio": "Kunsthuset Wendelboe", "titulo": {"en": "Berøring med blikket", "no": "Berøring med blikket", "es": "Berøring med blikket"},
-     "resumen": {"en": "Catalogue of 26 works, an exhibition text and the opening video.", "no": "Katalog med 26 verk, utstillingstekst og video fra åpningen.", "es": "Catálogo de 26 obras, texto de la exposición y vídeo de la inauguración."},
-     "enlaces": [
-       {"url": "https://kunsthusetwendelboe.no/wp-content/uploads/2019/09/ramon-katalog-1.pdf", "rotulo": {"en": "Catalogue (PDF)", "no": "Katalog (PDF)", "es": "Catálogo (PDF)"}},
-       {"url": "https://kunsthusetwendelboe.no/wp-content/uploads/2019/09/berc3b8ring-med-blikket-ii.pdf", "rotulo": {"en": "Exhibition text (PDF)", "no": "Utstillingstekst (PDF)", "es": "Texto de la exposición (PDF)"}},
-       {"url": "https://kunsthusetwendelboe.no/2019/09/15/apningsvideo-kulturnatt-ramon-haiti-filiu/", "rotulo": {"en": "Opening video", "no": "Åpningsvideo", "es": "Vídeo de la inauguración"}}]},
-    {"anio": "2018", "medio": "Galleri Amare",
-     "resumen": {"en": "Solo exhibition in Stavanger, 13 September to 7 October 2018, with the works shown.", "no": "Separatutstilling i Stavanger 13. september til 7. oktober 2018, med verkene.", "es": "Exposición individual en Stavanger, del 13 de septiembre al 7 de octubre de 2018, con las obras expuestas."},
-     "enlaces": [{"url": "https://galleriamare.no/kjersti-naess-separatutstilling-13-09-2018-07-10-2018/", "rotulo": {"en": "Exhibition page", "no": "Utstillingen", "es": "Página de la exposición"}}]},
-    {"anio": "2012", "medio": "Oseana", "titulo": {"en": "Livets stier og former", "no": "Livets stier og former", "es": "Livets stier og former"},
-     "resumen": {"en": "Solo exhibition in the Hvelvet gallery, 28 January to 11 March 2012.", "no": "Separatutstilling i Hvelvet 28. januar til 11. mars 2012.", "es": "Exposición individual en la sala Hvelvet, del 28 de enero al 11 de marzo de 2012."},
-     "enlaces": [{"url": "https://www.oseana.no/event/ramon-e-haiti-filiu-livets-stier-og-former/", "rotulo": {"en": "Exhibition page", "no": "Utstillingen", "es": "Página de la exposición"}}]},
-    {"anio": "", "medio": "Artistnator",
-     "resumen": {"en": "Video interview filmed in Miami by Humberto Ochoa Photography.", "no": "Videointervju filmet i Miami av Humberto Ochoa Photography.", "es": "Entrevista en vídeo filmada en Miami por Humberto Ochoa Photography."},
-     "enlaces": [{"url": "http://artistnator.com/videos/painter-sculptor-ramon-haiti-filiu/", "rotulo": {"en": "Watch", "no": "Se", "es": "Ver"}}]}
-  ]
+ "_nota": "Prensa verificada en el archivo de la Biblioteca Nacional de Noruega (nb.no) el 14 sep 2026. Solo piezas editoriales sobre el artista (no agendas ni anuncios). 'titular' y 'autor' solo cuando constan en el fragmento del archivo. acceso: abierto (cualquier país), restringido (bibliotecas de Noruega), pago. Resúmenes escritos por nosotros; nunca se reproduce el texto del artículo. Nada que sitúe al artista en Estados Unidos: por decisión suya, retirada la entrevista de Artistnator (15 sep 2026).",
+ "cita": {
+  "texto": "Nordmenn er opptekne av lyset, kubanarar er meir opptekne av fargane.",
+  "fecha": "2012-09-10",
+  "medio": "Firda"
+ },
+ "articulos": [
+  {
+   "fecha": "2006-01-27",
+   "medio": "Avisa Nordland",
+   "autor": "Kjell Nordeng",
+   "acceso": "abierto",
+   "urn": "URN:NBN:no-nb_digavis_avisanordland_null_null_20060127_4_23_1",
+   "resumen": {
+    "en": "His first exhibition in Bodø: works at the SAS Radisson during the Bodø Latin Festival.",
+    "no": "Hans første utstilling i Bodø: arbeider på SAS Radisson under Bodø Latinofestival.",
+    "es": "Su primera exposición en Bodø: obra en el SAS Radisson durante el Bodø Latinofestival."
+   }
+  },
+  {
+   "fecha": "2006",
+   "medio": "Bodø nu, n.º 4",
+   "acceso": "restringido",
+   "urn": "URN:NBN:no-nb_digitidsskrift_2024020680024_004",
+   "resumen": {
+    "en": "Interview on his arrival in Bodø with twenty paintings brought from Cuba.",
+    "no": "Intervju ved ankomsten til Bodø med tjue malerier fra Cuba.",
+    "es": "Entrevista a su llegada a Bodø con veinte pinturas traídas de Cuba."
+   }
+  },
+  {
+   "fecha": "2006",
+   "medio": "Bodø nu, n.º 28",
+   "acceso": "restringido",
+   "urn": "URN:NBN:no-nb_digitidsskrift_2024021280055_005",
+   "resumen": {
+    "en": "His painting <i>Consejos en la penumbra</i> and a profile of the painter, then a teacher at an art school in Havana.",
+    "no": "Maleriet <i>Consejos en la penumbra</i> og et portrett av maleren, den gang lærer ved en kunstskole i Havanna.",
+    "es": "Su cuadro <i>Consejos en la penumbra</i> y una semblanza del pintor, entonces profesor en una escuela de arte de La Habana."
+   }
+  },
+  {
+   "fecha": "2006-08-05",
+   "medio": "Avisa Nordland",
+   "autor": "Nina Sjøholt",
+   "acceso": "abierto",
+   "urn": "URN:NBN:no-nb_digavis_avisanordland_null_null_20060805_4_179_1",
+   "resumen": {
+    "en": "Second exhibition in Bodø in six months, at Galleri Sjøgata: women in everyday scenes.",
+    "no": "Andre utstilling i Bodø på et halvt år, i Galleri Sjøgata: kvinner i hverdagssituasjoner.",
+    "es": "Segunda exposición en Bodø en medio año, en Galleri Sjøgata: mujeres en escenas cotidianas."
+   }
+  },
+  {
+   "fecha": "2006-08-05",
+   "medio": "Klassekampen",
+   "acceso": "restringido",
+   "urn": "URN:NBN:no-nb_digavis_klassekampen_null_null_20060805_38_178_1",
+   "resumen": {
+    "en": "Note on his show of eighteen paintings at Galleri Sjøgata, Bodø.",
+    "no": "Notis om utstillingen med atten bilder i Galleri Sjøgata i Bodø.",
+    "es": "Nota sobre su muestra de dieciocho cuadros en Galleri Sjøgata, Bodø."
+   }
+  },
+  {
+   "fecha": "2006-08-15",
+   "medio": "Avisa Nordland",
+   "autor": "Hanna Lisa Skau",
+   "acceso": "abierto",
+   "urn": "URN:NBN:no-nb_digavis_avisanordland_null_null_20060815_4_187_1",
+   "resumen": {
+    "en": "A painting course with the artist during his exhibition in Bodø.",
+    "no": "Malerkurs med kunstneren under utstillingen i Bodø.",
+    "es": "Un curso de pintura con el artista durante su exposición en Bodø."
+   }
+  },
+  {
+   "fecha": "2007-08-02",
+   "medio": "Bergensavisen",
+   "acceso": "abierto",
+   "urn": "URN:NBN:no-nb_digavis_bergensavisen_null_null_20070802_81_205_1",
+   "resumen": {
+    "en": "Exhibition in Bergen shared with the Cuban artist Alain Lázaro Gutiérrez Almeida.",
+    "no": "Utstilling i Bergen sammen med den cubanske kunstneren Alain Lázaro Gutiérrez Almeida.",
+    "es": "Exposición en Bergen compartida con el artista cubano Alain Lázaro Gutiérrez Almeida."
+   }
+  },
+  {
+   "fecha": "2008",
+   "medio": "Krigsropet, n.º 23",
+   "titular": "Fra Havanna til Bergen",
+   "acceso": "abierto",
+   "urn": "URN:NBN:no-nb_digitidsskrift_2019081481103_001",
+   "resumen": {
+    "en": "Feature on his exhibition at Galleri VOX, Bergen, including one of his sculptures.",
+    "no": "Reportasje om utstillingen i Galleri VOX i Bergen, med en av skulpturene hans.",
+    "es": "Reportaje sobre su exposición en Galleri VOX, Bergen, con una de sus esculturas."
+   }
+  },
+  {
+   "fecha": "2010-04-29",
+   "medio": "VestNytt",
+   "acceso": "restringido",
+   "urn": "URN:NBN:no-nb_digavis_vestnytt_null_null_20100429_22_48_1",
+   "resumen": {
+    "en": "Exhibition at Glesvær Kafé, opened with a concert by the Cuban-Norwegian band Timbason.",
+    "no": "Utstilling på Glesvær Kafé, åpnet med konsert av det cubansk-norske bandet Timbason.",
+    "es": "Exposición en Glesvær Kafé, inaugurada con un concierto del grupo cubano-noruego Timbason."
+   }
+  },
+  {
+   "fecha": "2010-06-03",
+   "medio": "VestNytt",
+   "acceso": "restringido",
+   "urn": "URN:NBN:no-nb_digavis_vestnytt_null_null_20100603_22_61_1",
+   "resumen": {
+    "en": "His show sets the sales record at Glesvær Kafé.",
+    "no": "Utstillingen hans setter salgsrekord på Glesvær Kafé.",
+    "es": "Su muestra bate el récord de ventas de Glesvær Kafé."
+   }
+  },
+  {
+   "fecha": "2011-05-07",
+   "medio": "Sogn Avis",
+   "titular": "Cuba-eksotisk i Ciderhuset",
+   "acceso": "abierto",
+   "urn": "URN:NBN:no-nb_digavis_sognavis_null_null_20110507_0_87_1",
+   "resumen": {
+    "en": "Exhibition at the Ciderhuset in Balestrand during the Balejazz festival.",
+    "no": "Utstilling i Ciderhuset i Balestrand under Balejazz.",
+    "es": "Exposición en el Ciderhuset de Balestrand durante el festival Balejazz."
+   }
+  },
+  {
+   "fecha": "2012-01-17",
+   "medio": "Sydvesten",
+   "titular": "Et touch av Havanna på Laksevåg",
+   "acceso": "restringido",
+   "urn": "URN:NBN:no-nb_digavis_sydvesten_null_null_20120117_2_3_1",
+   "resumen": {
+    "en": "Profile of the painter, now living in Laksevåg: San Alejandro, his sculptor father and the Norwegian light.",
+    "no": "Portrett av maleren, nå bosatt på Laksevåg: San Alejandro, billedhuggerfaren og det norske lyset.",
+    "es": "Perfil del pintor, ya instalado en Laksevåg: San Alejandro, su padre escultor y la luz de Noruega."
+   }
+  },
+  {
+   "fecha": "2012-01-25",
+   "medio": "Os & Fusaposten",
+   "titular": "Lokkar med Cuba",
+   "acceso": "restringido",
+   "urn": "URN:NBN:no-nb_digavis_osogfusaposten_null_null_20120125_26_7_1",
+   "resumen": {
+    "en": "His solo exhibition <i>Livets stier og former</i> in the Hvelvet gallery at Oseana.",
+    "no": "Separatutstillingen <i>Livets stier og former</i> i Hvelvet på Oseana.",
+    "es": "Su exposición individual <i>Livets stier og former</i> en la sala Hvelvet de Oseana."
+   }
+  },
+  {
+   "fecha": "2012-09-01",
+   "medio": "Firdaposten",
+   "acceso": "restringido",
+   "urn": "URN:NBN:no-nb_digavis_firdaposten_null_null_20120901_64_101_1",
+   "resumen": {
+    "en": "Preview of <i>Kvardagens lys og former</i>, his exhibition with Flora Kunstlag at the Kystmuseet in Florø.",
+    "no": "Forhåndsomtale av <i>Kvardagens lys og former</i>, utstillingen med Flora Kunstlag på Kystmuseet i Florø.",
+    "es": "Anuncio de <i>Kvardagens lys og former</i>, su exposición con Flora Kunstlag en el Kystmuseet de Florø."
+   }
+  },
+  {
+   "fecha": "2012-09-10",
+   "medio": "Firda",
+   "autor": "Knut Magnussen",
+   "titular": "Kubanske kulørar",
+   "acceso": "restringido",
+   "urn": "URN:NBN:no-nb_digavis_firda_null_null_20120910_95_210_1",
+   "resumen": {
+    "en": "Norwegians notice the light, Cubans the colour: interview at the Kystmuseet in Florø.",
+    "no": "Nordmenn ser lyset, kubanere fargene: intervju på Kystmuseet i Florø.",
+    "es": "Los noruegos se fijan en la luz; los cubanos, en el color: entrevista en el Kystmuseet de Florø."
+   }
+  },
+  {
+   "fecha": "2012-09-11",
+   "medio": "Firdaposten",
+   "acceso": "restringido",
+   "urn": "URN:NBN:no-nb_digavis_firdaposten_null_null_20120911_64_105_1",
+   "resumen": {
+    "en": "Report from the opening in Florø: a painter who also works in ceramics and sculpture.",
+    "no": "Fra åpningen i Florø: en maler som også arbeider med keramikk og skulptur.",
+    "es": "Crónica de la inauguración en Florø: un pintor que también hace cerámica y escultura."
+   }
+  },
+  {
+   "fecha": "2013-06-06",
+   "medio": "Rogalands Avis",
+   "titular": "Fra Cuba til Amare",
+   "acceso": "abierto",
+   "urn": "URN:NBN:no-nb_digavis_rogalandsavis_null_null_20130606_113_127_1",
+   "resumen": {
+    "en": "His exhibition at Galleri Amare, Stavanger.",
+    "no": "Utstillingen hans i Galleri Amare i Stavanger.",
+    "es": "Su exposición en Galleri Amare, Stavanger."
+   }
+  },
+  {
+   "fecha": "2013-11-02",
+   "medio": "VestNytt",
+   "acceso": "restringido",
+   "urn": "URN:NBN:no-nb_digavis_vestnytt_null_null_20131102_25_123_1",
+   "resumen": {
+    "en": "Back at Glesvær Kafé with a new show, until 31 December.",
+    "no": "Tilbake på Glesvær Kafé med en ny utstilling, til 31. desember.",
+    "es": "Vuelve a Glesvær Kafé con una nueva muestra, hasta el 31 de diciembre."
+   }
+  },
+  {
+   "fecha": "2014-04-23",
+   "medio": "Klassekampen",
+   "acceso": "restringido",
+   "urn": "URN:NBN:no-nb_digavis_klassekampen_null_null_20140423_46_92_1",
+   "resumen": {
+    "en": "His exhibition <i>Refleksjon</i> at Nordic Black Theatre / Cafeteatret, Oslo.",
+    "no": "Utstillingen <i>Refleksjon</i> på Nordic Black Theatre / Cafeteatret i Oslo.",
+    "es": "Su exposición <i>Refleksjon</i> en Nordic Black Theatre / Cafeteatret, Oslo."
+   }
+  },
+  {
+   "fecha": "2014-09-30",
+   "medio": "Sogn Avis",
+   "titular": "Byr på fargerik kunst frå Cuba",
+   "acceso": "restringido",
+   "urn": "URN:NBN:no-nb_digavis_sognavis_null_null_20140930_22_187_1",
+   "resumen": {
+    "en": "Exhibition at the Gamlehotellet in Leikanger during the Fruktbare dagar festival.",
+    "no": "Utstilling på Gamlehotellet i Leikanger under Fruktbare dagar.",
+    "es": "Exposición en el Gamlehotellet de Leikanger durante el festival Fruktbare dagar."
+   }
+  },
+  {
+   "fecha": "2015-08-11",
+   "medio": "Bergens Tidende",
+   "acceso": "restringido",
+   "urn": "URN:NBN:no-nb_digavis_bergenstidende_null_null_20150811_148_213_1",
+   "resumen": {
+    "en": "His three-by-six-metre mural for the Vestre Torggaten 12 housing cooperative in Bergen.",
+    "no": "Veggmaleriet på tre ganger seks meter for borettslaget i Vestre Torggaten 12 i Bergen.",
+    "es": "Su mural de tres por seis metros para la cooperativa de viviendas de Vestre Torggaten 12, Bergen."
+   }
+  },
+  {
+   "fecha": "2015-09-10",
+   "medio": "Firda",
+   "acceso": "restringido",
+   "urn": "URN:NBN:no-nb_digavis_firda_null_null_20150910_98_209_1",
+   "resumen": {
+    "en": "Large-format oil paintings at the Vevringutstillinga.",
+    "no": "Storformata oljemåleri på Vevringutstillinga.",
+    "es": "Óleos de gran formato en la Vevringutstillinga."
+   }
+  },
+  {
+   "fecha": "2016-03-22",
+   "medio": "Fjordenes Tidende",
+   "autor": "Siv K. Berg",
+   "acceso": "abierto",
+   "urn": "URN:NBN:no-nb_digavis_fjordenestidende_null_null_20160322_106_23_1",
+   "resumen": {
+    "en": "Easter exhibition at Doktorgarden, Selje: oil paintings, collages and prints.",
+    "no": "Påskeutstilling i Doktorgarden i Selje: oljemalerier, collager og grafikk.",
+    "es": "Exposición de Semana Santa en Doktorgarden, Selje: óleos, collages y grabados."
+   }
+  },
+  {
+   "fecha": "2016-06-17",
+   "medio": "Fjordenes Tidende",
+   "acceso": "abierto",
+   "urn": "URN:NBN:no-nb_digavis_fjordenestidende_null_null_20160617_106_46_1",
+   "resumen": {
+    "en": "His work in the summer exhibition at Doktorgarden, Selje.",
+    "no": "Bilder av ham på sommerutstillingen i Doktorgarden i Selje.",
+    "es": "Obra suya en la exposición de verano de Doktorgarden, Selje."
+   }
+  },
+  {
+   "fecha": "2017-09-08",
+   "medio": "Bergensavisen",
+   "acceso": "restringido",
+   "urn": "URN:NBN:no-nb_digavis_bergensavisen_null_null_20170908_0_243_1",
+   "resumen": {
+    "en": "Interview at Kunsthuset Wendelboe: his father's influence, jute and cardboard, and a palette that has grown lighter in Norway.",
+    "no": "Intervju på Kunsthuset Wendelboe: farens innflytelse, strie og bølgepapp, og en fargepalett som er blitt lysere i Norge.",
+    "es": "Entrevista en Kunsthuset Wendelboe: la huella de su padre, el yute y el cartón, y una paleta que en Noruega se ha vuelto más clara."
+   }
+  },
+  {
+   "fecha": "2017-09-09",
+   "medio": "Bergensavisen",
+   "acceso": "restringido",
+   "urn": "URN:NBN:no-nb_digavis_bergensavisen_null_null_20170909_0_244_1",
+   "resumen": {
+    "en": "The paper's editor-in-chief, Sigvald Sveinbjørnsson, opens his exhibition at Kunsthuset Wendelboe.",
+    "no": "Sjefredaktør Sigvald Sveinbjørnsson åpner utstillingen hans på Kunsthuset Wendelboe.",
+    "es": "El director del diario, Sigvald Sveinbjørnsson, inaugura su exposición en Kunsthuset Wendelboe."
+   }
+  },
+  {
+   "fecha": "2019-08-21",
+   "medio": "Firda",
+   "acceso": "restringido",
+   "urn": "URN:NBN:no-nb_digavis_firda_null_null_20190821_102_192_1",
+   "resumen": {
+    "en": "Joint exhibition with the goldsmith Kristin Selboskar; he keeps studios in Bergen and Havana.",
+    "no": "Felles utstilling med gullsmed Kristin Selboskar; han har atelier i Bergen og Havanna.",
+    "es": "Exposición conjunta con la orfebre Kristin Selboskar; tiene taller en Bergen y en La Habana."
+   }
+  },
+  {
+   "fecha": "2019-09-12",
+   "medio": "Bergensavisen",
+   "acceso": "restringido",
+   "urn": "URN:NBN:no-nb_digavis_bergensavisen_null_null_20190912_0_246_1",
+   "resumen": {
+    "en": "<i>Berøring med blikket</i>, his exhibition at Kunsthuset Wendelboe during Bergen's Kulturnatt.",
+    "no": "<i>Berøring med blikket</i>, utstillingen hans på Kunsthuset Wendelboe under Kulturnatt i Bergen.",
+    "es": "<i>Berøring med blikket</i>, su exposición en Kunsthuset Wendelboe durante la Kulturnatt de Bergen."
+   }
+  },
+  {
+   "fecha": "2020-07-09",
+   "medio": "Sogn Avis",
+   "acceso": "restringido",
+   "urn": "URN:NBN:no-nb_digavis_sognavis_null_null_20200709_0_132_1",
+   "resumen": {
+    "en": "Exhibition at Galleri Holmen, Balestrand: the local art society's first opening after the pandemic closure.",
+    "no": "Utstilling i Galleri Holmen i Balestrand: kunstlagets første opning etter koronastenginga.",
+    "es": "Exposición en Galleri Holmen, Balestrand: la primera inauguración de la asociación de arte local tras el cierre por la pandemia."
+   }
+  },
+  {
+   "fecha": "2020-10-09",
+   "medio": "Hordaland Folkeblad",
+   "acceso": "restringido",
+   "urn": "URN:NBN:no-nb_digavis_hordalandfolkeblad_null_null_20201009_147_77_1",
+   "resumen": {
+    "en": "<i>Vinden frå Vest</i>, his exhibition at Hardanger Kulturgalleri in Mælen.",
+    "no": "<i>Vinden frå Vest</i>, utstillingen hans på Hardanger Kulturgalleri på Mælen.",
+    "es": "<i>Vinden frå Vest</i>, su exposición en Hardanger Kulturgalleri, en Mælen."
+   }
+  },
+  {
+   "fecha": "2020-10-09",
+   "medio": "Hardanger Folkeblad",
+   "titular": "Heftige rytmer fra Cuba avslutter sesongen på Hardanger Kulturgalleri",
+   "acceso": "pago",
+   "url": "https://www.hardanger-folkeblad.no/heftige-rytmer-fra-cuba-avslutter-sesongen-pa-hardanger-kulturgalleri/s/5-22-295165",
+   "resumen": {
+    "en": "Works full of dance, music and colour close the season at Hardanger Kulturgalleri.",
+    "no": "Bilder fulle av dans, musikk og farger avslutter sesongen på Hardanger Kulturgalleri.",
+    "es": "Obras llenas de baile, música y color cierran la temporada de Hardanger Kulturgalleri."
+   }
+  },
+  {
+   "fecha": "2023",
+   "medio": "Per Vie, Vie veier til sommernorge",
+   "libro": true,
+   "acceso": "restringido",
+   "urn": "URN:NBN:no-nb_digibok_2023072448026",
+   "resumen": {
+    "en": "A travel book that recalls his exhibition at Galleri Holmen, Balestrand.",
+    "no": "En reisebok som minnes utstillingen hans i Galleri Holmen i Balestrand.",
+    "es": "Un libro de viajes que recuerda su exposición en Galleri Holmen, Balestrand."
+   }
+  }
+ ],
+ "textos": [
+  {
+   "anio": "2020",
+   "medio": "Samtidskunst",
+   "autor": "Wenche Holmedal",
+   "titulo": {
+    "en": "Become better acquainted with the exciting artist Ramon Eduardo Haiti Filiu",
+    "no": "Bli bedre kjent med den spennende kunstneren Ramon Eduardo Haiti Filiu",
+    "es": "Become better acquainted with the exciting artist Ramon Eduardo Haiti Filiu"
+   },
+   "resumen": {
+    "en": "Long profile: technique, themes and his father's legacy.",
+    "no": "Langt portrett: teknikk, temaer og farens arv.",
+    "es": "Perfil extenso: técnica, temas y el legado de su padre."
+   },
+   "enlaces": [
+    {
+     "url": {
+      "en": "https://samtidskunst.com/become-better-acquainted-with-the-exciting-artist-ramon-eduardo-haiti-filiu/",
+      "no": "https://samtidskunst.com/bli-bedre-kjent-med-den-spennende-kunstneren-ramon-eduardo-haiti-filiu/",
+      "es": "https://samtidskunst.com/become-better-acquainted-with-the-exciting-artist-ramon-eduardo-haiti-filiu/"
+     },
+     "rotulo": {
+      "en": "Read",
+      "no": "Les",
+      "es": "Leer"
+     }
+    }
+   ]
+  },
+  {
+   "anio": "2021",
+   "medio": "Kunsthuset Wendelboe",
+   "resumen": {
+    "en": "Exhibition opening at Bergen's Kulturnatt, 10 September 2021, with a downloadable catalogue.",
+    "no": "Utstillingsåpning under Kulturnatt i Bergen 10. september 2021, med katalog.",
+    "es": "Inauguración en la Kulturnatt de Bergen, el 10 de septiembre de 2021, con catálogo descargable."
+   },
+   "enlaces": [
+    {
+     "url": "https://kunsthusetwendelboe.no/2021/09/05/ramon-haiti-f-apning-kulturnatt-10-09/",
+     "rotulo": {
+      "en": "Exhibition page",
+      "no": "Utstillingen",
+      "es": "Página de la exposición"
+     }
+    }
+   ]
+  },
+  {
+   "anio": "2019",
+   "medio": "Kunsthuset Wendelboe",
+   "titulo": {
+    "en": "Berøring med blikket",
+    "no": "Berøring med blikket",
+    "es": "Berøring med blikket"
+   },
+   "resumen": {
+    "en": "Catalogue of 26 works, an exhibition text and the opening video.",
+    "no": "Katalog med 26 verk, utstillingstekst og video fra åpningen.",
+    "es": "Catálogo de 26 obras, texto de la exposición y vídeo de la inauguración."
+   },
+   "enlaces": [
+    {
+     "url": "https://kunsthusetwendelboe.no/wp-content/uploads/2019/09/ramon-katalog-1.pdf",
+     "rotulo": {
+      "en": "Catalogue (PDF)",
+      "no": "Katalog (PDF)",
+      "es": "Catálogo (PDF)"
+     }
+    },
+    {
+     "url": "https://kunsthusetwendelboe.no/wp-content/uploads/2019/09/berc3b8ring-med-blikket-ii.pdf",
+     "rotulo": {
+      "en": "Exhibition text (PDF)",
+      "no": "Utstillingstekst (PDF)",
+      "es": "Texto de la exposición (PDF)"
+     }
+    },
+    {
+     "url": "https://kunsthusetwendelboe.no/2019/09/15/apningsvideo-kulturnatt-ramon-haiti-filiu/",
+     "rotulo": {
+      "en": "Opening video",
+      "no": "Åpningsvideo",
+      "es": "Vídeo de la inauguración"
+     }
+    }
+   ]
+  },
+  {
+   "anio": "2018",
+   "medio": "Galleri Amare",
+   "resumen": {
+    "en": "Solo exhibition in Stavanger, 13 September to 7 October 2018, with the works shown.",
+    "no": "Separatutstilling i Stavanger 13. september til 7. oktober 2018, med verkene.",
+    "es": "Exposición individual en Stavanger, del 13 de septiembre al 7 de octubre de 2018, con las obras expuestas."
+   },
+   "enlaces": [
+    {
+     "url": "https://galleriamare.no/kjersti-naess-separatutstilling-13-09-2018-07-10-2018/",
+     "rotulo": {
+      "en": "Exhibition page",
+      "no": "Utstillingen",
+      "es": "Página de la exposición"
+     }
+    }
+   ]
+  },
+  {
+   "anio": "2012",
+   "medio": "Oseana",
+   "titulo": {
+    "en": "Livets stier og former",
+    "no": "Livets stier og former",
+    "es": "Livets stier og former"
+   },
+   "resumen": {
+    "en": "Solo exhibition in the Hvelvet gallery, 28 January to 11 March 2012.",
+    "no": "Separatutstilling i Hvelvet 28. januar til 11. mars 2012.",
+    "es": "Exposición individual en la sala Hvelvet, del 28 de enero al 11 de marzo de 2012."
+   },
+   "enlaces": [
+    {
+     "url": "https://www.oseana.no/event/ramon-e-haiti-filiu-livets-stier-og-former/",
+     "rotulo": {
+      "en": "Exhibition page",
+      "no": "Utstillingen",
+      "es": "Página de la exposición"
+     }
+    }
+   ]
+  }
+ ]
 }
