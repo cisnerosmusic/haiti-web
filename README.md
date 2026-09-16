@@ -37,14 +37,13 @@ Si cambia `css/` o `js/`, sube `VERSION` en `herramientas/sitio.py`. Los origina
 
 **Añadir una obra:** una entrada en `datos/obras.json`, su texto alternativo en `datos/vistas.json`, y los dos comandos.
 
-## Lanzamiento
+## Publicado
 
-Hoy las páginas llevan `noindex` porque el dominio aún apunta a otro servidor. El día del cambio:
+En línea desde el 15 de septiembre de 2026 en https://ramonhaitifiliu.com, con certificado de Let's Encrypt y HTTPS forzado. El DNS vive en Hostinger (cuatro registros A a GitHub Pages y `www` por CNAME a cisnerosmusic.github.io) y el dominio está pagado hasta octubre de 2028. Verificado en Google Search Console por etiqueta HTML: **esa etiqueta no se quita nunca**, va en `herramientas/sitio.py`.
 
-1. Apuntar el DNS de ramonhaitifiliu.com a GitHub Pages.
-2. `LANZADO = True` en `herramientas/sitio.py`, crear el archivo `CNAME` y regenerar.
-3. Search Console y Bing Webmaster Tools, enviar el sitemap.
-4. Al añadir o cambiar páginas, avisar a IndexNow (clave en `50b4bba7fb1994877743ecfcfb601eb9.txt`):
+El WordPress anterior sigue en el hosting de Hostinger, cerrado con contraseña y sin conexión con el dominio. En su panel **no se debe pulsar "Conectar dominio"**: rehace el DNS y tumba esta web.
+
+Al añadir o cambiar páginas, avisar a IndexNow (Bing, Yandex y otros):
 
 ```bash
 python herramientas/indexnow.py
