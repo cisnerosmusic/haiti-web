@@ -28,6 +28,7 @@ FACEBOOK = "https://www.facebook.com/RamonHaitiFiliu/"
 AMARE = "https://galleriamare.no/eduardo-haiti-filiu-ramon/"
 SAMTIDSKUNST = "https://samtidskunst.com/become-better-acquainted-with-the-exciting-artist-ramon-eduardo-haiti-filiu/"
 PADRE_WIKIDATA = "https://www.wikidata.org/wiki/Q131699504"
+INDEXNOW = "50b4bba7fb1994877743ecfcfb601eb9"  # el archivo 50b4bba7fb1994877743ecfcfb601eb9.txt en la raíz demuestra que el sitio es nuestro
 GSC = "hfJRBFzE-V4nuhZlSwdddRu3gsEHIV11B_nBc2wO50s"  # verificación de Google Search Console
 TONY = "https://antoniolopezsanchez.art"
 TONY_WEB = {"en": TONY + "/en/", "no": TONY + "/en/", "es": TONY + "/"}

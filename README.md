@@ -44,6 +44,11 @@ Hoy las páginas llevan `noindex` porque el dominio aún apunta a otro servidor.
 1. Apuntar el DNS de ramonhaitifiliu.com a GitHub Pages.
 2. `LANZADO = True` en `herramientas/sitio.py`, crear el archivo `CNAME` y regenerar.
 3. Search Console y Bing Webmaster Tools, enviar el sitemap.
+4. Al añadir o cambiar páginas, avisar a IndexNow (clave en `50b4bba7fb1994877743ecfcfb601eb9.txt`):
+
+```bash
+python herramientas/indexnow.py
+```
 
 ## Reglas de contenido
 
