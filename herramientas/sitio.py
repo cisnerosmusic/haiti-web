@@ -19,7 +19,7 @@ RAIZ = Path(__file__).resolve().parent.parent
 DOMINIO = "https://ramonhaitifiliu.com"
 # Mientras el dominio siga apuntando al WordPress antiguo, las páginas llevan
 # noindex. El día que el DNS apunte a GitHub Pages: True, añadir CNAME y regenerar.
-LANZADO = False
+LANZADO = True
 VERSION = "5"  # súbela cada vez que cambien css/ o js/
 IDIOMAS = ["en", "no", "es"]
 SELECTOR = ["no", "en", "es"]
