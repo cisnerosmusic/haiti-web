@@ -1,5 +1,5 @@
 {
- "_nota": "Prensa verificada en el archivo de la Biblioteca Nacional de Noruega (nb.no) el 14 sep 2026. Solo piezas editoriales sobre el artista (no agendas ni anuncios). 'titular' y 'autor' solo cuando constan en el fragmento del archivo. acceso: abierto (cualquier país), restringido (bibliotecas de Noruega), pago. Resúmenes escritos por nosotros; nunca se reproduce el texto del artículo. Nada que sitúe al artista en Estados Unidos: por decisión suya, retirada la entrevista de Artistnator (15 sep 2026).",
+ "_nota": "Prensa verificada en el archivo de la Biblioteca Nacional de Noruega (nb.no) el 14 sep 2026. Solo piezas editoriales sobre el artista (no agendas ni anuncios). 'titular' y 'autor' solo cuando constan en el fragmento del archivo. acceso: abierto (cualquier país), restringido (bibliotecas de Noruega), pago. Resúmenes escritos por nosotros; nunca se reproduce el texto del artículo. Por decisión del artista, ningún texto lo sitúa en Estados Unidos (15 sep 2026).",
  "cita": {
   "texto": "Nordmenn er opptekne av lyset, kubanarar er meir opptekne av fargane.",
   "fecha": "2012-09-10",
@@ -501,6 +501,25 @@
       "en": "Exhibition page",
       "no": "Utstillingen",
       "es": "Página de la exposición"
+     }
+    }
+   ]
+  },
+  {
+   "anio": "",
+   "medio": "Artistnator",
+   "resumen": {
+    "en": "Video interview with Humberto Ochoa Photography.",
+    "no": "Videointervju med Humberto Ochoa Photography.",
+    "es": "Entrevista en vídeo con Humberto Ochoa Photography."
+   },
+   "enlaces": [
+    {
+     "url": "http://artistnator.com/videos/painter-sculptor-ramon-haiti-filiu/",
+     "rotulo": {
+      "en": "Watch",
+      "no": "Se",
+      "es": "Ver"
      }
     }
    ]
