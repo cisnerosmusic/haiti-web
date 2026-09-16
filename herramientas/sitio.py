@@ -28,6 +28,7 @@ FACEBOOK = "https://www.facebook.com/RamonHaitiFiliu/"
 AMARE = "https://galleriamare.no/eduardo-haiti-filiu-ramon/"
 SAMTIDSKUNST = "https://samtidskunst.com/become-better-acquainted-with-the-exciting-artist-ramon-eduardo-haiti-filiu/"
 PADRE_WIKIDATA = "https://www.wikidata.org/wiki/Q131699504"
+GSC = "hfJRBFzE-V4nuhZlSwdddRu3gsEHIV11B_nBc2wO50s"  # verificación de Google Search Console
 TONY = "https://antoniolopezsanchez.art"
 TONY_WEB = {"en": TONY + "/en/", "no": TONY + "/en/", "es": TONY + "/"}
 
@@ -259,6 +260,7 @@ def documento(l, u, clave, slug, titulo, desc, cuerpo, objetos, og_img, portada=
 {robots}<link rel="canonical" href="{DOMINIO}{u}">
 {alternos}
 <meta name="theme-color" content="#E9EAE3">
+<meta name="google-site-verification" content="{GSC}">
 <meta property="og:type" content="{"profile" if portada else "website"}">
 <meta property="og:site_name" content="{NOMBRE}">
 <meta property="og:title" content="{esc(titulo)}">
