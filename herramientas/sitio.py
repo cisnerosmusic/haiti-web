@@ -400,7 +400,8 @@ def ficha(l, i, o):
         obra["height"] = {"@type": "QuantitativeValue", "value": o["alto"], "unitCode": "CMT"}
         obra["width"] = {"@type": "QuantitativeValue", "value": o["ancho"], "unitCode": "CMT"}
     objetos = [obra, migas(l, [(NOMBRE, url("portada", l)), (pag("obra", l)["h1"], url("obra", l)), (o["titulo"], u)])]
-    titulo = f'{o["titulo"]} ({o["anio"]}) · {NOMBRE_CORTO}' if o.get("anio") else f'{o["titulo"]} · {NOMBRE_CORTO}'
+    cabeza = f'{o["titulo"]} ({o["anio"]})' if o.get("anio") else o["titulo"]
+    titulo = f'{cabeza} · {ui(l, "obra_de")} {NOMBRE_CORTO}'
     escribir(u, documento(l, u, "obra", s, titulo, texto, cuerpo, objetos, f"/img/og/{s}.jpg"))
 
 
