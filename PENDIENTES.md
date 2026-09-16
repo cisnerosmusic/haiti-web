@@ -19,9 +19,12 @@
 - **Statement:** un texto suyo en primera persona sobre su obra. Hoy la biografía está en tercera persona y no hay statement.
 - **Cuencos pintados** (sala Otros, 4 fotos sin datos por decisión de Ernesto): ¿madera, cerámica o las dos? (el del árbol es de madera por dentro). Dos llevan firma con "19", probablemente 2019. ¿Siguen disponibles? Si los tiene, repetir las fotos con fondo liso, luz de día y el mismo ángulo; así entrarían también los que hoy quedaron fuera por calidad.
 - **Escultura:** decisión de Ernesto (16-sep): el sitio lo presenta solo como pintor. No se abre sala de Escultura; la docencia de escultura, el curso de fundición y las reseñas de prensa se mantienen como hechos.
-- **Revisión del noruego** por un hablante nativo.
+- **Revisión del noruego** por un hablante nativo, sobre todo los textos nuevos de la portada (16-sep): "Kunst mellom territorier", "Minne, bevegelse og forvandling", "En dialog mellom steder" y la declaración.
+- **Textos de la portada (16-sep):** vienen de la propuesta de Ramón en español; la versión inglesa y la noruega son traducción nuestra. Confirmar que "Instalación" entra en sus disciplinas.
 
 ## Técnicos
+
+- **Recorte de móvil de la portada** (`movil` en `datos/obras.json`): en la Máquina 2 se generó desde la versión de 1800 px (864 px de ancho). Con los originales, `python herramientas/imagenes.py --forzar` lo rehace a resolución completa, y de paso da a la portada de escritorio anchos mayores de 1800 px si se añaden a `ANCHOS_OBRA`.
 
 - Dossier en PDF generado desde el CV.
 - Afinar los recortes de detalle obra por obra (`foco` en `datos/obras.json`).

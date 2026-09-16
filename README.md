@@ -18,7 +18,7 @@ Inglés en la raíz (`x-default`), noruego bokmål en `/no/` y español en `/es/
 
 ## Cómo está hecho
 
-HTML, CSS y JS propios, sin frameworks ni peticiones a terceros (fuentes autohospedadas: Schibsted Grotesk y Newsreader cursiva). Todo el HTML sale de un generador; no se edita a mano.
+HTML, CSS y JS propios, sin frameworks ni peticiones a terceros (fuentes autohospedadas: Jost y Newsreader cursiva para los títulos de obra). Todo el HTML sale de un generador; no se edita a mano.
 
 | Carpeta | Contenido |
 |---|---|
