@@ -4,7 +4,7 @@ Web del pintor cubano-noruego **Ramón Eduardo Haití Filiu** (La Habana, 1971),
 
 ## La idea
 
-**Luz del norte.** El marco calla para que hable el cuadro: tipografía sobria, cartelas de museo, ningún color propio. El color de fondo lo pone la luz real de Bergen: `js/luz.js` calcula la altura del sol sobre la ciudad y pinta la página, del azul casi negro de la noche al alba y al amarillo verdeazulado de la hora más clara. En la portada la luz es un cielo en degradado, con una aurora casi imperceptible en noche cerrada; en las demás páginas conserva la hora pero pierde el color, para que el único color siga siendo la obra. El texto elige solo la tinta clara u oscura, y ningún fondo con texto cae en la franja de luminancia donde el contraste no alcanza.
+**Luz del norte.** El marco calla para que hable el cuadro: tipografía sobria, cartelas de museo, ningún color propio. El color de fondo lo pone la luz real de Bergen: `js/luz.js` calcula la altura del sol sobre la ciudad y pinta la página, del azul casi negro de la noche al alba y al amarillo verdeazulado de la hora más clara. La portada, desde el 16 de septiembre de 2026, sigue la propuesta del artista: su obra a pantalla completa con los bordes oscurecidos y el texto en blanco encima (en teléfonos, un solo lienzo del díptico); la luz sigue en la banda de debajo y en las demás páginas, que conservan la hora pero pierden el color, para que el único color siga siendo la obra. El texto elige solo la tinta clara u oscura, y ningún fondo con texto cae en la franja de luminancia donde el contraste no alcanza.
 
 Vista previa de cualquier hora: añade `?luz=HH:MM` a una dirección (hora de Bergen, día de hoy).
 
