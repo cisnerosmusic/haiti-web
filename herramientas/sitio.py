@@ -2,9 +2,9 @@
 
 Lee datos/ (textos, obras, cv, vistas) e img/manifiesto.json (de imagenes.py)
 y escribe todas las páginas en los tres idiomas, más sitemap.xml, robots.txt,
-llms.txt, 404.html y los favicons. Todos los enlaces internos son relativos,
-así el sitio funciona igual en cisnerosmusic.github.io/haiti-web/ y en el
-dominio propio. Canónicas, hreflang y sitemap usan siempre el dominio propio.
+llms.txt y 404.html. Todos los enlaces internos son relativos, así el sitio
+funciona igual en el dominio y en una copia local de prueba. Canónicas,
+hreflang y sitemap usan siempre el dominio.
 
 Uso:  python herramientas/sitio.py
 """
@@ -17,8 +17,8 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
 DOMINIO = "https://ramonhaitifiliu.com"
-# Mientras el dominio siga apuntando al WordPress antiguo, las páginas llevan
-# noindex. El día que el DNS apunte a GitHub Pages: True, añadir CNAME y regenerar.
+# True desde el lanzamiento (15 sep 2026). En False, todas las páginas salen
+# con noindex, por si alguna vez hace falta esconder el sitio.
 LANZADO = True
 VERSION = "5"  # súbela cada vez que cambien css/ o js/
 IDIOMAS = ["en", "no", "es"]

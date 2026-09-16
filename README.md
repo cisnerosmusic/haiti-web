@@ -1,12 +1,16 @@
 # Ramón Eduardo Haití Filiu · sitio oficial
 
-Web del pintor y escultor cubano-noruego **Ramón Eduardo Haití Filiu** (La Habana, 1971), que vive y trabaja en Bergen. Dominio: **ramonhaitifiliu.com** (pendiente de apuntar; mientras tanto se ve en [cisnerosmusic.github.io/haiti-web](https://cisnerosmusic.github.io/haiti-web/)).
+Web del pintor y escultor cubano-noruego **Ramón Eduardo Haití Filiu** (La Habana, 1971), que vive y trabaja en Bergen. En línea en **https://ramonhaitifiliu.com**.
 
 ## La idea
 
 **Luz del norte.** El marco calla para que hable el cuadro: tipografía sobria, cartelas de museo, ningún color propio. El color de fondo lo pone la luz real de Bergen: `js/luz.js` calcula la altura del sol sobre la ciudad y pinta la página, del azul casi negro de la noche al alba y al amarillo verdeazulado de la hora más clara. En la portada la luz es un cielo en degradado, con una aurora casi imperceptible en noche cerrada; en las demás páginas conserva la hora pero pierde el color, para que el único color siga siendo la obra. El texto elige solo la tinta clara u oscura, y ningún fondo con texto cae en la franja de luminancia donde el contraste no alcanza.
 
 Vista previa de cualquier hora: añade `?luz=HH:MM` a una dirección (hora de Bergen, día de hoy).
+
+## Salas
+
+Portada · Obra (una página por cuadro) · Otros (murales, carteles, cubiertas y cuencos pintados) · De La Habana a Bergen · CV · Prensa · Contacto. Escultura entrará cuando haya fotos.
 
 ## Idiomas
 
@@ -22,8 +26,11 @@ HTML, CSS y JS propios, sin frameworks ni peticiones a terceros (fuentes autohos
 | `datos/obras.json` | Catálogo: título, año, técnica, medidas, original y centro del recorte de detalle |
 | `datos/cv.json` | CV por secciones; `desde`/`hasta` activan el aviso de exposición en la portada |
 | `datos/vistas.json` | Texto alternativo de cada imagen |
+| `datos/prensa.json` | Prensa verificada y textos de galerías, con su tipo de acceso |
 | `herramientas/imagenes.py` | Originales → AVIF y WebP en 640/1200/1800, recortes de detalle, imágenes para redes |
-| `herramientas/sitio.py` | Escribe las 51 páginas, `sitemap.xml`, `robots.txt`, `llms.txt`, `404.html` y favicons |
+| `herramientas/sitio.py` | Escribe las 90 páginas, `sitemap.xml`, `robots.txt`, `llms.txt` y `404.html` |
+| `herramientas/favicon.py` | Marca del artista limpia, favicon, iconos y apple-touch-icon |
+| `herramientas/indexnow.py` | Avisa a IndexNow de que el sitio cambió |
 | `css/`, `js/`, `fonts/`, `img/` | Recursos publicados |
 
 Al cambiar algo:
@@ -39,7 +46,7 @@ Si cambia `css/` o `js/`, sube `VERSION` en `herramientas/sitio.py`. Los origina
 
 ## Publicado
 
-En línea desde el 15 de septiembre de 2026 en https://ramonhaitifiliu.com, con certificado de Let's Encrypt y HTTPS forzado. El DNS vive en Hostinger (cuatro registros A a GitHub Pages y `www` por CNAME a cisnerosmusic.github.io) y el dominio está pagado hasta octubre de 2028. Verificado en Google Search Console por etiqueta HTML: **esa etiqueta no se quita nunca**, va en `herramientas/sitio.py`.
+En línea desde el 15 de septiembre de 2026 en https://ramonhaitifiliu.com, con certificado de Let's Encrypt y HTTPS forzado. El DNS vive en Hostinger (cuatro registros A a GitHub Pages y el `www` por CNAME al mismo destino) y el dominio está pagado hasta octubre de 2028. Verificado en Google Search Console por etiqueta HTML: **esa etiqueta no se quita nunca**, va en `herramientas/sitio.py`.
 
 El WordPress anterior sigue en el hosting de Hostinger, cerrado con contraseña y sin conexión con el dominio. En su panel **no se debe pulsar "Conectar dominio"**: rehace el DNS y tumba esta web.
 
