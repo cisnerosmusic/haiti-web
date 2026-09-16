@@ -101,7 +101,7 @@ def escribir(u, contenido):
 
 # ---------- piezas ----------
 
-def picture(desde, tipo, slug, alt, sizes, carga="lazy", prioridad=False):
+def picture(desde, tipo, slug, alt, sizes, carga="lazy", prioridad=False, movil=False):
     m = M[tipo][slug]
     anchos = m["anchos"]
     mayor = anchos[-1]
@@ -110,10 +110,21 @@ def picture(desde, tipo, slug, alt, sizes, carga="lazy", prioridad=False):
     def srcset(ext):
         return ", ".join(f"{rel(desde, f'/img/{tipo}/{slug}-{a}.{ext}')} {a}w" for a in anchos)
     fp = ' fetchpriority="high"' if prioridad else ""
-    return (f'<picture><source type="image/avif" srcset="{srcset("avif")}" sizes="{sizes}">'
+    telefono = ""
+    if movil and m.get("movil"):
+        # En teléfonos, la franja 'movil' (un solo lienzo si es díptico)
+        mv = m["movil"]
+        def srcset_movil(ext):
+            return ", ".join(f"{rel(desde, f'/img/{tipo}/{slug}-movil-{a}.{ext}')} {a}w" for a in mv["anchos"])
+        telefono = "".join(f'<source media="{MOVIL}" type="image/{ext}" srcset="{srcset_movil(ext)}" sizes="100vw" '
+                           f'width="{mv["ancho"]}" height="{mv["alto"]}">' for ext in ("avif", "webp"))
+    return (f'<picture>{telefono}<source type="image/avif" srcset="{srcset("avif")}" sizes="{sizes}">'
             f'<source type="image/webp" srcset="{srcset("webp")}" sizes="{sizes}">'
             f'<img src="{rel(desde, f"/img/{tipo}/{slug}-{medio}.webp")}" width="{mayor}" height="{alto}" '
             f'alt="{esc(alt)}" loading="{carga}" decoding="async"{fp}></picture>')
+
+
+MOVIL = "(max-width: 760px)"  # mismo corte que el CSS
 
 
 def picture_detalle(desde, slug, alt):
@@ -321,7 +332,7 @@ def portada(l):
     enlace = rel(u, url("obra", l, hero["slug"]))
     # Obra a pantalla completa con los bordes oscurecidos; encima, la cabecera en blanco y los textos del artista
     cuerpo = f"""<div class="escena">
-{picture(u, "obra", hero["slug"], V[hero["slug"]][l], "100vw", "eager", True)}
+{picture(u, "obra", hero["slug"], V[hero["slug"]][l], "100vw", "eager", True, movil=True)}
 <div class="velo" aria-hidden="true"></div>
 {{{{CABECERA}}}}
 <div class="escena-texto">

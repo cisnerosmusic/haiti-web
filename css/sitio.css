@@ -132,7 +132,7 @@ i, em { font-style: italic; }
 .escena-ficha a:hover { text-decoration: underline; }
 @media (max-width: 760px) {
   .escena { min-height: max(540px, 88svh); }
-  .escena > picture img { object-position: 30% 45%; }
+  .escena > picture img { object-position: 50% 40%; }
   .escena .velo { background:
     linear-gradient(180deg, rgba(5,7,12,.75) 0, rgba(5,7,12,.2) 26%, rgba(5,7,12,0) 36%),
     linear-gradient(0deg, rgba(5,7,12,.85) 0, rgba(5,7,12,.7) 42%, rgba(5,7,12,.15) 70%, rgba(5,7,12,0) 80%),
@@ -142,6 +142,7 @@ i, em { font-style: italic; }
   .declaracion .disciplinas, .escena-texto .antetitulo { letter-spacing: .26em; }
   .declaracion h2 { letter-spacing: .14em; }
 }
+@media (max-width: 420px) { .declaracion .disciplinas { letter-spacing: .14em; } }
 
 /* Portada: la voz del artista */
 .declaracion { max-width: var(--ancho); margin: 0 auto; padding-inline: var(--margen); padding-block: clamp(36px, 5vw, 56px) clamp(8px, 2vw, 16px); text-align: center; }

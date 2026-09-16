@@ -1,8 +1,9 @@
 {
-  "_nota": "Catálogo de obra. Fuente: IMAGE IDENTIFICATION LIST del artista (títulos, años, técnica, medidas). 'alto' y 'ancho' en cm, deducidos de la orientación de la foto. 'fuente' es relativa a la carpeta de originales indicada en herramientas/imagenes.py. 'foco' es el centro del recorte de detalle, en fracciones (x, y) del original; null = sin detalle.",
+  "_nota": "Catálogo de obra. Fuente: IMAGE IDENTIFICATION LIST del artista (títulos, años, técnica, medidas). 'alto' y 'ancho' en cm, deducidos de la orientación de la foto. 'fuente' es relativa a la carpeta de originales indicada en herramientas/imagenes.py. 'foco' es el centro del recorte de detalle, en fracciones (x, y) del original; null = sin detalle. 'movil' (opcional) es la franja horizontal, en fracciones del ancho, que ven los teléfonos en la portada: en un díptico, un solo lienzo, para que no aparezca la división.",
   "obras": [
     {
       "slug": "echo-in-the-sea",
+      "movil": [0.52, 1.0],
       "titulo": "Echo in the Sea I–II",
       "anio": 2025,
       "tecnica": "mixta",

@@ -3,6 +3,7 @@
 Lee datos/obras.json y escribe en img/:
   obra/<slug>-<ancho>.avif|webp   (anchos 640, 1200, 1800; nunca amplía)
   obra/<slug>-detalle.avif|webp   (recorte 1:1 de 800 px alrededor de 'foco')
+  obra/<slug>-movil-<ancho>.avif|webp  (franja 'movil' para la portada en teléfonos)
   mural/<slug>-<ancho>.avif|webp
   retrato/<slug>-<ancho>.avif|webp
   og/<slug>.jpg                   (1200 px, para compartir en redes)
@@ -83,6 +84,14 @@ def detalle(im, slug, foco):
     return True
 
 
+def movil(im, slug, franja):
+    """Franja vertical completa entre las fracciones de ancho de 'franja'."""
+    ancho, alto = im.size
+    recorte = im.crop((round(franja[0] * ancho), 0, round(franja[1] * ancho), alto))
+    return {"ancho": recorte.size[0], "alto": recorte.size[1],
+            "anchos": escalas(recorte, "obra", f"{slug}-movil", sorted({min(a, recorte.size[0]) for a in ANCHOS_OBRA}))}
+
+
 def main():
     datos = json.loads((RAIZ / "datos" / "obras.json").read_text(encoding="utf-8"))
     manifiesto = {"obra": {}, "mural": {}, "retrato": {}, "cuenco": {}}
@@ -94,6 +103,8 @@ def main():
             "anchos": escalas(im, "obra", o["slug"], ANCHOS_OBRA),
             "detalle": detalle(im, o["slug"], o.get("foco")),
         }
+        if o.get("movil"):
+            manifiesto["obra"][o["slug"]]["movil"] = movil(im, o["slug"], o["movil"])
         og(im, o["slug"])
         print("obra", o["slug"], im.size)
 

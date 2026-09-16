@@ -8,7 +8,15 @@
     1200,
     1800
    ],
-   "detalle": true
+   "detalle": true,
+   "movil": {
+    "ancho": 864,
+    "alto": 1330,
+    "anchos": [
+     640,
+     864
+    ]
+   }
   },
   "angel-iii": {
    "ancho": 2940,
