@@ -1,6 +1,6 @@
 # Ramón Eduardo Haití Filiu · sitio oficial
 
-Web del pintor y escultor cubano-noruego **Ramón Eduardo Haití Filiu** (La Habana, 1971), que vive y trabaja en Bergen. En línea en **https://ramonhaitifiliu.com**.
+Web del pintor cubano-noruego **Ramón Eduardo Haití Filiu** (La Habana, 1971), que vive y trabaja en Bergen. En línea en **https://ramonhaitifiliu.com**.
 
 ## La idea
 
@@ -10,7 +10,7 @@ Vista previa de cualquier hora: añade `?luz=HH:MM` a una dirección (hora de Be
 
 ## Salas
 
-Portada · Obra (una página por cuadro) · Otros (murales, carteles, cubiertas y cuencos pintados) · De La Habana a Bergen · CV · Prensa · Contacto. Escultura entrará cuando haya fotos.
+Portada · Obra (una página por cuadro) · Otros (murales, carteles, cubiertas y cuencos pintados) · De La Habana a Bergen · CV · Prensa · Contacto.
 
 ## Idiomas
 

@@ -186,7 +186,7 @@ def persona(l):
         "image": f"{DOMINIO}/img/retrato/ramon-haiti-filiu-{retrato['anchos'][-1]}.webp",
         "email": f"mailto:{CORREO}",
         "alumniOf": {"@type": "EducationalOrganization", "name": "Academia de Bellas Artes San Alejandro", "address": "Havana, Cuba"},
-        "knowsAbout": ["Painting", "Sculpture", "Collage", "Mixed media", "Murals"],
+        "knowsAbout": ["Painting", "Collage", "Mixed media", "Murals"],
         "parent": {"@type": "Person", "name": "Ramón Haití Eduardo", "sameAs": PADRE_WIKIDATA,
                    "description": "Cuban sculptor and painter (b. 1932), member of the Grupo Antillano"},
         "knows": {"@type": "Person", "name": "Antonio López Sánchez", "url": TONY},
@@ -629,7 +629,7 @@ def llms():
     obras = "\n".join(f"- [{o['titulo']}]({DOMINIO}{url('obra', 'en', o['slug'])}): {frase(o, 'en')}" for o in OBRAS)
     return f"""# {NOMBRE}
 
-> Cuban-Norwegian painter and sculptor, born in Havana in 1971 and based in Bergen, Norway, since 2009. Works in mixed media on canvas: oil and acrylic with collage of printed fabric, jute and corrugated cardboard.
+> Cuban-Norwegian painter, born in Havana in 1971 and based in Bergen, Norway, since 2009. Works in mixed media on canvas: oil and acrylic with collage of printed fabric, jute and corrugated cardboard.
 
 Key facts:
 - Education: Paulita Concepción art school, Havana (1984); San Alejandro Academy of Fine Arts, Havana (1992–1996); bronze casting course (1997).

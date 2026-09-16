@@ -18,7 +18,7 @@
 - **El grabado falta en la web.** La prensa noruega lo documenta ("oljemåleri, collagar og print", Fjordenes Tidende 2016; óleos y grabados en Vevring 2015) y las IA ya lo mencionan, pero ni la biografía ni el CV lo recogen. Confirmar con él técnica y años, y si conserva obra gráfica que quiera mostrar.
 - **Statement:** un texto suyo en primera persona sobre su obra. Hoy la biografía está en tercera persona y no hay statement.
 - **Cuencos pintados** (sala Otros, 4 fotos sin datos por decisión de Ernesto): ¿madera, cerámica o las dos? (el del árbol es de madera por dentro). Dos llevan firma con "19", probablemente 2019. ¿Siguen disponibles? Si los tiene, repetir las fotos con fondo liso, luz de día y el mismo ángulo; así entrarían también los que hoy quedaron fuera por calidad.
-- **Escultura:** fotos de sus piezas tridimensionales (resina, textil, estructuras). Con ellas se abre la sala Escultura.
+- **Escultura:** decisión de Ernesto (16-sep): el sitio lo presenta solo como pintor. No se abre sala de Escultura; la docencia de escultura, el curso de fundición y las reseñas de prensa se mantienen como hechos.
 - **Revisión del noruego** por un hablante nativo.
 
 ## Técnicos
