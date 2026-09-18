@@ -20,7 +20,7 @@ DOMINIO = "https://ramonhaitifiliu.com"
 # True desde el lanzamiento (15 sep 2026). En False, todas las páginas salen
 # con noindex, por si alguna vez hace falta esconder el sitio.
 LANZADO = True
-VERSION = "7"  # súbela cada vez que cambien css/ o js/
+VERSION = "8"  # súbela cada vez que cambien css/ o js/
 IDIOMAS = ["en", "no", "es"]
 SELECTOR = ["no", "en", "es"]
 CORREO = "haitifiliu@yahoo.es"
@@ -35,6 +35,8 @@ PADRE_WIKIDATA = "https://www.wikidata.org/wiki/Q131699504"
 INDEXNOW = "50b4bba7fb1994877743ecfcfb601eb9"  # el archivo 50b4bba7fb1994877743ecfcfb601eb9.txt en la raíz demuestra que el sitio es nuestro
 GSC = "hfJRBFzE-V4nuhZlSwdddRu3gsEHIV11B_nBc2wO50s"  # verificación de Google Search Console
 TONY = "https://antoniolopezsanchez.art"
+LIBRO = {"titulo": "The Soul Devoured in Darkness", "titulo_es": "El Alma devorada en la Oscuridad", "isbn": "979-8858149323",
+         "url": "https://www.amazon.com/dp/B0CFZH9C75", "kindle": "https://www.amazon.com/dp/B0CGSMSK7T"}
 TONY_WEB = {"en": TONY + "/en/", "no": TONY + "/en/", "es": TONY + "/"}
 
 
@@ -336,8 +338,6 @@ def portada(l):
 <div class="velo" aria-hidden="true"></div>
 {{{{CABECERA}}}}
 <div class="escena-texto">
-<p class="antetitulo">{p["antetitulo"]}</p>
-<p class="escena-titulo">{esc(hero["titulo"])}</p>
 <p class="lema">{p["lema"]}</p>
 <a class="boton" href="{enlace}">{ui(l, "ver_obra")}{FLECHA_DERECHA}</a>
 </div>
@@ -470,12 +470,21 @@ def murales(l):
 <p class="cartela-min"><i>{m["titulo"]}</i> {ui(l, "mural")}, {m["medidas_texto"]}</p></div>
 <h2 style="margin-bottom:24px">{ui(l, "cubiertas")}</h2>
 <div class="cubiertas">{cubiertas}</div>
+<h2 style="margin-bottom:24px">{ui(l, "libro")}</h2>
+<div class="libro"><p class="libro-titulo"><i>{LIBRO["titulo"]}</i><i lang="es">{LIBRO["titulo_es"]}</i></p>
+<p>{ui(l, "libro_nota")}</p><p class="libro-ficha">{ui(l, "libro_ficha")} · ISBN {LIBRO["isbn"]}</p>
+<p>{fuera(LIBRO["url"], ui(l, "libro_enlace"))}</p></div>
 <h2 style="margin-bottom:24px">{ui(l, "cuencos")}</h2>
 <div class="cuencos">{"".join(picture(u, "cuenco", c["slug"], V[c["slug"]][l], "(max-width: 700px) 92vw, 45vw") for c in O.get("cuencos", []))}</div>
 <section class="cv"><div><h2>{ui(l, "cronologia")}</h2>{lista_cv(l, u, encargos["items"])}</div></section>
 </main>"""
     objetos = [{"@type": "CollectionPage", "@id": DOMINIO + u, "url": DOMINIO + u, "name": p["titulo"], "inLanguage": cod(l),
                 "isPartOf": {"@id": f"{DOMINIO}/#web"}, "about": {"@id": f"{DOMINIO}/#persona"}},
+               {"@type": "Book", "@id": f"{DOMINIO}/#libro", "name": f'{LIBRO["titulo"]} & {LIBRO["titulo_es"]}',
+                "author": {"@id": f"{DOMINIO}/#persona"}, "illustrator": {"@id": f"{DOMINIO}/#persona"},
+                "isbn": LIBRO["isbn"].replace("-", ""), "numberOfPages": 72, "datePublished": "2023-08-21",
+                "bookFormat": "https://schema.org/Paperback", "inLanguage": ["en", "es"],
+                "url": LIBRO["url"], "sameAs": [LIBRO["kindle"]]},
                migas(l, [(NOMBRE, url("portada", l)), (p["h1"], u)])]
     escribir(u, documento(l, u, "murales", None, p["titulo"], p["desc"], cuerpo, objetos, f"/img/og/{OBRAS[0]['slug']}.jpg"))
 
@@ -663,6 +672,7 @@ Key facts:
 - Taught sculpture at the José Antonio Díaz Peláez art school in Havana.
 - Exhibited at the 10th (2012) and 15th (2024–2025) Havana Biennial, at Kunsthuset Wendelboe (Bergen), Galleri Amare (Stavanger) and Hardanger Kulturgalleri.
 - Murals and the 2017 festival poster for Nattjazz, Bergen. Cover illustrations for the Cuban writer Antonio López Sánchez.
+- Author and illustrator of the bilingual illustrated book "{LIBRO['titulo']} & {LIBRO['titulo_es']}" (2023, ISBN {LIBRO['isbn']}): {LIBRO['url']}
 - Work in the collections of the Grieg Foundation (Bergen), Universitetet i Nordland and Nordland psykiatriske sykehus (Bodø).
 - Not to be confused with his father, the Cuban sculptor Ramón Haití Eduardo (b. 1932), member of the Grupo Antillano ({PADRE_WIKIDATA}). Awards and 1960s studies attributed online to "Ramón Haití" belong to the father.
 - Contact: {CORREO}
@@ -676,7 +686,7 @@ Key facts:
 ## Pages
 - [Home]({DOMINIO}/)
 - [Works]({DOMINIO}{url('obra', 'en')})
-- [Other work: murals, posters and book covers]({DOMINIO}{url('murales', 'en')})
+- [Other work: murals, posters, book covers and his illustrated book]({DOMINIO}{url('murales', 'en')})
 - [From Havana to Bergen]({DOMINIO}{url('relato', 'en')}): biography
 - [CV]({DOMINIO}{url('cv', 'en')})
 - [Press]({DOMINIO}{url('prensa', 'en')}): {len(P['articulos'])} pieces in the Norwegian press since 2006 (Avisa Nordland, Bergensavisen, Bergens Tidende, Klassekampen, Firda and others), with links to the National Library of Norway

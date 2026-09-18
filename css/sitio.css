@@ -117,9 +117,7 @@ i, em { font-style: italic; }
 .escena .idioma-sel .idiomas a:hover, .escena .idioma-sel .idiomas a[aria-current="true"] { color: var(--tinta); }
 .escena-texto { margin-top: auto; padding-inline: var(--margen-escena); padding-block: clamp(32px, 6vw, 72px) clamp(28px, 5vw, 64px); max-width: 52rem; }
 .escena-texto p { margin: 0; }
-.escena-texto .antetitulo { font-size: var(--f-xs); letter-spacing: .42em; text-transform: uppercase; margin-bottom: clamp(14px, 2vw, 22px); }
-.escena-titulo { font-weight: 300; font-size: clamp(2.4rem, 1.4rem + 3.6vw, 4.25rem); line-height: 1.05; letter-spacing: -.005em; }
-.escena-texto .lema { font-weight: 300; font-size: clamp(1.1rem, .95rem + .6vw, 1.45rem); margin-top: clamp(12px, 1.6vw, 20px); }
+.escena-texto .lema { font-weight: 300; font-size: clamp(1.1rem, .95rem + .6vw, 1.45rem); }
 .boton { display: inline-flex; align-items: center; gap: 22px; margin-top: clamp(24px, 3vw, 40px); padding: 16px 30px;
   border: 1px solid rgba(255,255,255,.85); color: #fff; text-decoration: none; font-size: var(--f-xs); letter-spacing: .22em; text-transform: uppercase;
   transition: background .3s var(--curva), color .3s var(--curva); }
@@ -139,7 +137,7 @@ i, em { font-style: italic; }
     rgba(5,7,12,.12); }
   .escena-pie { flex-direction: column; align-items: flex-start; }
   .escena-ficha { margin: 0; text-align: left; }
-  .declaracion .disciplinas, .escena-texto .antetitulo { letter-spacing: .26em; }
+  .declaracion .disciplinas { letter-spacing: .26em; }
   .declaracion h2 { letter-spacing: .14em; }
 }
 @media (max-width: 420px) { .declaracion .disciplinas { letter-spacing: .14em; } }
@@ -206,6 +204,11 @@ h3 { font-size: var(--f-l); }
 .cubiertas figure { margin: 0; }
 .cubiertas figcaption { margin-top: 10px; font-size: var(--f-s); color: var(--tinta-2); }
 .cubiertas figcaption i { font-family: var(--titulo); font-size: var(--f-l); color: var(--tinta); display: block; }
+.libro { max-width: 36rem; margin: 0 0 clamp(48px, 7vw, 88px); }
+.libro p { margin: 0 0 10px; }
+.libro-titulo i { font-family: var(--titulo); font-size: var(--f-l); display: block; line-height: 1.25; }
+.libro-titulo i + i { color: var(--tinta-2); }
+.libro-ficha { font-size: var(--f-s); color: var(--tinta-2); }
 .cuencos { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: clamp(16px, 2.5vw, 28px); margin: 0 0 clamp(48px, 7vw, 88px); }
 .cuencos img { width: 100%; }
 @media (max-width: 860px) { .mural { grid-template-columns: 1fr; } }

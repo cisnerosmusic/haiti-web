@@ -95,6 +95,10 @@
       "cronologia": "Chronology",
       "cubiertas": "Book covers",
       "cuencos": "Painted bowls",
+      "libro": "Illustrated book",
+      "libro_nota": "A book of his own illustrations: monsters and enigmatic figures drawn from inner fears and the dark side of society. Bilingual, in English and Spanish.",
+      "libro_ficha": "2023 · 72 pages · paperback and Kindle",
+      "libro_enlace": "On Amazon",
       "cubierta_alt": "Cover of {libro} by Antonio López Sánchez, illustrated by Ramón Eduardo Haití Filiu",
       "retrato_pie": "Ramón Eduardo Haití Filiu",
       "mural": "Mural",
@@ -145,6 +149,10 @@
       "cronologia": "Kronologi",
       "cubiertas": "Bokomslag",
       "cuencos": "Malte boller",
+      "libro": "Illustrert bok",
+      "libro_nota": "En bok med hans egne illustrasjoner: monstre og gåtefulle skikkelser hentet fra indre frykt og samfunnets mørke side. Tospråklig, på engelsk og spansk.",
+      "libro_ficha": "2023 · 72 sider · heftet og Kindle",
+      "libro_enlace": "På Amazon",
       "cubierta_alt": "Omslaget til {libro} av Antonio López Sánchez, illustrert av Ramón Eduardo Haití Filiu",
       "retrato_pie": "Ramón Eduardo Haití Filiu",
       "mural": "Veggmaleri",
@@ -195,6 +203,10 @@
       "cronologia": "Cronología",
       "cubiertas": "Cubiertas de libros",
       "cuencos": "Cuencos pintados",
+      "libro": "Libro ilustrado",
+      "libro_nota": "Un libro con sus propias ilustraciones: monstruos y figuras enigmáticas nacidas de los miedos internos y del lado oscuro de la sociedad. Bilingüe, en inglés y español.",
+      "libro_ficha": "2023 · 72 páginas · tapa blanda y Kindle",
+      "libro_enlace": "En Amazon",
       "cubierta_alt": "Cubierta de {libro}, de Antonio López Sánchez, ilustrada por Ramón Eduardo Haití Filiu",
       "retrato_pie": "Ramón Eduardo Haití Filiu",
       "mural": "Mural",
@@ -213,7 +225,6 @@
         "titulo": "Ramón Eduardo Haití Filiu · Painter, Bergen",
         "desc": "Cuban-Norwegian painter, born in Havana in 1971 and based in Bergen. Mixed media on canvas: paint, printed fabric and collage.",
         "intro": "Born in Havana in 1971, trained at San Alejandro and based in Bergen since 2009, Ramón Eduardo Haití Filiu builds his paintings from paint, printed fabric, jute and corrugated cardboard: figures in wide-brimmed hats, fish, masks, the sea.",
-        "antetitulo": "Art between territories",
         "lema": "Memory, movement and transformation",
         "disciplinas": "Painting · Collage · Installation",
         "dialogo": "A dialogue between places",
@@ -223,7 +234,6 @@
         "titulo": "Ramón Eduardo Haití Filiu · Maler, Bergen",
         "desc": "Kubansk-norsk maler, født i Havana i 1971 og bosatt i Bergen. Blandingsteknikk på lerret: maling, trykt stoff og kollasj.",
         "intro": "Født i Havana i 1971, utdannet ved San Alejandro og bosatt i Bergen siden 2009: Ramón Eduardo Haití Filiu bygger bildene sine av maling, trykt stoff, jute og bølgepapp. Skikkelser med bredbremmede hatter, fisker, masker, havet.",
-        "antetitulo": "Kunst mellom territorier",
         "lema": "Minne, bevegelse og forvandling",
         "disciplinas": "Maleri · Kollasj · Installasjon",
         "dialogo": "En dialog mellom steder",
@@ -233,7 +243,6 @@
         "titulo": "Ramón Eduardo Haití Filiu · Pintor en Bergen",
         "desc": "Pintor cubano-noruego, nacido en La Habana en 1971 y radicado en Bergen. Técnica mixta sobre lienzo: pintura, tela estampada y collage.",
         "intro": "Nacido en La Habana en 1971, formado en San Alejandro y radicado en Bergen desde 2009, Ramón Eduardo Haití Filiu construye sus cuadros con pintura, tela estampada, yute y cartón ondulado: figuras con sombreros de ala ancha, peces, máscaras, el mar.",
-        "antetitulo": "Arte entre territorios",
         "lema": "Memoria, movimiento y transformación",
         "disciplinas": "Pintura · Collage · Instalación",
         "dialogo": "Un diálogo entre lugares",
@@ -265,19 +274,19 @@
         "titulo": "Murals, posters and covers · Ramón Haití Filiu",
         "h1": "Other work",
         "desc": "Murals, festival posters, a record cover and book covers by Ramón Eduardo Haití Filiu: Nattjazz in Bergen and covers for the writer Antonio López Sánchez.",
-        "lead": "Work made for a wall, a festival or a book: murals in Bergen and Western Norway, the Nattjazz 2017 poster, a record cover, and covers for the Cuban writer {tony}."
+        "lead": "Work made for a wall, a festival or a book: murals in Bergen and Western Norway, the Nattjazz 2017 poster, a record cover, covers for the Cuban writer {tony}, and a book of his own illustrations."
       },
       "no": {
         "titulo": "Veggmalerier, plakater og omslag · Ramón Haití Filiu",
         "h1": "Andre arbeider",
         "desc": "Veggmalerier, festivalplakater, et plateomslag og bokomslag av Ramón Eduardo Haití Filiu: Nattjazz i Bergen og omslag for forfatteren Antonio López Sánchez.",
-        "lead": "Arbeider laget for en vegg, en festival eller en bok: veggmalerier i Bergen og på Vestlandet, Nattjazz-plakaten for 2017, et plateomslag og bokomslag for den kubanske forfatteren {tony}."
+        "lead": "Arbeider laget for en vegg, en festival eller en bok: veggmalerier i Bergen og på Vestlandet, Nattjazz-plakaten for 2017, et plateomslag, bokomslag for den kubanske forfatteren {tony} og en bok med hans egne illustrasjoner."
       },
       "es": {
         "titulo": "Murales, carteles y cubiertas · Ramón Haití Filiu",
         "h1": "Otros trabajos",
         "desc": "Murales, carteles de festival, una portada de disco y cubiertas de libros de Ramón Eduardo Haití Filiu: Nattjazz en Bergen y las cubiertas de Antonio López Sánchez.",
-        "lead": "Obra hecha para una pared, un festival o un libro: murales en Bergen y el oeste de Noruega, el cartel de Nattjazz 2017, una portada de disco y las cubiertas para el escritor cubano {tony}."
+        "lead": "Obra hecha para una pared, un festival o un libro: murales en Bergen y el oeste de Noruega, el cartel de Nattjazz 2017, una portada de disco, las cubiertas para el escritor cubano {tony} y un libro con sus propias ilustraciones."
       }
     },
     "relato": {
