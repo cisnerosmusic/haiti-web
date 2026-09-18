@@ -204,7 +204,9 @@ h3 { font-size: var(--f-l); }
 .cubiertas figure { margin: 0; }
 .cubiertas figcaption { margin-top: 10px; font-size: var(--f-s); color: var(--tinta-2); }
 .cubiertas figcaption i { font-family: var(--titulo); font-size: var(--f-l); color: var(--tinta); display: block; }
-.libro { max-width: 36rem; margin: 0 0 clamp(48px, 7vw, 88px); }
+.libro { display: grid; grid-template-columns: minmax(140px, 220px) minmax(0, 32rem); gap: clamp(20px, 3vw, 36px); align-items: start; margin: 0 0 clamp(48px, 7vw, 88px); }
+.libro-cubierta img { display: block; width: 100%; height: auto; }
+@media (max-width: 520px) { .libro { grid-template-columns: minmax(0, 220px); } }
 .libro p { margin: 0 0 10px; }
 .libro-titulo i { font-family: var(--titulo); font-size: var(--f-l); display: block; line-height: 1.25; }
 .libro-titulo i + i { color: var(--tinta-2); }

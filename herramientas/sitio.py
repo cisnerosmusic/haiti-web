@@ -20,7 +20,7 @@ DOMINIO = "https://ramonhaitifiliu.com"
 # True desde el lanzamiento (15 sep 2026). En False, todas las páginas salen
 # con noindex, por si alguna vez hace falta esconder el sitio.
 LANZADO = True
-VERSION = "8"  # súbela cada vez que cambien css/ o js/
+VERSION = "9"  # súbela cada vez que cambien css/ o js/
 IDIOMAS = ["en", "no", "es"]
 SELECTOR = ["no", "en", "es"]
 CORREO = "haitifiliu@yahoo.es"
@@ -471,9 +471,10 @@ def murales(l):
 <h2 style="margin-bottom:24px">{ui(l, "cubiertas")}</h2>
 <div class="cubiertas">{cubiertas}</div>
 <h2 style="margin-bottom:24px">{ui(l, "libro")}</h2>
-<div class="libro"><p class="libro-titulo"><i>{LIBRO["titulo"]}</i><i lang="es">{LIBRO["titulo_es"]}</i></p>
+<div class="libro"><a class="libro-cubierta" href="{LIBRO["url"]}" target="_blank" rel="noopener"><img src="{rel(u, "/img/libros/soul-devoured-cubierta.webp")}" width="640" height="828" alt="{esc(ui(l, "libro_alt"))}" loading="lazy" decoding="async"></a>
+<div><p class="libro-titulo"><i>{LIBRO["titulo"]}</i><i lang="es">{LIBRO["titulo_es"]}</i></p>
 <p>{ui(l, "libro_nota")}</p><p class="libro-ficha">{ui(l, "libro_ficha")} · ISBN {LIBRO["isbn"]}</p>
-<p>{fuera(LIBRO["url"], ui(l, "libro_enlace"))}</p></div>
+<p>{fuera(LIBRO["url"], ui(l, "libro_enlace"))}</p></div></div>
 <h2 style="margin-bottom:24px">{ui(l, "cuencos")}</h2>
 <div class="cuencos">{"".join(picture(u, "cuenco", c["slug"], V[c["slug"]][l], "(max-width: 700px) 92vw, 45vw") for c in O.get("cuencos", []))}</div>
 <section class="cv"><div><h2>{ui(l, "cronologia")}</h2>{lista_cv(l, u, encargos["items"])}</div></section>
@@ -484,7 +485,7 @@ def murales(l):
                 "author": {"@id": f"{DOMINIO}/#persona"}, "illustrator": {"@id": f"{DOMINIO}/#persona"},
                 "isbn": LIBRO["isbn"].replace("-", ""), "numberOfPages": 72, "datePublished": "2023-08-21",
                 "bookFormat": "https://schema.org/Paperback", "inLanguage": ["en", "es"],
-                "url": LIBRO["url"], "sameAs": [LIBRO["kindle"]]},
+                "url": LIBRO["url"], "sameAs": [LIBRO["kindle"]], "image": f"{DOMINIO}/img/libros/soul-devoured-cubierta.webp"},
                migas(l, [(NOMBRE, url("portada", l)), (p["h1"], u)])]
     escribir(u, documento(l, u, "murales", None, p["titulo"], p["desc"], cuerpo, objetos, f"/img/og/{OBRAS[0]['slug']}.jpg"))
 
