@@ -73,6 +73,16 @@ def og(im, slug):
     im.resize((a, round(alto * a / ancho)), Image.LANCZOS).save(destino, quality=82, optimize=True, progressive=True)
 
 
+def detalle_foto(slug, rel):
+    """Detalle fotografiado aparte por el artista: cuadrado central a 800 px."""
+    im = abrir(ruta_fuente(rel))
+    ancho, alto = im.size
+    lado = min(ancho, alto)
+    im = im.crop(((ancho - lado) // 2, (alto - lado) // 2, (ancho + lado) // 2, (alto + lado) // 2))
+    guardar(im.resize((DETALLE, DETALLE), Image.LANCZOS), SALIDA / "obra" / f"{slug}-detalle")
+    return True
+
+
 def detalle(im, slug, foco):
     ancho, alto = im.size
     if not foco or min(ancho, alto) < 1600:
@@ -101,7 +111,8 @@ def main():
         manifiesto["obra"][o["slug"]] = {
             "ancho": im.size[0], "alto": im.size[1],
             "anchos": escalas(im, "obra", o["slug"], ANCHOS_OBRA),
-            "detalle": detalle(im, o["slug"], o.get("foco")),
+            "detalle": (detalle_foto(o["slug"], o["detalle_fuente"]) if o.get("detalle_fuente")
+                        else detalle(im, o["slug"], o.get("foco"))),
         }
         if o.get("movil"):
             manifiesto["obra"][o["slug"]]["movil"] = movil(im, o["slug"], o["movil"])

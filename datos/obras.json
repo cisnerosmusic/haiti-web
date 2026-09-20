@@ -42,6 +42,15 @@
       "foco": [0.55, 0.40]
     },
     {
+      "slug": "criolla",
+      "titulo": "Criolla",
+      "anio": 2022,
+      "tecnica": "pintura",
+      "alto": 100, "ancho": 80,
+      "fuente": "new/Criolla 2022 100x80cm 39.4x31.5in.jpg",
+      "foco": [0.45, 0.3]
+    },
+    {
       "slug": "the-hopeful-one",
       "titulo": "The Hopeful One",
       "anio": 2021,
@@ -104,6 +113,71 @@
       "alto": 100, "ancho": 80,
       "fuente": "10 Tre, sjebnen, solen dor.jpg",
       "foco": [0.50, 0.40]
+    },
+    {
+      "slug": "in-the-shadow-of-the-cimarron",
+      "titulo": "In the Shadow of the Cimarron",
+      "anio": 2019,
+      "tecnica": "pintura",
+      "alto": null, "ancho": null,
+      "fuente": "new/2019 In the Shadow of the Cimarron 70x60cm 27.6x23.6in .jpg",
+      "foco": [0.48, 0.35]
+    },
+    {
+      "slug": "connected",
+      "titulo": "Connected",
+      "anio": 2017,
+      "tecnica": "pintura",
+      "alto": 100, "ancho": 80,
+      "fuente": "new/2017  Conncted  100x80cm 39.4x31.5in.jpg",
+      "foco": [0.52, 0.28]
+    },
+    {
+      "slug": "my-rooster-unites-us",
+      "titulo": "My Rooster Unites Us",
+      "anio": 2017,
+      "tecnica": "pintura",
+      "alto": 70, "ancho": 60,
+      "fuente": "new/2017 My Rooster Unites Us 70x60cm 27.6x23.6in.jpg",
+      "foco": [0.7, 0.55]
+    },
+    {
+      "slug": "the-barbacoa",
+      "titulo": "The Barbacoa",
+      "anio": 2017,
+      "tecnica": "pintura",
+      "alto": null, "ancho": null,
+      "fuente": "new/20172017 The Barbacoa 70x60cm  27.6x23.6in (1).jpg",
+      "foco": [0.45, 0.35]
+    },
+    {
+      "slug": "ripples-in-the-water",
+      "titulo": "Ripples in the Water",
+      "alternativo": "Ringar i vatn",
+      "anio": null,
+      "tecnica": "pintura",
+      "alto": 120, "ancho": 150,
+      "fuente": "new/Ripples in the Water   120x150cm  47..jpg",
+      "detalle_fuente": "new/det Ringar i vatn.jpg",
+      "foco": null
+    },
+    {
+      "slug": "a-world-within",
+      "titulo": "A World Within",
+      "anio": null,
+      "tecnica": "pintura",
+      "alto": null, "ancho": null,
+      "fuente": "new/A World Within 60x65cm 23.62x25.59in.jpg",
+      "foco": [0.5, 0.45]
+    },
+    {
+      "slug": "beneath-the-surface",
+      "titulo": "Beneath the Surface",
+      "anio": null,
+      "tecnica": "pintura",
+      "alto": null, "ancho": null,
+      "fuente": "new/Beneath the Surface  70x60cm 27.6x23.6in.JPG",
+      "foco": [0.5, 0.48]
     },
     {"slug": "vind-fra-vest", "titulo": "Vind fra vest", "anio": null, "tecnica": "pintura", "alto": 150, "ancho": 200, "fuente": "Vind-fra-vest-Maleri-150x200-cm-kr-45000-ur.jpg", "foco": null, "consultar": false},
     {"slug": "stotter-iv", "titulo": "Støtter IV", "anio": null, "tecnica": "pintura", "alto": 150, "ancho": 120, "fuente": "Støtter-IV-Maleri-150x120-cm-kr-35000-ur.jpg", "foco": null, "consultar": false},

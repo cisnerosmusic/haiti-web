@@ -395,7 +395,7 @@ def ficha(l, i, o):
     texto = frase(o, l)
     detalle = ""
     if M["obra"][s]["detalle"]:
-        detalle = (f'<section class="detalle"><p><b>{ui(l, "detalle")}</b>{ui(l, "detalle_nota")}</p>'
+        detalle = (f'<section class="detalle"><p><b>{ui(l, "detalle")}</b>{ui(l, "detalle_nota_foto") if o.get("detalle_fuente") else ui(l, "detalle_nota")}</p>'
                    f'{picture_detalle(u, s, ui(l, "detalle") + ": " + o["titulo"])}</section>')
     vecinas = []
     if i > 0:

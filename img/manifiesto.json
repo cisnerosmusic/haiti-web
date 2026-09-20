@@ -114,6 +114,86 @@
    ],
    "detalle": true
   },
+  "criolla": {
+   "ancho": 2731,
+   "alto": 3436,
+   "anchos": [
+    640,
+    1200,
+    1800
+   ],
+   "detalle": true
+  },
+  "in-the-shadow-of-the-cimarron": {
+   "ancho": 4416,
+   "alto": 5906,
+   "anchos": [
+    640,
+    1200,
+    1800
+   ],
+   "detalle": true
+  },
+  "connected": {
+   "ancho": 4699,
+   "alto": 5906,
+   "anchos": [
+    640,
+    1200,
+    1800
+   ],
+   "detalle": true
+  },
+  "my-rooster-unites-us": {
+   "ancho": 4724,
+   "alto": 5705,
+   "anchos": [
+    640,
+    1200,
+    1800
+   ],
+   "detalle": true
+  },
+  "the-barbacoa": {
+   "ancho": 4385,
+   "alto": 5906,
+   "anchos": [
+    640,
+    1200,
+    1800
+   ],
+   "detalle": true
+  },
+  "ripples-in-the-water": {
+   "ancho": 5906,
+   "alto": 4557,
+   "anchos": [
+    640,
+    1200,
+    1800
+   ],
+   "detalle": true
+  },
+  "a-world-within": {
+   "ancho": 5473,
+   "alto": 4724,
+   "anchos": [
+    640,
+    1200,
+    1800
+   ],
+   "detalle": true
+  },
+  "beneath-the-surface": {
+   "ancho": 2259,
+   "alto": 3000,
+   "anchos": [
+    640,
+    1200,
+    1800
+   ],
+   "detalle": true
+  },
   "vind-fra-vest": {
    "ancho": 1034,
    "alto": 768,

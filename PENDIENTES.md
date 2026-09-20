@@ -7,6 +7,12 @@
 - **Títulos.** *Moment* sale del archivo "Trim_Moment 2023"; ¿el título es *Moment*? *Serene and Enchanting* y *Fredfullt og fortryllende* son el mismo cuadro: ¿cuál es el título principal? En "Dagen i morgon" hay obras con título noruego (*Dagen i morgon*, *Ein engel går forbi*, *En uforglemmelig gjeng*, *Koplingar*, *Ringar i vatn*) que podrían ser las mismas que en la lista inglesa con otro nombre.
 - ***Elleguás hager II*** (2021): faltan técnica y medidas.
 - **Las 12 obras en noruego** (*Vind fra vest*, *Støtter* y *Støtter IV*, *Barbacoa I* y *IV*, *Konkyliens ferd*, *Broen*, *Sjølvsikker*, *Medlevere*, *Familie*, *Grensen begrenser sinnet*, *Den raude pupillen*): vienen de fotos de la tienda de Galleri Amare (768 px de alto, sin recorte de detalle posible). Faltan año y técnica exacta; se publican como "pintura" y sin año. Ernesto cree que se vendieron hace años en Noruega: sus fichas no llevan "Consultar esta obra" ni precio. Confirmar si están vendidas o en colecciones, y si *Vind fra vest* es la misma obra que *Vind frå Vest* (catálogo de Wendelboe 2019, 150 × 200 cm). Pedir fotos en alta.
+- **Las ocho obras nuevas de septiembre de 2026** (carpeta `new`): faltan datos y hay medidas que no cuadran.
+  - *The Barbacoa* (2017), *In the Shadow of the Cimarron* (2019) y *Beneath the Surface*: el archivo dice 70 × 60 cm, pero la foto, recortada al borde del lienzo, da proporción de 60 × 80. Se publican **sin medidas** hasta que él confirme. Lo mismo con *A World Within*, cuyo archivo dice 60 × 65 y la foto da otra proporción.
+  - Sin año: *Ripples in the Water*, *A World Within* y *Beneath the Surface*.
+  - Técnica: se publican como "pintura" porque no hay dato. Varias tienen collage a la vista; confirmar cuáles son técnica mixta.
+  - *Connected* (2017) y *Koplingar III* (2022) son cuadros distintos (verificado), pero "koplingar" es "conexiones": ¿son la misma serie con título en dos idiomas?
+  - *Ripples in the Water* es *Ringar i vatn*, de la muestra "Dagen i morgon" (los dos detalles fotografiados por él son de ese cuadro). Se publica con los dos títulos.
 - **Obras sin publicar por falta de datos:** *Teatralsk IV* y *Mirror of Pride* (no hay foto) y las 19 fotos numeradas de la carpeta (no tienen título).
 - **Mural *Hverdagen* (8 × 4 m):** año y lugar. ¿Es el mural de la escalera exterior de la foto?
 - **Docencia en La Habana:** su CV dice 1999–2011; el de Galleri Amare, 1999–2008. Se publica 1999–2011.
