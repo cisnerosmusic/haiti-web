@@ -10,11 +10,12 @@
    ],
    "detalle": true,
    "movil": {
-    "ancho": 864,
-    "alto": 1330,
+    "ancho": 1765,
+    "alto": 2717,
     "anchos": [
      640,
-     864
+     1200,
+     1765
     ]
    }
   },
@@ -75,14 +76,13 @@
    "detalle": true
   },
   "silent-axis": {
-   "ancho": 2664,
-   "alto": 4019,
+   "ancho": 1340,
+   "alto": 2064,
    "anchos": [
     640,
-    1200,
-    1800
+    1200
    ],
-   "detalle": true
+   "detalle": false
   },
   "serene-and-enchanting": {
    "ancho": 5906,
