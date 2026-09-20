@@ -126,6 +126,8 @@ def picture(desde, tipo, slug, alt, sizes, carga="lazy", prioridad=False, movil=
             f'alt="{esc(alt)}" loading="{carga}" decoding="async"{fp}></picture>')
 
 
+LUZ_JS = (RAIZ / "js" / "luz.js").read_text(encoding="utf-8").strip()
+
 MOVIL = "(max-width: 760px)"  # mismo corte que el CSS
 
 
@@ -299,14 +301,14 @@ def documento(l, u, clave, slug, titulo, desc, cuerpo, objetos, og_img, portada=
 <link rel="apple-touch-icon" href="{rel(u, "/apple-touch-icon.png")}">
 <link rel="preload" href="{rel(u, "/fonts/jost-latin.woff2")}" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{rel(u, "/css/sitio.css")}{v}">
-<script src="{rel(u, "/js/luz.js")}{v}"></script>
+<script>{LUZ_JS}</script>
 <script src="{rel(u, "/js/sitio.js")}{v}" defer></script>
-{ld(objetos)}
 </head>
 <body class="pag-{"portada" if portada else clave}">
 <a class="salto" href="#contenido">{ui(l, "saltar")}</a>
 {cab}{cuerpo}
 {pie(l, u, clave, slug)}
+{ld(objetos)}
 </body>
 </html>
 """

@@ -23,7 +23,7 @@ from PIL import Image, ImageOps
 RAIZ = Path(__file__).resolve().parent.parent
 ORIGINALES = Path(os.environ.get("RH_ORIGINALES", r"C:\Users\Ernesto\OneDrive\Imágenes\Haití"))
 SALIDA = RAIZ / "img"
-ANCHOS_OBRA = [640, 1200, 1800]
+ANCHOS_OBRA = [640, 900, 1200, 1800]
 ANCHOS_RETRATO = [480, 960]
 DETALLE = 800
 FORZAR = "--forzar" in sys.argv
