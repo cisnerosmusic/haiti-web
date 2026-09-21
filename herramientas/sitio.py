@@ -213,6 +213,11 @@ def persona(l):
     }
 
 
+def autor(l):
+    """Referencia tipada a la persona: Google no resuelve un @id suelto si la Person no está en la página."""
+    return {"@type": "Person", "@id": f"{DOMINIO}/#persona", "name": NOMBRE, "url": DOMINIO + url("portada", l)}
+
+
 def sitio_web():
     return {"@type": "WebSite", "@id": f"{DOMINIO}/#web", "url": DOMINIO + "/", "name": NOMBRE,
             "inLanguage": [cod(l) for l in IDIOMAS], "about": {"@id": f"{DOMINIO}/#persona"}}
@@ -422,7 +427,7 @@ def ficha(l, i, o):
 </main>"""
     img = M["obra"][s]
     obra = {"@type": "VisualArtwork", "@id": DOMINIO + url("obra", "en", s) + "#obra", "url": DOMINIO + u,
-            "name": o["titulo"], "creator": {"@id": f"{DOMINIO}/#persona"},
+            "name": o["titulo"], "creator": autor(l),
             "artform": "Painting", "description": texto, "inLanguage": cod(l),
             "image": f"{DOMINIO}/img/obra/{s}-{img['anchos'][-1]}.webp"}
     if o.get("anio"):
@@ -484,7 +489,7 @@ def murales(l):
     objetos = [{"@type": "CollectionPage", "@id": DOMINIO + u, "url": DOMINIO + u, "name": p["titulo"], "inLanguage": cod(l),
                 "isPartOf": {"@id": f"{DOMINIO}/#web"}, "about": {"@id": f"{DOMINIO}/#persona"}},
                {"@type": "Book", "@id": f"{DOMINIO}/#libro", "name": f'{LIBRO["titulo"]} & {LIBRO["titulo_es"]}',
-                "author": {"@id": f"{DOMINIO}/#persona"}, "illustrator": {"@id": f"{DOMINIO}/#persona"},
+                "author": autor(l), "illustrator": autor(l),
                 "isbn": LIBRO["isbn"].replace("-", ""), "numberOfPages": 72, "datePublished": "2023-08-21",
                 "bookFormat": "https://schema.org/Paperback", "inLanguage": ["en", "es"],
                 "url": LIBRO["url"], "sameAs": [LIBRO["kindle"]], "image": f"{DOMINIO}/img/libros/soul-devoured-cubierta.webp"},
@@ -517,7 +522,7 @@ def cv(l):
 <div class="cv">{bloques}</div>
 </main>"""
     objetos = [{"@type": "ProfilePage", "@id": DOMINIO + u, "url": DOMINIO + u, "name": p["titulo"], "inLanguage": cod(l),
-                "isPartOf": {"@id": f"{DOMINIO}/#web"}, "mainEntity": {"@id": f"{DOMINIO}/#persona"}},
+                "isPartOf": {"@id": f"{DOMINIO}/#web"}, "mainEntity": persona(l)},  # Person completa: Google no resuelve un @id suelto
                migas(l, [(NOMBRE, url("portada", l)), (p["h1"], u)])]
     escribir(u, documento(l, u, "cv", None, p["titulo"], p["desc"], cuerpo, objetos, "/img/og/ramon-haiti-filiu.jpg"))
 
