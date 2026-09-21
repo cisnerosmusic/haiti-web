@@ -12,6 +12,7 @@ import datetime
 import html
 import json
 import posixpath
+import re
 import urllib.parse
 from pathlib import Path
 
@@ -443,6 +444,8 @@ def ficha(l, i, o):
     objetos = [obra, migas(l, [(NOMBRE, url("portada", l)), (pag("obra", l)["h1"], url("obra", l)), (o["titulo"], u)])]
     cabeza = f'{o["titulo"]} ({o["anio"]})' if o.get("anio") else o["titulo"]
     titulo = f'{cabeza} · {ui(l, "obra_de")} {NOMBRE_CORTO}'
+    if len(titulo) > 60:  # títulos largos: fuera el año, que Google cortaría; "Obra de" se queda para distinguir idiomas
+        titulo = f'{o["titulo"]} · {ui(l, "obra_de")} {NOMBRE_CORTO}'
     escribir(u, documento(l, u, "obra", s, titulo, texto, cuerpo, objetos, f"/img/og/{s}.jpg"))
 
 
@@ -562,10 +565,14 @@ def prensa(l):
             filas.append(f'<li><span class="anio">{fecha_txt(a["fecha"], l)}</span><div>'
                          f'<p class="medio"><b>{esc(a["medio"])}</b>{autor}</p>{titular}<p>{a["resumen"][l]}</p>'
                          f'<p class="fuente">{fuera(enlace, leer)}<span class="acceso">{rotulo_acceso[a["acceso"]]}</span></p></div></li>')
-            n = {"@type": "Book" if a.get("libro") else "NewsArticle",
-                 "headline": a.get("titular") or f'{a["medio"]}, {a["fecha"]}', "url": enlace,
+            n = {"@type": "Book" if a.get("libro") else "NewsArticle", "url": enlace,
+                 "description": re.sub(r"<[^>]+>", "", a["resumen"][l]),
                  "datePublished": a["fecha"], "inLanguage": "no", "about": {"@id": f"{DOMINIO}/#persona"},
                  "publisher": {"@type": "Organization", "name": a["medio"]}}
+            if a.get("titular"):
+                n["headline"] = a["titular"]  # solo el titular real; sin él, un nombre descriptivo
+            else:
+                n["name"] = f'{a["medio"]}, {a["fecha"]}'
             if a.get("autor"):
                 n["author"] = {"@type": "Person", "name": a["autor"]}
             noticias.append(n)

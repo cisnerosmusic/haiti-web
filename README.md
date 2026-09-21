@@ -28,7 +28,7 @@ HTML, CSS y JS propios, sin frameworks ni peticiones a terceros (fuentes autohos
 | `datos/vistas.json` | Texto alternativo de cada imagen |
 | `datos/prensa.json` | Prensa verificada y textos de galerías, con su tipo de acceso |
 | `herramientas/imagenes.py` | Originales → AVIF y WebP en 640/1200/1800, recortes de detalle, imágenes para redes |
-| `herramientas/sitio.py` | Escribe las 90 páginas, `sitemap.xml`, `robots.txt`, `llms.txt` y `404.html` |
+| `herramientas/sitio.py` | Escribe las 114 páginas, `sitemap.xml`, `robots.txt`, `llms.txt` y `404.html` |
 | `herramientas/favicon.py` | Marca del artista limpia, favicon, iconos y apple-touch-icon |
 | `herramientas/indexnow.py` | Avisa a IndexNow de que el sitio cambió |
 | `css/`, `js/`, `fonts/`, `img/` | Recursos publicados |
@@ -40,9 +40,9 @@ python herramientas/imagenes.py     # solo si hay obra o imagen nueva (--forzar 
 python herramientas/sitio.py        # siempre
 ```
 
-Si cambia `css/` o `js/`, sube `VERSION` en `herramientas/sitio.py`. Los originales de alta resolución no están en git: viven en OneDrive y en `originales/` (ignorada).
+Si cambia `css/` o `js/`, sube `VERSION` en `herramientas/sitio.py`. Los originales de alta resolución no están en git: viven en OneDrive y en `originales/` (ignorada). En `originales/amare/` están las fotos de Galleri Amare copiadas con el nombre de la obra: los archivos de la galería llevan el precio en el nombre y ese nombre no debe llegar al repositorio.
 
-**Añadir una obra:** una entrada en `datos/obras.json`, su texto alternativo en `datos/vistas.json`, y los dos comandos.
+**Añadir una obra:** una entrada en `datos/obras.json`, su texto alternativo en `datos/vistas.json`, y los dos comandos. Si el artista manda una foto de detalle propia, va en `detalle_fuente` y sustituye al recorte automático.
 
 ## Publicado
 
