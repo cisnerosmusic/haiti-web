@@ -213,6 +213,8 @@ h3 { font-size: var(--f-l); }
 .libro-ficha { font-size: var(--f-s); color: var(--tinta-2); }
 .cuencos { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: clamp(16px, 2.5vw, 28px); margin: 0 0 clamp(48px, 7vw, 88px); }
 .cuencos img { width: 100%; }
+.papeles { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(200px, 38vw), 1fr)); gap: clamp(12px, 2vw, 24px); align-items: center; margin: 0 0 clamp(48px, 7vw, 88px); }
+.papeles img { width: 100%; height: auto; }
 @media (max-width: 860px) { .mural { grid-template-columns: 1fr; } }
 
 /* Listas de CV */

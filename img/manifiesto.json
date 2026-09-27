@@ -366,5 +366,210 @@
     640
    ]
   }
+ },
+ "papel": {
+  "papel-4358": {
+   "ancho": 606,
+   "alto": 634,
+   "anchos": [
+    606
+   ]
+  },
+  "papel-4359": {
+   "ancho": 609,
+   "alto": 625,
+   "anchos": [
+    609
+   ]
+  },
+  "papel-4360": {
+   "ancho": 602,
+   "alto": 616,
+   "anchos": [
+    602
+   ]
+  },
+  "papel-4361": {
+   "ancho": 619,
+   "alto": 635,
+   "anchos": [
+    619
+   ]
+  },
+  "papel-4362": {
+   "ancho": 606,
+   "alto": 599,
+   "anchos": [
+    606
+   ]
+  },
+  "papel-4363": {
+   "ancho": 621,
+   "alto": 605,
+   "anchos": [
+    621
+   ]
+  },
+  "papel-4364": {
+   "ancho": 618,
+   "alto": 600,
+   "anchos": [
+    618
+   ]
+  },
+  "papel-4365": {
+   "ancho": 615,
+   "alto": 605,
+   "anchos": [
+    615
+   ]
+  },
+  "papel-4366": {
+   "ancho": 625,
+   "alto": 623,
+   "anchos": [
+    625
+   ]
+  },
+  "papel-4367": {
+   "ancho": 568,
+   "alto": 616,
+   "anchos": [
+    568
+   ]
+  },
+  "papel-4369": {
+   "ancho": 600,
+   "alto": 640,
+   "anchos": [
+    600
+   ]
+  },
+  "papel-4388": {
+   "ancho": 378,
+   "alto": 379,
+   "anchos": [
+    378
+   ]
+  },
+  "papel-4390": {
+   "ancho": 393,
+   "alto": 407,
+   "anchos": [
+    393
+   ]
+  },
+  "papel-4402": {
+   "ancho": 598,
+   "alto": 601,
+   "anchos": [
+    598
+   ]
+  },
+  "papel-4403": {
+   "ancho": 598,
+   "alto": 594,
+   "anchos": [
+    598
+   ]
+  },
+  "papel-4405": {
+   "ancho": 582,
+   "alto": 561,
+   "anchos": [
+    582
+   ]
+  },
+  "papel-4407": {
+   "ancho": 580,
+   "alto": 587,
+   "anchos": [
+    580
+   ]
+  },
+  "papel-4408": {
+   "ancho": 580,
+   "alto": 611,
+   "anchos": [
+    580
+   ]
+  },
+  "papel-4409": {
+   "ancho": 570,
+   "alto": 584,
+   "anchos": [
+    570
+   ]
+  },
+  "papel-4410": {
+   "ancho": 591,
+   "alto": 586,
+   "anchos": [
+    591
+   ]
+  },
+  "papel-4411": {
+   "ancho": 597,
+   "alto": 584,
+   "anchos": [
+    597
+   ]
+  },
+  "papel-4412": {
+   "ancho": 424,
+   "alto": 414,
+   "anchos": [
+    424
+   ]
+  },
+  "papel-4466": {
+   "ancho": 446,
+   "alto": 447,
+   "anchos": [
+    446
+   ]
+  },
+  "papel-4467": {
+   "ancho": 456,
+   "alto": 466,
+   "anchos": [
+    456
+   ]
+  },
+  "papel-4468": {
+   "ancho": 446,
+   "alto": 449,
+   "anchos": [
+    446
+   ]
+  },
+  "papel-4469": {
+   "ancho": 449,
+   "alto": 421,
+   "anchos": [
+    449
+   ]
+  },
+  "papel-4472": {
+   "ancho": 618,
+   "alto": 592,
+   "anchos": [
+    618
+   ]
+  },
+  "papel-4479": {
+   "ancho": 616,
+   "alto": 616,
+   "anchos": [
+    616
+   ]
+  },
+  "papel-4509": {
+   "ancho": 623,
+   "alto": 620,
+   "anchos": [
+    623
+   ]
+  }
  }
 }

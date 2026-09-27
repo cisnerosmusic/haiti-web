@@ -1,0 +1,54 @@
+# Publica en GitHub Pages solo la web generada, con una lista cerrada.
+# Los documentos internos (README, PENDIENTES, CLAUDE, docs/, datos/, herramientas/) no salen.
+name: Publicar
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.despliegue.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Reunir la web
+        run: |
+          mkdir _site
+          cp index.html 404.html sitemap.xml robots.txt llms.txt CNAME favicon.ico \
+             apple-touch-icon.png icon-192.png icon-512.png \
+             50b4bba7fb1994877743ecfcfb601eb9.txt _site/
+          cp -r css js fonts img _site/
+          rm -f _site/img/manifiesto.json
+          # Cada sala es una carpeta con su index.html (en, no/, es/)
+          for d in */; do
+            d=${d%/}
+            case "$d" in css|js|fonts|img|_site) continue ;; esac
+            [ -f "$d/index.html" ] && cp -r "$d" _site/
+          done
+          # Red de seguridad: nada interno puede salir
+          if find _site -type f \( -name '*.md' -o -name '*.py' -o -name '*.json' -o -name '*.yml' \) | grep .; then
+            echo "Archivos internos en la publicación" >&2
+            exit 1
+          fi
+          find _site -type f | wc -l
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: despliegue
+        uses: actions/deploy-pages@v4

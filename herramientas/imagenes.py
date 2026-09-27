@@ -104,7 +104,7 @@ def movil(im, slug, franja):
 
 def main():
     datos = json.loads((RAIZ / "datos" / "obras.json").read_text(encoding="utf-8"))
-    manifiesto = {"obra": {}, "mural": {}, "retrato": {}, "cuenco": {}}
+    manifiesto = {"obra": {}, "mural": {}, "retrato": {}, "cuenco": {}, "papel": {}}
 
     for o in datos["obras"]:
         im = abrir(ruta_fuente(o["fuente"]))
@@ -132,6 +132,14 @@ def main():
         manifiesto["cuenco"][c["slug"]] = {"ancho": im.size[0], "alto": im.size[1],
                                            "anchos": escalas(im, "cuenco", c["slug"], [640, 1200])}
         print("cuenco", c["slug"], im.size)
+
+    for p in datos.get("papeles", []):
+        im = abrir(ruta_fuente(p["fuente"]))
+        if p.get("recorte"):
+            im = im.crop(tuple(p["recorte"]))  # al borde del papel, sin el fondo negro
+        manifiesto["papel"][p["slug"]] = {"ancho": im.size[0], "alto": im.size[1],
+                                          "anchos": escalas(im, "papel", p["slug"], [640])}
+        print("papel", p["slug"], im.size)
 
     r = datos["retrato"]
     im = abrir(ruta_fuente(r["fuente"]))

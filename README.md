@@ -10,7 +10,7 @@ Vista previa de cualquier hora: añade `?luz=HH:MM` a una dirección (hora de Be
 
 ## Salas
 
-Portada · Obra (una página por cuadro) · Otros (murales, carteles, cubiertas y cuencos pintados) · De La Habana a Bergen · CV · Prensa · Contacto.
+Portada · Obra (una página por cuadro) · Otros (murales, carteles, cubiertas, cuencos pintados y obra sobre papel) · De La Habana a Bergen · CV · Prensa · Contacto.
 
 ## Idiomas
 
@@ -47,6 +47,8 @@ Si cambia `css/` o `js/`, sube `VERSION` en `herramientas/sitio.py`. Los origina
 ## Publicado
 
 En línea desde el 15 de septiembre de 2026 en https://ramonhaitifiliu.com, con certificado de Let's Encrypt y HTTPS forzado. El DNS vive en Hostinger (cuatro registros A a GitHub Pages y el `www` por CNAME al mismo destino) y el dominio está pagado hasta octubre de 2028. Verificado en Google Search Console por etiqueta HTML: **esa etiqueta no se quita nunca**, va en `herramientas/sitio.py`.
+
+**Qué se publica.** Desde el 27 de septiembre de 2026, GitHub Pages no sirve el repositorio entero: lo publica `.github/workflows/publicar.yml` con cada push a `main`, y solo copia una lista cerrada (las páginas generadas, `css/`, `js/`, `fonts/`, `img/`, iconos, `CNAME`, `sitemap.xml`, `robots.txt`, `llms.txt` y la clave de IndexNow). Este README, `PENDIENTES.md`, `CLAUDE.md`, `docs/`, `datos/` y `herramientas/` no llegan al dominio; el flujo falla si algún `.md`, `.py` o `.json` se cuela. Un archivo nuevo en la raíz que deba verse en la web hay que añadirlo a esa lista.
 
 El WordPress anterior sigue en el hosting de Hostinger, cerrado con contraseña y sin conexión con el dominio. En su panel **no se debe pulsar "Conectar dominio"**: rehace el DNS y tumba esta web.
 

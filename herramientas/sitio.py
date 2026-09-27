@@ -21,7 +21,7 @@ DOMINIO = "https://ramonhaitifiliu.com"
 # True desde el lanzamiento (15 sep 2026). En False, todas las páginas salen
 # con noindex, por si alguna vez hace falta esconder el sitio.
 LANZADO = True
-VERSION = "9"  # súbela cada vez que cambien css/ o js/
+VERSION = "10"  # súbela cada vez que cambien css/ o js/
 IDIOMAS = ["en", "no", "es"]
 SELECTOR = ["no", "en", "es"]
 CORREO = "haitifiliu@yahoo.es"
@@ -487,6 +487,8 @@ def murales(l):
 <p>{fuera(LIBRO["url"], ui(l, "libro_enlace"))}</p></div></div>
 <h2 style="margin-bottom:24px">{ui(l, "cuencos")}</h2>
 <div class="cuencos">{"".join(picture(u, "cuenco", c["slug"], V[c["slug"]][l], "(max-width: 700px) 92vw, 45vw") for c in O.get("cuencos", []))}</div>
+<h2 style="margin-bottom:24px">{ui(l, "papeles")}</h2>
+<div class="papeles">{"".join(picture(u, "papel", p["slug"], V[p["slug"]][l], "(max-width: 520px) 46vw, (max-width: 1100px) 30vw, 300px") for p in O.get("papeles", []))}</div>
 <section class="cv"><div><h2>{ui(l, "cronologia")}</h2>{lista_cv(l, u, encargos["items"])}</div></section>
 </main>"""
     objetos = [{"@type": "CollectionPage", "@id": DOMINIO + u, "url": DOMINIO + u, "name": p["titulo"], "inLanguage": cod(l),
