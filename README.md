@@ -10,7 +10,7 @@ Vista previa de cualquier hora: añade `?luz=HH:MM` a una dirección (hora de Be
 
 ## Salas
 
-Portada · Obra (una página por cuadro) · Otros (murales, carteles, cubiertas, cuencos pintados y obra sobre papel) · De La Habana a Bergen · CV · Prensa · Contacto.
+Portada · Obra (una página por cuadro) · Otros (murales, carteles, cubiertas, cuencos pintados y collage) · De La Habana a Bergen · CV · Prensa · Contacto.
 
 ## Idiomas
 
